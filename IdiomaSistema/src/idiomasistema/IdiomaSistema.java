@@ -16,8 +16,8 @@ public class IdiomaSistema {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Locale idioma = new Locale;
-        System.out.println("Idioma do sistema: " + idioma.getDefault());
+        Locale idioma = Locale.getDefault();
+        System.out.println("Idioma do sistema em: " + "'" + idioma + "'.");
     }
     
 }
