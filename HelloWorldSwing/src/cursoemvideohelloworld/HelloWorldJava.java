@@ -8,6 +8,7 @@ package cursoemvideohelloworld;
  *
  * @author Camila
  */
+// extends == herença
 public class HelloWorldJava extends javax.swing.JFrame {
 
     /**
@@ -37,6 +38,11 @@ public class HelloWorldJava extends javax.swing.JFrame {
         btnClick.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnClick.setForeground(new java.awt.Color(0, 0, 255));
         btnClick.setText("Clique aqui!");
+        btnClick.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClickActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -61,6 +67,11 @@ public class HelloWorldJava extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+    //evento
+    private void btnClickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClickActionPerformed
+        // TODO add your handling code here:
+        lblMensagem.setText("Hello world!");
+    }//GEN-LAST:event_btnClickActionPerformed
 
     /**
      * @param args the command line arguments
@@ -97,6 +108,7 @@ public class HelloWorldJava extends javax.swing.JFrame {
         });
     }
 
+    // private == encapsulamento
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnClick;
     private javax.swing.JLabel lblMensagem;
