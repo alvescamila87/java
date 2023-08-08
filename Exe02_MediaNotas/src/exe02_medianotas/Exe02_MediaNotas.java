@@ -6,7 +6,8 @@ package exe02_medianotas;
 
 import java.util.Scanner;
 
-/**
+/**5
+ * 6
  *
  * @author Camila
  */
@@ -34,8 +35,8 @@ public class Exe02_MediaNotas {
         
         float media = (nota1 + nota2 + nota3 + nota4) / 4;
                 
-        System.out.printf("A média das notas: %s, %s, %s, %s' é: %s.", nota1, nota2, nota3, nota4, media);
-        
+        System.out.printf("A média das notas: %s, %s, %s, %s é: %s.", nota1, nota2, nota3, nota4, media);
+      
         
     }
     
