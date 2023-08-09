@@ -25,24 +25,23 @@ public class Exe15_LojaBicicletas {
         // Salário-mínimo
         System.out.println("Informe o valor do salário-mínimo: R$");
         float salarioMinimo = teclado.nextFloat();
-        
-        // Preço bicileta
-        float precoCustoBike = teclado.nextFloat();
-        float precoVendaBike = (float) (precoCustoBike * 1.50);
-                
+                     
          // Quantidade biciletas
         System.out.println("Informe a quantidade de biciletas vendidas: ");
         int qtdBikes = teclado.nextInt();
         
+        // Preço bicileta
+        System.out.println("Informe o preço de custo da bicicleta: R$");
+        float precoCustoBike = teclado.nextFloat();
+                
         // Salario empregado
         float salarioEmpregado = (float) ((salarioMinimo * 2) + ((0.15 * precoCustoBike * qtdBikes) / qtdEmpregados));
-        System.out.printf("O salário de cada empregado é de R$%.2f.", salarioEmpregado);
+        System.out.printf("\nO salário de cada empregado é de R$%.2f.", salarioEmpregado);
         
-        // Lucro da loja
-        float vendas = qtdBikes * (precoVendaBike - precoCustoBike);
-        float lucro = vendas - (salarioEmpregado * qtdEmpregados);
-        System.out.printf("Lucro da loja: R$%.2f", lucro);
-        
+        // Vendas e Lucro da loja
+        float precoVendaBike = (float) (precoCustoBike * 1.50);
+        float lucro = (qtdBikes * (precoVendaBike - precoCustoBike)) - (salarioEmpregado * qtdEmpregados);
+        System.out.printf("\nLucro da loja: R$%.2f", lucro);   
     }
     
 }
