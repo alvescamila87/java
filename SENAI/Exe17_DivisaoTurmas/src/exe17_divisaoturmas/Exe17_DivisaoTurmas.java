@@ -21,20 +21,17 @@ public class Exe17_DivisaoTurmas {
         System.out.println("Informe a quantidade de alunos: ");
         int nAlunos = teclado.nextInt();
         
-        int turmaA = nAlunos / 3;
-        nAlunos = nAlunos - turmaA;
+        int alunosPorTurma = nAlunos / 3;
+        int resto = nAlunos % 3;
         
-        int turmaB = nAlunos / 2;
-        nAlunos = nAlunos - turmaB;
-        
-        int turmaC = nAlunos;
-        
+        int turmaA = alunosPorTurma;
+        int turmaB = alunosPorTurma;
+        int turmaC = alunosPorTurma + resto;
+               
+                
         System.out.printf("\nA turma A possui: %s alunos.", turmaA); 
         System.out.printf("\nA turma B possui: %s alunos.", turmaB);
-        System.out.printf("\nA turma C possui: %s alunos.", turmaC);
-                
-                
-            
+        System.out.printf("\nA turma C possui: %s alunos.\n", turmaC);                  
     }
     
 }
