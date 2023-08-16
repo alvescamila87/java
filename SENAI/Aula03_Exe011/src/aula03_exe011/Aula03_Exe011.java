@@ -22,25 +22,29 @@ public class Aula03_Exe011 {
         int i = 0;
         float totalRenda = 0;
         int qtdFilhosTotal = 0;
-        while (i > 5) {
-            System.out.printf("Informe a renda familiar do 'Habitante %s': ", i);
+        float mediaRenda = 0;
+        int mediaQtdFilhos = 0;
+        
+        while (i < 5) {
+            System.out.printf("Informe a renda familiar do 'Habitante %s': R$", i+1);
             float renda = entrada.nextFloat();
-            System.out.printf("Informe a quantidade de filhos do 'Habitante %s': ", i);
+            System.out.printf("Informe a quantidade de filhos do 'Habitante %s': ", i+1);
             int qtdFilhos = entrada.nextInt();
             i = i + 1;
             totalRenda += renda;
             qtdFilhosTotal += qtdFilhos;
-            
-        // Processamento
-        float mediaRenda = totalRenda / i;
-        int mediaQtdFilhos = qtdFilhosTotal / i;
         }
-        
-        // Saída de dados
-        System.out.printf("\n A média do salário da população entrevistada  %s é de: R$%s.\n", i , mediaRenda);
-        System.out.printf("\n A média do salário da população entrevistada %s é de: R$%s.\n" , i , mediaQtdFilhos);
-        System.out.println(mediaRenda);
-        System.out.println(mediaQtdFilhos);
+            
+            // Processamento
+            mediaRenda = totalRenda / i;
+            mediaQtdFilhos = qtdFilhosTotal / i;
+            
+            
+            // Saída de dados
+            System.out.printf("\n Foram entrevistados %s habitantes da população da cidade como amostra da pesquisa.", i);
+            System.out.printf("\n A média do salário da população é de: R$%s.", i , mediaRenda);
+            System.out.printf("\n A média de filhos da população de: %s.\n" , i , mediaQtdFilhos);
     }
+
     
 }
