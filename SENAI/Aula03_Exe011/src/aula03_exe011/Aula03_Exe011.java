@@ -42,8 +42,8 @@ public class Aula03_Exe011 {
             
             // Saída de dados
             System.out.printf("\n Foram entrevistados %s habitantes da população da cidade como amostra da pesquisa.", i);
-            System.out.printf("\n A média do salário da população é de: R$%s.", i , mediaRenda);
-            System.out.printf("\n A média de filhos da população de: %s.\n" , i , mediaQtdFilhos);
+            System.out.printf("\n A média do salário da população é de: R$%s.", mediaRenda);
+            System.out.printf("\n A média de filhos da população de: %s.\n" , mediaQtdFilhos);
     }
 
     
