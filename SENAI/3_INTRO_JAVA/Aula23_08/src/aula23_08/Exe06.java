@@ -25,10 +25,10 @@ public class Exe06 {
         float mediaGeral = (media1 + media2) / 2;
         
         // Saída de dados:
-        System.out.printf("Os números: %s, %s, %s tem média: %s.\n", n1, n2, n3, media1);
-        System.out.printf("Os números: %s, %s, %s tem média: %s.\n", n4, n5, n6, media2);
-        System.out.printf("A soma das duas médias é: %s.\n", somaMedias);
-        System.out.printf("A média geral das duas médias é: %s.\n", mediaGeral);       
+        System.out.printf("Os números: %s, %s, %s tem média: %.1f \n", n1, n2, n3, media1);
+        System.out.printf("Os números: %s, %s, %s tem média: %.1f\n", n4, n5, n6, media2);
+        System.out.printf("A soma das duas médias é: %.1f\n", somaMedias);
+        System.out.printf("A média geral das duas médias é: %.1f\n", mediaGeral);       
     }
     
 }

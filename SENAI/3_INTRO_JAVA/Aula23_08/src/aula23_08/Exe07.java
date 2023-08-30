@@ -16,8 +16,10 @@ public class Exe07 {
         float saldoFinal = saldo + valorReajuste;
         
         // Saída de dados
-        System.out.printf("Saldo inicial R$%s. Valor reajustado %s .\n", saldo, valorReajuste);
-        System.out.printf("Saldo final reajustado R$%s.\n", saldoFinal);
+        System.out.printf("Saldo inicial R$%.2f Valor reajustado %.2f\n", saldo, valorReajuste);
+        System.out.printf("Saldo final reajustado R$%.2f\n", saldoFinal);
+        
+        entrada.close();
         
     }
     
