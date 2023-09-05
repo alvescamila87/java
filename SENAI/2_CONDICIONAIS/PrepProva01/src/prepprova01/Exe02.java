@@ -12,15 +12,15 @@ public class Exe02 {
         // Entrada de dados
         Scanner teclado = new Scanner(System.in);
         System.out.println("Informe a quantidade de combustível abastecido em litros: ");
-        int qtd_gasolina = teclado.nextInt();
+        int qtGasolina = teclado.nextInt();
         System.out.println("Informe o consumo do veículo por litro: ");
-        float km_litro = teclado.nextFloat();
+        float kmLitro = teclado.nextFloat();
         
         // Processamento de dados
-        float distancia = qtd_gasolina * km_litro;
+        float distancia = qtGasolina * kmLitro;
         
         // Saída de dados
-        System.out.printf("Com %s lts de gasolina, o veículo pode percorrer a distância máxima de: %.1f km.", qtd_gasolina, distancia);
+        System.out.printf("Com %s lts de gasolina, o veículo pode percorrer a distância máxima de: %.1f km.", qtGasolina, distancia);
         
         teclado.close();
     }
