@@ -25,7 +25,6 @@ public class Exe16DecomporNumero {
         dezena = dezena / 10;
         System.out.printf("\nDezena: %s", dezena);
         int unidade = num % 10;
-        unidade = unidade / 1;
         System.out.printf("\nUnidade: %s\n", unidade);
         
         

@@ -4,8 +4,6 @@
  */
 package exe16_decompornumero;
 
-import java.util.Scanner;
-
 /**
  *
  * @author camila_alves3

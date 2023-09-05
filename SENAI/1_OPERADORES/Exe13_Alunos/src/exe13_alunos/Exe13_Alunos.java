@@ -19,31 +19,31 @@ public class Exe13_Alunos {
         Scanner teclado = new Scanner (System.in);
         
         // Quantidade de alunos nas turmas:
-        int turma_c = 60;
-        int turma_d = 20;
+        int turmaC = 60;
+        int turmaD = 20;
         
         // Percentual de alunos reprovados na turma C
         System.out.println("Informe o percentual de alunos REPROVADOS na 'Turma C': ");
-        float percentual_c = teclado.nextFloat();
-        int reprovados_c = (int) (turma_c * percentual_c /100);
-        int aprovados_c = turma_c - reprovados_c;
+        float percentualC = teclado.nextFloat();
+        int reprovadosC = (int) (turmaC * percentualC /100);
+        int aprovadosC = turmaC - reprovadosC;
         
         
         // Percentual de alunos aprovados na turma D
         System.out.println("Informe o percentual de alunos APROVADOS na 'Turma D': ");
-        float percentual_d = teclado.nextFloat();
-        int aprovados_d = (int) (turma_c * percentual_d / 100);
-        int reprovados_d = turma_d - aprovados_d;
+        float percentualD = teclado.nextFloat();
+        int aprovadosD = (int) (turmaC * percentualD / 100);
+        int reprovadosD = turmaD - aprovadosD;
         
         
         // Percentual de alunos reprovados em relação ao total de alunos das duas turmas
-        int totalAlunos = (int) (turma_c + turma_d);
-        int totalReprovados = (int) (reprovados_c + reprovados_d) * 100 / totalAlunos;
+        int totalAlunos = (int) (turmaC + turmaD);
+        int totalReprovados = (int) (reprovadosC + reprovadosD) * 100 / totalAlunos;
         
         
         //Respostas:
-        System.out.printf("\n Turma C: Total de alunos: %s Total de reprovados: %s.", turma_c, reprovados_c);
-        System.out.printf("\n Turma D: Total de alunos: %s Total de reprovados: %s.", turma_d, reprovados_d);
+        System.out.printf("\n Turma C: Total de alunos: %s Total de reprovados: %s.", turmaC, reprovadosC);
+        System.out.printf("\n Turma D: Total de alunos: %s Total de reprovados: %s.", turmaD, reprovadosD);
         System.out.printf("\n Há %s por cento de alunos reprovados em relação ao total de alunos: %s.", totalReprovados, totalAlunos);
     }
     
