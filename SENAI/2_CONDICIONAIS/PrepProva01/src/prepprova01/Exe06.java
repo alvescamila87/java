@@ -19,6 +19,8 @@ public class Exe06 {
         int pedro = entrada.nextInt();
         System.out.println("Informe a quantidade de pontos do jogador João: ");
         int bola = entrada.nextInt();
+        
+        // Processamento e saída de dados
         int qtdPontosTime = (chico + pedro + bola);
         
         if (joao < qtdPontosTime / 2) {
@@ -49,7 +51,7 @@ public class Exe06 {
         else {
             System.out.println("TIME CLASSIFICADO!!!");
         }
-              
+        entrada.close();
     }
     
 }
