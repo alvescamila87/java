@@ -10,12 +10,15 @@ import java.util.Scanner;
 public class Exe06 {
     public static void main(String[] args) {
         // Entrada de dados
-//        Scanner entrada = new Scanner(System.in);
-
-        int joao = 25;
-        int chico = 5;
-        int pedro = 4;
-        int bola = 2;
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Informe a quantidade de pontos do jogador João: ");
+        int joao = entrada.nextInt();
+        System.out.println("Informe a quantidade de pontos do jogador João: ");
+        int chico = entrada.nextInt();
+        System.out.println("Informe a quantidade de pontos do jogador João: ");
+        int pedro = entrada.nextInt();
+        System.out.println("Informe a quantidade de pontos do jogador João: ");
+        int bola = entrada.nextInt();
         int qtdPontosTime = (chico + pedro + bola);
         
         if (joao < qtdPontosTime / 2) {
