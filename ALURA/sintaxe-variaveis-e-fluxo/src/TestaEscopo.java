@@ -23,6 +23,5 @@ public class TestaEscopo {
             System.out.println("Infelizmente você não pode entrar!");
         }
     }
-    }
-    
 }
+
