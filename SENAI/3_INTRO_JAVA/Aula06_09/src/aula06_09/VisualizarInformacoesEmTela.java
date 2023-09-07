@@ -19,6 +19,7 @@ public class VisualizarInformacoesEmTela {
         
         JOptionPane.showMessageDialog(null, "Nome: " + nome
             + "\nIdade: " + idade
+            + "\nPeso: " + peso
             + "\nSalário R$" + salario);
     }
     
