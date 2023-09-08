@@ -15,8 +15,7 @@ public class TestaLacoFor_Numeros {
             }
             System.out.println();
         }
-        
-        
+  
     }
     
 }
