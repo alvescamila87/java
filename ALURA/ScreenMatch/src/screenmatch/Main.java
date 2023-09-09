@@ -1,5 +1,6 @@
 package screenmatch;
 
+import br.com.alura.screenmatch.calc.CalcOfTime;
 import br.com.alura.screenmatch.modelos.Movie;
 import br.com.alura.screenmatch.modelos.TVShow;
 
@@ -30,6 +31,17 @@ public class Main {
         myTVShow.setEpisodesPerSeason(7);
         myTVShow.setMinutesPerEpidose(50);
         System.out.println("Running time: " + myTVShow.getRunningTime() + " minutes.");
+        
+        Movie myMovie2 = new Movie();
+        myMovie2.setName("Forrest Gump");
+        myMovie2.setReleaseYear(1994);
+        myMovie2.setRunningTime(142);
+        
+        CalcOfTime myCalc = new CalcOfTime();
+        myCalc.insert(myMovie);
+        myCalc.insert(myMovie2);
+        myCalc.insert(myTVShow);
+        System.out.println(myCalc.getTotalTime());
     }
     
 }
