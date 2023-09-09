@@ -1,4 +1,4 @@
-package primeiroprojeto_streammatch;
+package primeiroprojeto_screenmatch;
 
 /**
  *
@@ -12,7 +12,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("This is the Stream Match!");
+        System.out.println("This is the Screen Match!");
         System.out.println("Movie: Top Gun: Maverick");
         
         int releaseYear = 2022;

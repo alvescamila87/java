@@ -1,4 +1,4 @@
-package primeiroprojeto_streammatch;
+package primeiroprojeto_screenmatch;
 
 import java.util.Scanner;
 
