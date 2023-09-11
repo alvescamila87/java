@@ -4,27 +4,19 @@ package br.com.alura.banco.modelos;
  *
  * @author Camila
  */
-public class Conta {
-    String nome;
-    long numero;
-    double saldo;
-    double limite;
+public class Conta extends Cliente {
+    private long conta;
+    private double saldo;
+    private double limite;
     
     // Getters e Setters
-    public String getNome() {
-        return nome;
+
+    public long getConta() {
+        return conta;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public long getNumero() {
-        return numero;
-    }
-
-    public void setNumero(long numero) {
-        this.numero = numero;
+    public void setConta(long conta) {
+        this.conta = conta;
     }
 
     public double getSaldo() {
@@ -60,6 +52,11 @@ public class Conta {
     
     public double extrato() {
         return saldo;      
+    }
+    
+    public void transfere(double valor, Conta contaDestino) {
+        this.saldo -= valor;
+        contaDestino.saldo += valor;
     }
     
 }
