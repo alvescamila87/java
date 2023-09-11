@@ -24,6 +24,10 @@ public class Title {
         this.releaseYear = releaseYear;
     }
 
+    public int getReleaseYear() {
+        return releaseYear;
+    }  
+
     public void setIncludedInThePlan(boolean includedInThePlan) {
         this.includedInThePlan = includedInThePlan;
     }
