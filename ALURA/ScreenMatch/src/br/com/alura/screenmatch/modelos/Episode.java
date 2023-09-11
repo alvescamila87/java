@@ -52,5 +52,4 @@ public class Episode implements Rating {
             return 2;
         }
     }
-    
 }

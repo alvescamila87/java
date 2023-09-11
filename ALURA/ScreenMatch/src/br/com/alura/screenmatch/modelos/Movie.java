@@ -21,4 +21,5 @@ public class Movie extends Title implements Rating {
     public int getRate() {
         return (int) getTotalGrades() / 2;
     }
+    
 }

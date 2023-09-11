@@ -1,7 +1,7 @@
 package screenmatch;
 
 import br.com.alura.screenmatch.calc.CalcOfTime;
-import br.com.alura.screenmatch.calc.FilterRecomendation;
+import br.com.alura.screenmatch.calc.FilterRecommendation;
 import br.com.alura.screenmatch.modelos.Episode;
 import br.com.alura.screenmatch.modelos.Movie;
 import br.com.alura.screenmatch.modelos.TVShow;
@@ -45,7 +45,7 @@ public class Main {
         myCalc.insert(myTVShow);
         System.out.println(myCalc.getTotalTime());
         
-        FilterRecomendation myFilter = new FilterRecomendation();
+        FilterRecommendation myFilter = new FilterRecommendation();
         myFilter.filter(myMovie);
         
         Episode myEpisode = new Episode();

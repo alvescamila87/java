@@ -50,4 +50,10 @@ public class Title {
     public double getAverageRating(){
         return sumGrades / totalGrades;
     }
+
+    public String getName() {
+        return name;
+    }
+    
+    
 }

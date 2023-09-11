@@ -6,5 +6,5 @@ package br.com.alura.screenmatch.calc;
  */
 public interface Rating {
     int getRate();
-    
+    String getName();    
 }
