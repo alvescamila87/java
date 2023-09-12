@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.calc;
+package calcs;
 
 /**
  *

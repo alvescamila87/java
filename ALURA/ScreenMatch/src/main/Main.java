@@ -1,10 +1,10 @@
-package screenmatch;
+package main;
 
-import br.com.alura.screenmatch.calc.CalcOfTime;
-import br.com.alura.screenmatch.calc.FilterRecommendation;
-import br.com.alura.screenmatch.modelos.Episode;
-import br.com.alura.screenmatch.modelos.Movie;
-import br.com.alura.screenmatch.modelos.TVShow;
+import calcs.CalcOfTime;
+import calcs.FilterRecommendation;
+import patterns.Episode;
+import patterns.Movie;
+import patterns.TVShow;
 import java.util.ArrayList;
 
 /**
@@ -13,23 +13,25 @@ import java.util.ArrayList;
  */
 public class Main {
     public static void main(String[] args) {
-//        Movie myMovie = new Movie();
-//        myMovie.setName("The Shawshank Redemption");
-        Movie myMovie = new Movie("The Shawshank Redemption");
-        myMovie.setReleaseYear(1994);
-        myMovie.setRunningTime(142);
-        System.out.println("Running time: " + myMovie.getRunningTime());
+//        Movie myMovie1 = new Movie();
+//        myMovie1.setName("The Shawshank Redemption");
+//        Movie myMovie1 = new Movie("The Shawshank Redemption");
+//        myMovie1.setReleaseYear(1994);
+        var myMovie1 = new Movie("The Shawshank Redemption", 1994);
+        myMovie1.setRunningTime(142);
+        System.out.println("Running time: " + myMovie1.getRunningTime());
         
-        myMovie.displayTechnicalSpecifications();
-        myMovie.rate(9.4);
-        myMovie.rate(7.3);
-        myMovie.rate(8.7);
-        System.out.println("Total grades: " + myMovie.getTotalGrades());
-        System.out.println(myMovie.getAverageRating());
+        myMovie1.displayTechnicalSpecifications();
+        myMovie1.rate(9.4);
+        myMovie1.rate(7.3);
+        myMovie1.rate(8.7);
+        System.out.println("Total grades: " + myMovie1.getTotalGrades());
+        System.out.println(myMovie1.getAverageRating());
         
-        TVShow myTVShow = new TVShow();
-        myTVShow.setName("Breaking Bad");
-        myTVShow.setReleaseYear(2008);
+//        TVShow myTVShow = new TVShow();
+//        myTVShow.setName("Breaking Bad");
+//        myTVShow.setReleaseYear(2008);
+        var myTVShow = new TVShow("Breaking Bad", 2008);
         myTVShow.displayTechnicalSpecifications();
         myTVShow.setSeason(5);
         myTVShow.setEpisodesPerSeason(7);
@@ -38,18 +40,19 @@ public class Main {
         
 //        Movie myMovie2 = new Movie();
 //        myMovie2.setName("Forrest Gump");
-        Movie myMovie2 = new Movie("Forrest Gump");
-        myMovie2.setReleaseYear(1994);
+//        Movie myMovie2 = new Movie("Forrest Gump");
+//        myMovie2.setReleaseYear(1994);
+        var myMovie2 = new Movie("Forrest Gump", 1994);
         myMovie2.setRunningTime(142);
         
         CalcOfTime myCalc = new CalcOfTime();
-        myCalc.insert(myMovie);
+        myCalc.insert(myMovie1);
         myCalc.insert(myMovie2);
         myCalc.insert(myTVShow);
         System.out.println(myCalc.getTotalTime());
         
         FilterRecommendation myFilter = new FilterRecommendation();
-        myFilter.filter(myMovie);
+        myFilter.filter(myMovie1);
         
         Episode myEpisode = new Episode();
         myEpisode.setNumber(1);
@@ -60,14 +63,14 @@ public class Main {
         // New Movie
 //        var myMovie3 = new Movie();
 //        myMovie3.setName("Radio Flyer");
-        var myMovie3 = new Movie("Radio Flyer");
-        myMovie3.setRunningTime(114);        
-        myMovie3.setReleaseYear(1992);
+//        myMovie3.setReleaseYear(1992);
+        var myMovie3 = new Movie("Radio Flyer", 1992);
+        myMovie3.setRunningTime(114);                
         myMovie3.rate(10);
         
         // Arraylist
         ArrayList<Movie> listOfMovies = new ArrayList<>();
-        listOfMovies.add(myMovie);
+        listOfMovies.add(myMovie1);
         listOfMovies.add(myMovie2);
         listOfMovies.add(myMovie3);
         System.out.println("Length list: " + listOfMovies.size());
@@ -75,10 +78,10 @@ public class Main {
         System.out.println(listOfMovies);
         System.out.println(listOfMovies.toString());
         System.out.println("First movie: " + listOfMovies.get(2).toString());
-        System.out.println(myMovie.toString());
+        System.out.println(myMovie1.toString());
         
         // Constructor        
-        var myMovie4 = new Movie("Ferris Bueller's Day Off");
+        var myMovie4 = new Movie("Ferris Bueller's Day Off", 1986);
     }
     
 }

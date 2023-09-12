@@ -1,6 +1,6 @@
-package br.com.alura.screenmatch.modelos;
+package patterns;
 
-import br.com.alura.screenmatch.calc.Rating;
+import calcs.Rating;
 
 /**
  *
@@ -10,8 +10,8 @@ public class Movie extends Title implements Rating {
     private String director;
 
     // new constructor
-    public Movie(String name) {
-        this.setName(name);
+    public Movie(String name, int releaseYear) {
+        super (name, releaseYear);
     }
 
     public String getDirector() {

@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.modelos;
+package patterns;
 
 /**
  *
@@ -12,6 +12,12 @@ public class Title {
     private int totalGrades;
     private int runningTime; 
     
+    // Construtor
+    public Title(String name, int releaseYear) {
+        this.name = name;
+        this.releaseYear = releaseYear;
+    }
+        
     public int getTotalGrades(){
         return totalGrades;
     }
@@ -40,6 +46,7 @@ public class Title {
         return runningTime;
     }
    
+    // Métodos
     public void displayTechnicalSpecifications(){
         System.out.println("Movie name: " + name);
         System.out.println("Release year: " + releaseYear);

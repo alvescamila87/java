@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.modelos;
+package patterns;
 
 /**
  *
@@ -9,6 +9,11 @@ public class TVShow extends Title {
     private boolean active;
     private int episodesPerSeason;
     private int minutesPerEpidose;
+
+    // Construtor 
+    public TVShow(String name, int releaseYear) {
+        super(name, releaseYear);
+    }
 
     public int getSeason() {
         return season;

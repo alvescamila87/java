@@ -1,6 +1,6 @@
-package br.com.alura.screenmatch.modelos;
+package patterns;
 
-import br.com.alura.screenmatch.calc.Rating;
+import calcs.Rating;
 
 /**
  *

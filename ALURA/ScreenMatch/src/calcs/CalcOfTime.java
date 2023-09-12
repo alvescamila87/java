@@ -1,6 +1,6 @@
-package br.com.alura.screenmatch.calc;
+package calcs;
 
-import br.com.alura.screenmatch.modelos.Title;
+import patterns.Title;
 
 /**
  *
