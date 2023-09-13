@@ -2,6 +2,9 @@ package main;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.List;
 import patterns.Movie;
 import patterns.TVShow;
 import patterns.Title;
@@ -40,7 +43,8 @@ public class MainLists {
        
             
         // Ordenando listas
-        ArrayList<String> searchForArtist = new ArrayList<>();
+//        ArrayList<String> searchForArtist = new ArrayList<>();
+        List<String> searchForArtist = new LinkedList<>();
         searchForArtist.add("Tom Hanks");
         searchForArtist.add("Morgan Freeman");
         searchForArtist.add("Matthew Broderick");
@@ -56,6 +60,11 @@ public class MainLists {
         // Ordenando títulos A a Z - Collenctions sort
         Collections.sort(listOfWatched);
         System.out.println("Collection sort used: " + listOfWatched);
+        
+        // Ordenando por ano de lançamento - Sort Comparator
+        listOfWatched.sort(Comparator.comparing(Title::getReleaseYear));
+        System.out.println("Release year sort: " + listOfWatched);
+        
     }
     
 }

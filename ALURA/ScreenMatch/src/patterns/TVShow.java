@@ -51,4 +51,9 @@ public class TVShow extends Title {
     public int getRunningTime() {
         return season * episodesPerSeason * minutesPerEpidose;
     }
+    
+    @Override
+    public String toString() {
+        return "TVShow: " + this.getName() + " (" + this.getReleaseYear() + ")";
+    }
 }
