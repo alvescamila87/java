@@ -2,6 +2,7 @@
 package aula06_09;
 
 import java.util.Scanner;
+import javax.swing.SpringLayout;
 
 /**
  *
@@ -13,33 +14,25 @@ public class For_Exe03 {
         Scanner entrada = new Scanner (System.in);
         
         int valor;  
-        int contador = 0;
         int maiorValor = 0;
                         
         for (;;) { // Loop infinito
-            System.out.println("Informe um número inteiro ou digite -1 para parar: ");
+            System.out.println("Digite um número inteiro OU digite [-1] para PARAR: ");
             valor = entrada.nextInt();                   
-            
+           
             if (valor == -1) {
                 break;
             }
-            else {
-                contador = contador + 1;
-                
-                if (contador == 1) {
-                    maiorValor = valor;  
-                    System.out.println("Maior valor informado: " + maiorValor);  
-                } else {
-                    if (valor > maiorValor) {
-                        maiorValor = valor;
-                        System.out.println("Maior valor informado: " + maiorValor);
-                    }
-                }
+            if (valor > maiorValor){
+                maiorValor = valor;
             }
-                          
+   
         }
-       
-        entrada.close();
+        System.out.println("Maior valor informado: " + maiorValor); 
+        
+    entrada.close();     
+        
     }
-    
+      
 }
+
