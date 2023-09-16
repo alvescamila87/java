@@ -12,7 +12,7 @@ public class Vetores_Exe06_somaImpares_multiplicaPares {
     public static void main(String[] args) {
         Scanner entrada = new Scanner (System.in);
         
-        int[] vetorNumeros = new int[5];
+        int[] vetorNumeros = new int[10];
         
         for (int i = 0; i < vetorNumeros.length; i++) {
             System.out.printf("Informe o %sº número da lista de vetores: \n", i+1);
@@ -27,9 +27,9 @@ public class Vetores_Exe06_somaImpares_multiplicaPares {
                 soma = soma + numero;
             }
         }
-        System.out.println("Lista de números: " + Arrays.toString(vetorNumeros));
-        System.out.println("Multiplicação dos elementos pares: " + multiplicacao);
-        System.out.println("Soma dos elementos ímpares: " + soma);
+        System.out.println("Lista de números: " + vetorNumeros);
+        System.out.println("Multiplicação dos números pares: " + multiplicacao);
+        System.out.println("Soma dos números ímpares: " + soma);
         
         entrada.close();
     }
