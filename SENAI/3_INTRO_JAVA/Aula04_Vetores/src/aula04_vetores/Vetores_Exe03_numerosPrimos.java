@@ -18,13 +18,14 @@ public class Vetores_Exe03_numerosPrimos {
             System.out.printf("Informe o %sº números inteiro do vetor: ", i+1);
             vetorNumeros[i] = entrada.nextInt();
             
-            int divisoes = 0; 
+            int divisoes = 0; // Reinicia a contage de divisões para cada número
             
             for (int contador = 1; contador <= vetorNumeros[i]; contador++) {
                 if (vetorNumeros[i] % contador == 0) {
                     divisoes++;
                 }  
             }
+            // verifica quantas divisões um número tem e verifica se é primo
             if (divisoes == 2) {
                 System.out.println("É primo: " + vetorNumeros[i]);
             }
