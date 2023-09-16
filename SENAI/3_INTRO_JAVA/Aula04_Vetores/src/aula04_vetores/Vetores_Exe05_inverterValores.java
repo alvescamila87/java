@@ -8,7 +8,7 @@ import java.util.Scanner;
  *
  * @author Camila
  */
-public class Vetorres_Exe05_inverterValores {
+public class Vetores_Exe05_inverterValores {
     public static void main(String[] args) {
         Scanner entrada = new Scanner (System.in);
         
@@ -21,13 +21,15 @@ public class Vetorres_Exe05_inverterValores {
         }
         
         // Imprimir ANTES Da inversão da lista
-        System.out.println("ANTES DA INVERSÃO- Lista de números: " + listaNumeros);  
+        System.out.println("Lista original de números: " + listaNumeros);  
         
         // Inverter a lista usando a classe Collections
         Collections.reverse(listaNumeros);
         
         // Imprimir APÓS a inversão da lista
-        System.out.println("DEPOIS DA INVERSÃO - Lista de números: " + listaNumeros);
+        System.out.println("Lista invertida de números: " + listaNumeros);
+        
+        entrada.close();
     }
 }
 
