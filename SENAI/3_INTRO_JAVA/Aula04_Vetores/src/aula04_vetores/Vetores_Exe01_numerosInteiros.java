@@ -14,7 +14,7 @@ public class Vetores_Exe01_numerosInteiros {
     public static void main(String[] args) {
         Scanner entrada = new Scanner (System.in);
         
-        int[] vetorNumeros = new int[3];
+        int[] vetorNumeros = new int[8];
         
         // inserir valores no array
         for (int i = 0; i < vetorNumeros.length; i++) {
@@ -29,15 +29,15 @@ public class Vetores_Exe01_numerosInteiros {
         for (int i = 0; i < vetorNumeros.length; i++) {
             if (vetorNumeros.length == 1) {
                 maiorValor = vetorNumeros[i]; 
-                System.out.printf("Maior valor informado no vetor: '%s' na posição %s. \n",maiorValor, i);
+                System.out.printf("Maior valor informado é '%s' no índice %s do vetor. \n",maiorValor, i);
             } else {
                 if (vetorNumeros[i] > maiorValor) {
                     maiorValor = vetorNumeros[i];
-                    System.out.printf("Maior valor informado no vetor: '%s' na posição %s. \n",maiorValor, i);
+                    System.out.printf("Maior valor informado é '%s' no índice %s do vetor. \n",maiorValor, i);
                 }
             }
         }
-
+        entrada.close();
         
     }
     
