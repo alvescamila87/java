@@ -48,10 +48,8 @@ public class TestaArray5_ArrayList {
         gui.nome = "Paulo";
         
         System.out.println(gui.nome);
-        System.out.println(clientes.get(0).nome);
-        System.out.println(clientes.size());
-        
-        
+        System.out.println(clientes.get(0).nome);     
+
         
     }
     
