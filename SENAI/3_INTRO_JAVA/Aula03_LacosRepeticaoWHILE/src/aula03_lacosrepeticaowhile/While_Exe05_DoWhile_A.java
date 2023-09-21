@@ -7,7 +7,7 @@ import java.util.Scanner;
  *
  * @author Camila
  */
-public class While_Exe05_DoWhile {
+public class While_Exe05_DoWhile_A {
     
     public static void main(String[] args) {
         
