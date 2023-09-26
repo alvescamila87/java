@@ -1,5 +1,7 @@
-
 package bytebank;
+
+
+
 
 /**
  *
@@ -7,10 +9,9 @@ package bytebank;
  */
 public class Conta {
     // atributos
-    double saldo;
+    private double saldo;
     int agencia;
     int numero;
-    //String titular;    
     Cliente titular; //nome da classe Cliente como tipo de titular
     
     // métodos

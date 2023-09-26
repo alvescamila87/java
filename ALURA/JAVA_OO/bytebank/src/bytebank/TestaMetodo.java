@@ -44,7 +44,7 @@ public class TestaMetodo {
         System.out.println(camila); // referencia o mesmo objeto
         System.out.println(contaDaCamila.titular.nome);
         
-        // 2 - Associando diretamente:
+        // 2 - Associando diretamente - referência null
         Conta contaDaIsabel = new Conta();
         System.out.println(contaDaIsabel.saldo);
         
