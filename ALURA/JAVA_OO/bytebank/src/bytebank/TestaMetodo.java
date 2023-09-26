@@ -28,6 +28,31 @@ public class TestaMetodo {
         }
         System.out.println(contaDaMarcela.saldo);
         System.out.println(contaDaCamila.saldo);
+        
+        // 1 - Associando pass-a-passo:
+        
+        //contaDaCamila.titular = "Camila Maria";
+        //System.out.println(contaDaCamila.titular);
+        
+        Cliente camila = new Cliente();
+        camila.nome = "Camila Maria";
+        camila.cpf = "222.222.222-22";
+        camila.profissao = "Desenvolvedora";
+        
+        contaDaCamila.titular = camila;
+        System.out.println(contaDaCamila.titular); // referencia o mesmo objeto
+        System.out.println(camila); // referencia o mesmo objeto
+        System.out.println(contaDaCamila.titular.nome);
+        
+        // 2 - Associando diretamente:
+        Conta contaDaIsabel = new Conta();
+        System.out.println(contaDaIsabel.saldo);
+        
+        contaDaIsabel.titular = new Cliente();
+        System.out.println(contaDaIsabel.titular);
+        
+        contaDaIsabel.titular.nome = "Isabel";
+        System.out.println(contaDaIsabel.titular.nome);
     }
     
 }
