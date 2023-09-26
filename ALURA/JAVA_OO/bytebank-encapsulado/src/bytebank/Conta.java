@@ -1,8 +1,6 @@
 package bytebank;
 
 
-
-
 /**
  *
  * @author Camila
@@ -10,9 +8,9 @@ package bytebank;
 public class Conta {
     // atributos
     private double saldo;
-    int agencia;
-    int numero;
-    Cliente titular; //nome da classe Cliente como tipo de titular
+    private int agencia;
+    private int numero;
+    private Cliente titular; 
     
     // métodos
     public void deposita(double valor) {
@@ -38,7 +36,27 @@ public class Conta {
         return false;
     }
     
+    // Getter and Setters
     public double getSaldo() {
         return this.saldo;
     }
+    
+    public int getNumero() {
+        return this.numero;
+    }
+    
+    public void setNumero(int numero) {
+        this.numero = numero; 
+    }
+
+    public int getAgencia() {
+        return agencia;
+    }
+
+    public void setAgencia(int agencia) {
+        this.agencia = agencia;
+    }
+    
+    
+    
 }
