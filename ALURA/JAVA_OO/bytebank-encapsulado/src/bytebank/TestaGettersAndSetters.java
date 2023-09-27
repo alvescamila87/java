@@ -21,6 +21,22 @@ public class TestaGettersAndSetters {
         conta.setTitular(camila);
         
         System.out.println(conta.getTitular());
+        System.out.println(conta.getTitular().getNome());
+        System.out.println(conta.getTitular().getProfissao());
+        
+        conta.getTitular().setProfissao("Programador");
+        System.out.println(conta.getTitular().getProfissao());
+        // agora em duas linhas
+        Cliente titularDaConta = conta.getTitular();
+        titularDaConta.setProfissao("Programadora");
+        
+        //mesmos registros
+        System.out.println(titularDaConta);
+        System.out.println(camila);
+        System.out.println(conta.getTitular());
+       
+        System.out.println(conta.getTitular().getNome());
+        System.out.println(conta.getTitular().getProfissao());
         
         
         
