@@ -8,8 +8,8 @@ package bytebank;
 public class TestaGettersAndSetters {
     public static void main(String[] args) {
         
-        Conta conta = new Conta();
-        conta.setNumero(3307);
+        Conta conta = new Conta(3307, 96325);
+//        conta.setNumero(3307);
         System.out.println("Número conta: " + conta.getNumero());
         
         Cliente camila = new Cliente();

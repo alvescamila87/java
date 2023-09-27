@@ -10,9 +10,11 @@ public class Conta {
     private double saldo;
     private int agencia;
     private int numero;
-    private Cliente titular; 
+    private Cliente titular;
+    private static int total;
     
     public Conta(int agencia, int numero) {
+        Conta.total++;
         this.agencia = agencia;
         this.numero = numero;
         System.out.println("Criando nova conta: " + "agência: " + this.agencia + " conta: " + this.numero);        
@@ -78,5 +80,9 @@ public class Conta {
      public void setTitular(Cliente titular) {
         this.titular = titular;
     }
-    
+     
+     // método get da classe
+    public static int getTotal() {
+        return total;
+    }
 }
