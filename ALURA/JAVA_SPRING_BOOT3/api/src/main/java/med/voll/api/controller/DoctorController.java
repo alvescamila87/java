@@ -8,6 +8,8 @@ import med.voll.api.doctor.Doctor;
 import med.voll.api.doctor.DoctorRegistrationData;
 import med.voll.api.doctor.DoctorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
@@ -32,8 +34,8 @@ public class DoctorController {
     }
 
     @GetMapping
-    public List<DataListDoctor> list() {
-        return repository.findAll().stream().map(DataListDoctor::new).toList();
+    public Page<DataListDoctor> list(Pageable pageable) {
+        return repository.findAll(pageable).map(DataListDoctor::new);
     }
     
 }
