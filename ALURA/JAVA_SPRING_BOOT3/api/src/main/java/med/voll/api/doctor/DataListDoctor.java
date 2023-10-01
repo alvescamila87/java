@@ -1,7 +1,7 @@
 package med.voll.api.doctor;
 
 public record DataListDoctor(
-        String nome,
+        String name,
         String email,
         String crm,
         Specialty specialty) {
