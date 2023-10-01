@@ -28,12 +28,31 @@ public class Doctor {
     @Embedded
     private Address address;
 
+    private Boolean active;
+
     public Doctor(DoctorRegistrationData data) {
+        this.active = true;
         this.name = data.name();
         this.email = data.email();
         this.crm = data.crm();
         this.telephone = data.telephone();
         this.specialty = data.specialty();
         this.address = new Address(data.address());
+    }
+
+    public void updateInfo(DataUpdateDoctor data) {
+        if (data.name() != null) {
+            this.name = data.name();
+        }
+        if (data.telephone() != null) {
+            this.telephone = data.telephone();
+        }
+        if (data.address() != null) {
+            this.address.updateInfo(data.address());
+        }
+    }
+
+    public void remove() {
+        this.active = false;
     }
 }
