@@ -1,10 +1,10 @@
-package med.voll.api.doctor;
+package med.voll.api.patient;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import med.voll.api.address.AddressInfo;
 
-public record DataUpdateDoctor(
+public record DataUpdatePatient(
         @NotNull
         Long id,
         String name,
