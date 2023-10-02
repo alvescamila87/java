@@ -8,7 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.util.UriComponentsBuilder;
+
+import java.net.URI;
 import java.util.List;
 
 /**
@@ -26,29 +30,40 @@ public class DoctorController {
     //DTO Doctor Registration Data
     @PostMapping
     @Transactional
-    public void input(@RequestBody @Valid DoctorRegistrationData data) {
+    public ResponseEntity input(@RequestBody @Valid DoctorRegistrationData data, UriComponentsBuilder uriBuilder) {
 //        System.out.println(data);
-        repository.save(new Doctor(data));
+        var doctor = new Doctor(data);
+        repository.save(doctor);
+
+        var uri = uriBuilder.path("/doctors/{id}").buildAndExpand(doctor.getId()).toUri();
+
+        return ResponseEntity.created(uri).body(new DataDetailDoctor(doctor));
     }
 
     @GetMapping
-    public Page<DataListDoctor> list(@PageableDefault(sort={"name"}) Pageable pageable) {
-        return repository.findAllByActiveTrue(pageable).map(DataListDoctor::new);
+    public ResponseEntity <Page<DataListDoctor>> list(@PageableDefault(sort={"name"}) Pageable pageable) {
+        var page = repository.findAllByActiveTrue(pageable).map(DataListDoctor::new);
+
+        return ResponseEntity.ok(page);
     }
 
     @PutMapping
     @Transactional
-    public void update(@RequestBody @Valid DataUpdateDoctor data) {
+    public ResponseEntity update(@RequestBody @Valid DataUpdateDoctor data) {
         var doctor = repository.getReferenceById(data.id());
         doctor.updateInfo(data);
+
+        return ResponseEntity.ok(new DataDetailDoctor(doctor));
     }
 
     @DeleteMapping("/{id}")
     @Transactional
     // Exclusão lógica por inativação de registro em DB.
-    public void inactivate(@PathVariable Long id) {
-    var doctor = repository.getReferenceById(id);
-    doctor.inactivate();
+    public ResponseEntity inactivate(@PathVariable Long id) {
+        var doctor = repository.getReferenceById(id);
+        doctor.inactivate();
+
+        return ResponseEntity.noContent().build();
     }
 
 //    Exclusão física
