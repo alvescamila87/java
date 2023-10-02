@@ -52,7 +52,12 @@ public class Doctor {
         }
     }
 
-    public void remove() {
+//    Exclusão física
+//    public void remove() {
+//        this.active = false;
+//    }
+    public void inactivate() {
         this.active = false;
     }
+
 }

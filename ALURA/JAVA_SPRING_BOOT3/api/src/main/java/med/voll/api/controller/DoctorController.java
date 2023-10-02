@@ -45,10 +45,18 @@ public class DoctorController {
 
     @DeleteMapping("/{id}")
     @Transactional
-    public void remove(@PathVariable Long id) {
-//        repository.deleteById(id);
-        var doctor = repository.getReferenceById(id);
-        doctor.remove();
+    // Exclusão lógica por inativação de registro em DB.
+    public void inactivate(@PathVariable Long id) {
+    var doctor = repository.getReferenceById(id);
+    doctor.inactivate();
     }
-    
+
+//    Exclusão física
+//    @DeleteMapping("/{id}")
+//    @Transactional
+//    public void remove(@PathVariable Long id) {
+//        repository.deleteById(id);
+//        doctor.remove();
+//    }
+
 }

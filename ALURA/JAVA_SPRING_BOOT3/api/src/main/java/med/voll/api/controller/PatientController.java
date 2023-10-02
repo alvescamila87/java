@@ -35,10 +35,18 @@ public class PatientController {
         patient.updateInfo(data);
     }
 
+//    Exclusão física
+//    @DeleteMapping("/{id}")
+//    @Transactional
+//    public void remove(@PathVariable Long id) {
+//        patient.remove();
+//    }
+
+    //    Exclusão lógica por inativação de registro DB.
     @DeleteMapping("/{id}")
     @Transactional
-    public void remove(@PathVariable Long id) {
+    public void inactivate(@PathVariable Long id) {
         var patient = repository.getReferenceById(id);
-        patient.remove();
+        patient.inactivate();
     }
 }
