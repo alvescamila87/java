@@ -18,7 +18,7 @@ public class AuthenticationController {
         var token = new UsernamePasswordAuthenticationToken(data.login(), data.password());
         var authentication = manager.authenticate(token);
 
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok("");
     }
 
 }
