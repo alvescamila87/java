@@ -23,5 +23,7 @@ public class RepeticaoEx01_somaValores {
         }
         System.out.printf("A soma dos %s valores informados é: %s", contador, soma);
 
+        entrada.close();
+
     }
 }

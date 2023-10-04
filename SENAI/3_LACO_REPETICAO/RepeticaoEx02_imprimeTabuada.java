@@ -7,13 +7,20 @@ public class RepeticaoEx02_imprimeTabuada {
         System.out.println("Informe um número de 1 a 9 para gerar a tabuada: ");
         int tabuada = entrada.nextInt();
 
-        System.out.printf("Tabuada do '%s':\n", tabuada);
+        int contador = 1;
 
-        for (int i = 1; i <= 10; i++) {
+        while (contador <= 10) {
 
-            System.out.printf("%s X %s = %S \n", tabuada, i, tabuada*i);
+            if (tabuada <= 0) {
+                System.out.println("[ERRO] Multiplicação por zero OU números negativos não são válidos.");
+                break;
+            }
 
+            System.out.printf("%s X %s = %s \n", tabuada, contador, tabuada * contador);
+            contador++;
         }
+
+        entrada.close();
 
     }
 }
