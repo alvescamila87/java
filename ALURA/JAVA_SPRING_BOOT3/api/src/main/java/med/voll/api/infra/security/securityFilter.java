@@ -18,6 +18,8 @@ public class securityFilter extends OncePerRequestFilter {
         
         var tokenJWT = retrieveToken(request);
 
+//        System.out.println(tokenJWT);
+
         filterChain.doFilter(request, response);
     }
 
@@ -26,5 +28,7 @@ public class securityFilter extends OncePerRequestFilter {
         if (authorizationHeader == null) {
             throw new RuntimeException("Token did not send in Authorization header.");
         }
+
+        return authorizationHeader.replace("Bearer ", "");
     }
 }
