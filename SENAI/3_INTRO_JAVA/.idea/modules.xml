@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/3_INTRO_JAVA.iml" filepath="$PROJECT_DIR$/.idea/3_INTRO_JAVA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula01_OperadoresCondicionais/Aula01_OperadoresCondicionais.iml" filepath="$PROJECT_DIR$/Aula01_OperadoresCondicionais/Aula01_OperadoresCondicionais.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula02_LacosRepeticaoFOR/Aula02_LacosRepeticaoFOR.iml" filepath="$PROJECT_DIR$/Aula02_LacosRepeticaoFOR/Aula02_LacosRepeticaoFOR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula03_LacosRepeticaoWHILE/Aula03_LacosRepeticaoWHILE.iml" filepath="$PROJECT_DIR$/Aula03_LacosRepeticaoWHILE/Aula03_LacosRepeticaoWHILE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula04_Vetores/Aula04_Vetores.iml" filepath="$PROJECT_DIR$/Aula04_Vetores/Aula04_Vetores.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula05_ExerciciosGerais/Aula05_ExerciciosGerais.iml" filepath="$PROJECT_DIR$/Aula05_ExerciciosGerais/Aula05_ExerciciosGerais.iml" />
+    </modules>
+  </component>
+</project>
