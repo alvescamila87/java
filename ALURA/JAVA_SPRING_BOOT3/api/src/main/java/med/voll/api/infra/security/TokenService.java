@@ -3,6 +3,7 @@ package med.voll.api.infra.security;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;
+import com.auth0.jwt.exceptions.JWTVerificationException;
 import med.voll.api.domain.user.User;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -40,9 +41,9 @@ public class TokenService {
                     .build()
                     .verify(tokenJWT)
                     .getSubject();
-            
         } catch (JWTVerificationException exception){
-            // Invalid signature/claims
+            exception.printStackTrace();
+            throw new RuntimeException("Token JWT is invalid or expired.");
         }
     }
 
