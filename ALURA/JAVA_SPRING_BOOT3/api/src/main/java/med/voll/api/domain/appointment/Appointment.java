@@ -1,7 +1,7 @@
 package med.voll.api.domain.appointment;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -33,4 +33,12 @@ public class Appointment {
 
     //@Pattern(regexp = "yyyy/mm/ddThh:mm")
     private LocalDateTime date;
+
+    @Column(name = "reason_cancellation")
+    @Enumerated(EnumType.STRING)
+    private ReasonForCancellation reasonForCancellation;
+
+    public void cancel(ReasonForCancellation reason) {
+        this.reasonForCancellation = reason;
+    }
 }
