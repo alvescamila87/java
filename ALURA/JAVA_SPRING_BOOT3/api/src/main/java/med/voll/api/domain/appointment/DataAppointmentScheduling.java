@@ -1,5 +1,6 @@
 package med.voll.api.domain.appointment;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.NotNull;
 
@@ -12,6 +13,8 @@ public record DataAppointmentScheduling(
     Long idPatient,
 
     @NotNull
-    @Future LocalDateTime date) {
+    @Future
+    @JsonFormat(pattern = "yyyy/mm/ddThh:mm")
+    LocalDateTime date) {
 
 }
