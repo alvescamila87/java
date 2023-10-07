@@ -38,5 +38,6 @@ public class RepeticaoEx06_mediaAlunos {
             System.out.printf("Código aluno: %s \n", codigo);
             System.out.printf("Média do aluno: %s \n", media);
         }
+        entrada.close();
     }
 }
