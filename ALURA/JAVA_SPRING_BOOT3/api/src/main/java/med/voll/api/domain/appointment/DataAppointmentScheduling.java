@@ -15,7 +15,7 @@ public record DataAppointmentScheduling(
 
         @NotNull
         @Future
-        @JsonFormat(pattern = "yyyy/mm/ddThh:mm")
+        //@JsonFormat(pattern = "yyyy/mm/ddThh:mm")
         LocalDateTime date,
 
         Specialty specialty) {

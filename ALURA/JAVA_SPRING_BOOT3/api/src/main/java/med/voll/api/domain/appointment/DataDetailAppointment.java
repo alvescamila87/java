@@ -7,4 +7,7 @@ public record DataDetailAppointment(
         Long idDoctor,
         Long idPatient,
         LocalDateTime date) {
+    public DataDetailAppointment(Appointment appointment) {
+        this(appointment.getId(), appointment.getDoctor().getId(), appointment.getPatient().getId(), appointment.getDate());
+    }
 }

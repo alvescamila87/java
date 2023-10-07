@@ -1,12 +1,14 @@
 package med.voll.api.domain.appointment;
 
 import med.voll.api.domain.ValidationException;
+import med.voll.api.domain.appointment.validations.ValidatorAppointmentScheduling;
 import med.voll.api.domain.doctor.Doctor;
 import med.voll.api.domain.doctor.DoctorRepository;
-import med.voll.api.domain.doctor.Specialty;
 import med.voll.api.domain.patient.PatientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class AppointmentsSchedule {
@@ -20,7 +22,10 @@ public class AppointmentsSchedule {
     @Autowired
     private PatientRepository patientRepository;
 
-    public void schedule(DataAppointmentScheduling data) {
+    @Autowired
+    private List<ValidatorAppointmentScheduling> validations;
+
+    public DataDetailAppointment schedule(DataAppointmentScheduling data) {
 
         if(!patientRepository.existsById(data.idPatient())) {
             throw new ValidationException("ID Patient not found.");
@@ -30,10 +35,18 @@ public class AppointmentsSchedule {
             throw new ValidationException("ID Doctor not found.");
         }
 
+        validations.forEach(v -> v.validate(data));
+
         var doctor = chooseDoctor(data);
+
+        if (doctor == null) {
+            throw new ValidationException("There is no doctor available at this date.");
+        }
         var patient = patientRepository.getReferenceById(data.idPatient());
         var appointment = new Appointment(null, doctor, patient, data.date(), null);
         appointmentRepository.save(appointment);
+
+        return new DataDetailAppointment(appointment);
 
     }
 
