@@ -15,7 +15,7 @@ public class RepeticaoEx09_relatorioPessoas {
         int contador40 = 0;
         int contadorIdade1020 = 0;
 
-        while (contador <= 6) {
+        while (contador <= 10) {
             System.out.printf("Informe a idade da %sª pessoa: \n", contador);
             idade = entrada.nextInt();
 
@@ -50,5 +50,6 @@ public class RepeticaoEx09_relatorioPessoas {
         System.out.printf("Quantidade de pessoas com idade superior a 50 anos: %s pessoas. \n", contador50);
         System.out.printf("Média de altura das pessoas com idade entre 10 e 20 anos: %.2f cm. \n", somaAltura / contadorIdade1020);
         System.out.printf("Porcentagem de pessoas com peso inferior a 40 quilos entre todas as pessoas é de: %s por cento. \n", (contador40 * 100) / (contador - 1) );
+        entrada.close();
     }
 }

@@ -34,5 +34,6 @@ public class RepeticaoEx10_detranValorArrecadado {
         total = somaQtdMultas * valorMulta;
         System.out.printf("Total arrecadado com multas R$%.2f. \n", total);
         System.out.printf("Código do maior infrator %s, com %s multas. \n", maiorInfratorCodigo, maiorInfrator);
+        entrada.close();
     }
 }

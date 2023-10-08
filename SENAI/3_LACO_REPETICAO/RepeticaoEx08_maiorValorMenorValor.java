@@ -9,7 +9,7 @@ public class RepeticaoEx08_maiorValorMenorValor {
         Integer maiorValor = Integer.MIN_VALUE;
         Integer menorValor = Integer.MAX_VALUE;
 
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 50; i++) {
 
             System.out.printf("Informe o %sº valor inteiro: \n", i);
             valor = entrada.nextInt();
