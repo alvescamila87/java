@@ -1,7 +1,8 @@
 package med.voll.api.domain.appointment;
 
 import med.voll.api.domain.ValidationException;
-import med.voll.api.domain.appointment.validations.ValidatorAppointmentScheduling;
+import med.voll.api.domain.appointment.validations.scheduling.ValidatorAppointmentScheduling;
+import med.voll.api.domain.appointment.validations.cancellation.ValidatorCancellationAppointment;
 import med.voll.api.domain.doctor.Doctor;
 import med.voll.api.domain.doctor.DoctorRepository;
 import med.voll.api.domain.patient.PatientRepository;
@@ -12,6 +13,9 @@ import java.util.List;
 
 @Service
 public class AppointmentsSchedule {
+
+    @Autowired
+    private List<ValidatorCancellationAppointment> validationsCancellation;
 
     @Autowired
     private AppointmentRepository appointmentRepository;
@@ -66,6 +70,8 @@ public class AppointmentsSchedule {
         if(!appointmentRepository.existsById(data.idAppointment())) {
             throw new ValidationException("ID Appointment not found.");
         }
+
+        validationsCancellation.forEach(v -> v.validate(data));
 
         var appointment = appointmentRepository.getReferenceById(data.idAppointment());
         appointment.cancel(data.reason());

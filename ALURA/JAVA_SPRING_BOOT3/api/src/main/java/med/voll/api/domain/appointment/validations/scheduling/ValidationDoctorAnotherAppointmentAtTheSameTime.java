@@ -1,4 +1,4 @@
-package med.voll.api.domain.appointment.validations;
+package med.voll.api.domain.appointment.validations.scheduling;
 
 import med.voll.api.domain.ValidationException;
 import med.voll.api.domain.appointment.AppointmentRepository;
@@ -12,7 +12,7 @@ public class ValidationDoctorAnotherAppointmentAtTheSameTime implements Validato
     private AppointmentRepository repository;
 
     public void validate(DataAppointmentScheduling data) {
-        var doctorHasAnotherAppointmentAtTheSameTime = repository.existsByDoctorIdAndDate(data.idDoctor(), data.date());
+        var doctorHasAnotherAppointmentAtTheSameTime = repository.existsByDoctorIdAndDateAndReasonForCancellationIsNull(data.idDoctor(), data.date());
         if(doctorHasAnotherAppointmentAtTheSameTime) {
             throw new ValidationException("Doctor alreary has another appointment scheduled at the same time.");
         }

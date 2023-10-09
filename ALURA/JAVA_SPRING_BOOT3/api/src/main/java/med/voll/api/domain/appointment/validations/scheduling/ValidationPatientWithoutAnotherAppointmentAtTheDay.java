@@ -1,4 +1,4 @@
-package med.voll.api.domain.appointment.validations;
+package med.voll.api.domain.appointment.validations.scheduling;
 
 import med.voll.api.domain.ValidationException;
 import med.voll.api.domain.appointment.AppointmentRepository;
