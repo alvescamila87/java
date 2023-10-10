@@ -1,8 +1,10 @@
 package med.voll.api.domain.doctor;
 
+import med.voll.api.domain.address.Address;
+import med.voll.api.domain.address.AddressInfo;
 import med.voll.api.domain.appointment.Appointment;
-import med.voll.api.domain.appointment.DataDetailAppointment;
 import med.voll.api.domain.patient.Patient;
+import med.voll.api.domain.patient.PatientRegistrationData;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -28,62 +30,89 @@ class DoctorRepositoryTest {
     private DoctorRepository doctorRepository;
 
     @Autowired
-    private TestEntityManager em;
+    private TestEntityManager testEntityManager;
 
     @Test
-    @DisplayName("Return null when the only doctor registered is not available at the date.")
+    @DisplayName("Should return null when the only doctor registered is not available at the date.")
     void chooseRandomDoctorFreeOnDateScenario1() {
+
+        //given or arrange
         var nextMondayAt10 = LocalDateTime.now()
                 .with(TemporalAdjusters.next(DayOfWeek.MONDAY))
                 .toLocalDate().atTime(10, 0);
+
 
         var doctor = registerDoctor("Doctor", "doctor@voll.med", "123456", Specialty.CARDIOLOGIA);
         var patient = registerPatient("Patient", "patient@email.com", "22233344499");
         registerAppointment(doctor, patient, nextMondayAt10);
 
+        //when or act
         var freeDoctor = doctorRepository.chooseRandomDoctorFreeOnDate(Specialty.CARDIOLOGIA, nextMondayAt10);
+
+        //then or assert
         assertThat(freeDoctor).isNull();
+
+    }
+
+    @Test
+    @DisplayName("Should return a doctor when the doctor is available at the date.")
+    void chooseRandomDoctorFreeOnDateScenario2() {
+        //given or arrange
+        var nextMondayAt10 = LocalDateTime.now()
+                .with(TemporalAdjusters.next(DayOfWeek.MONDAY))
+                .toLocalDate().atTime(10, 0);
+
+        var doctor = registerDoctor("Doctor", "doctor@voll.med", "123456", Specialty.CARDIOLOGIA);
+
+        //when or act
+        var freeDoctor = doctorRepository.chooseRandomDoctorFreeOnDate(Specialty.CARDIOLOGIA, nextMondayAt10);
+
+        //then or assert
+        assertThat(freeDoctor).isEqualTo(doctor);
     }
 
     private void registerAppointment(Doctor doctor, Patient patient, LocalDateTime date) {
-        em.persist(new Appointment(null, doctor, patient, date, null));
+        testEntityManager.persist(new Appointment(null, doctor, patient, date, null));
     }
 
     private Doctor registerDoctor(String name, String email, String crm, Specialty specialty) {
-        var doctor = new Doctor(dataDoctor(name, email, crm, specialty));
-        em.persist(doctor);
+        var doctor = new Doctor(dataDoctor(name,email,crm,specialty));
+        testEntityManager.persist(doctor);
         return doctor;
     }
 
     private Patient registerPatient(String name, String email, String cpf) {
         var patient = new Patient(dataPatient(name, email, cpf));
-        em.persist(patient);
+        testEntityManager.persist(patient);
         return patient;
     }
 
-    private DataRegisterDoctor dataDoctor(String name, String email, String crm, Specialty specialty) {
-        return new DataRegisterDoctor(
+    // record Doctor
+    private DoctorRegistrationData dataDoctor(String name, String email, String crm, Specialty specialty) {
+        return new DoctorRegistrationData(
                 name,
                 email,
                 "61999999999",
                 crm,
                 specialty,
-                dataAddress()
+                address()
         );
     }
 
-    private DataRegisterPatient dataPatient(String name, String email, String cpf) {
-        return new DataRegisterPatient(
+    // record Patient
+    private PatientRegistrationData dataPatient(String name, String email, String cpf) {
+        return new PatientRegistrationData(
                 name,
                 email,
                 "61999999999",
                 cpf,
-                dataAddress()
+                address()
         );
     }
 
-    private DataAddress dataAddress() {
-        return new DataAddress(
+    // record Address
+    private AddressInfo address() {
+        return new AddressInfo(
                 "rua xpto",
                 "bairro",
                 "00000000",
