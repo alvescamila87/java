@@ -1,5 +1,6 @@
 package br.com.camilaalves.todolist.user;
 
+import at.favre.lib.crypto.bcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,6 +27,12 @@ public class UserController {
             //System.out.println("Usuário já cadastrado!");
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Usuário já cadastrado.");
         }
+
+        // criptografia de senha
+        var passwordHashred = BCrypt.withDefaults()
+                .hashToString(12,userModel.getPassword().toCharArray());
+
+        userModel.setPassword(passwordHashred);
 
         // usuário cadastrado com sucesso:
         var userCreated = this.userRepository.save(userModel);
