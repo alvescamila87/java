@@ -22,7 +22,7 @@ public record DoctorRegistrationData(
         String crm,
         @NotNull(message = "Specialty must not be blank")
         Specialty specialty,
-        @NotNull(message = "Addreess must not be blank")
+        @NotNull(message = "Address must not be blank")
         @Valid
         AddressInfo address) {
 }
