@@ -5,9 +5,9 @@ public class RepeticaoEx05_alturaZe {
 
         double chico = 1.50;
         double ze = 1.10;
-        int contador = 1;
+        int contador = 0;
 
-        while (ze <= chico) {
+        while (ze < chico) {
             contador++;
             chico = chico + 0.02;
             ze = ze + 0.03;
