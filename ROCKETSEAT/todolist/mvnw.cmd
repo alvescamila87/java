@@ -116,7 +116,7 @@ for /F "usebackq delims=" %%a in ("%MAVEN_PROJECTBASEDIR%\.mvn\jvm.config") do s
 
 :endReadAdditionalConfig
 
-SET MAVEN_JAVA_EXE="%JAVA_HOME%\bin\java.exe"
+SET MAVEN_JAVA_EXE="C:\Program Files\Java\jdk-17\bin\java.exe"
 set WRAPPER_JAR="%MAVEN_PROJECTBASEDIR%\.mvn\wrapper\maven-wrapper.jar"
 set WRAPPER_LAUNCHER=org.apache.maven.wrapper.MavenWrapperMain
 
