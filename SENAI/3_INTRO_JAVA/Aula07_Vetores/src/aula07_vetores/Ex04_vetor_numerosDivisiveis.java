@@ -32,7 +32,7 @@ public class Ex04_vetor_numerosDivisiveis {
                 System.out.printf("É divisível por %s o número informado: %s.\n", valorDivisivel,vetorNumeros[i]);
             }
         }
-        
+        entrada.close();        
     }
     
 }

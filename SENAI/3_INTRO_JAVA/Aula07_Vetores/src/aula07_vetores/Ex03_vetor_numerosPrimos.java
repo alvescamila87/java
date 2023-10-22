@@ -29,7 +29,8 @@ public class Ex03_vetor_numerosPrimos {
                 System.out.printf("É primo: %s.\n", vetorNumeros[i]); 
             }               
             
-        }       
+        }
+        entrada.close();      
                 
     }
     

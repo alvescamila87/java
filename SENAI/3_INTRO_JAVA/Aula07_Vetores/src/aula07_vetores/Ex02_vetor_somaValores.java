@@ -23,6 +23,8 @@ public class Ex02_vetor_somaValores {
             
         }
         System.out.println("A soma dos 10 valores informados é: " + soma);
+        entrada.close();
+
     }
     
 }

@@ -34,8 +34,6 @@ public class Ex01_vetor_numerosInteiros {
             
         }
         System.out.printf("Maior valor informado no vetor de 8 posições é: %s na posição %s. \n", maiorValor, posicaoMaiorValor);
-        
-        
-    
+        entrada.close();
     }
 }
