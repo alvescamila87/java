@@ -40,7 +40,6 @@ public class Ex05_vetor_inveterValores {
         for (int i = 0; i < vetorNumeros.length; i++) {
             System.out.printf("%s ", vetorNumeros[i]);
         }
-   
-        
+        entrada.close();        
     }
 }
