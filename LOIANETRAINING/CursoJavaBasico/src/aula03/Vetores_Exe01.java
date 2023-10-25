@@ -2,6 +2,7 @@ package aula03;
 
 import java.util.Scanner;
 
+// exercicios: https://www.slideshare.net/loianeg/curso-java-basico-exercicios-aula-19
 public class Vetores_Exe01 {
 
     public static void main(String[] args) {

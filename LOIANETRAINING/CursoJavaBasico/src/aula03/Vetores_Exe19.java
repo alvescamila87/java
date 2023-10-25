@@ -12,10 +12,10 @@ public class Vetores_Exe19 {
         double[] resultado = new double[nota2.length];
 
         for (int i = 0; i < nota1.length; i++) {
-            System.out.printf("Informe a %sª nota da prova 1: \n", i);
+            System.out.printf("Informe a 1ª nota do %sº aluno : \n", i + 1);
             nota1[i] = entrada.nextDouble();
 
-            System.out.printf("Informe a %sª nota da prova 2: \n", i);
+            System.out.printf("Informe a 2ª nota do %sº aluno: \n", i + 1);
             nota1[i] = entrada.nextDouble();
 
             resultado[i] = (nota1[i] + nota2[i]) / 2;
@@ -23,7 +23,12 @@ public class Vetores_Exe19 {
         }
 
         for (int i = 0; i < resultado.length; i++) {
-            System.out.println(resultado[i]);
+            if (resultado[i] >= 7) {
+                System.out.println("Média: " + resultado[i] + " Classificação: APROVADO!\n");
+            } else {
+                System.out.println("Média: " + resultado[i] + " Classificação: REPROVADO!\n");
+            }
+
 
         }
 
