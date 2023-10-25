@@ -16,12 +16,12 @@ public class Condicional {
             case 4:
             case 5:
             case 6:
-                System.out.println("Dia Ãºtil da semana."); break;
+                System.out.println("Dia útil da semana."); break;
             case 1:
             case 7:
                 System.out.println("Dia de final de semana."); break;
             default:
-                System.out.println("NÃºmero invÃ¡lido");
+                System.out.println("Número inválido");
         }
 
     }
