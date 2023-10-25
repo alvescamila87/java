@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/aula02/SwitchCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CursoJavaBasico.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula01/Argumentos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula01/Argumentos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula01/Argumentos2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula01/Argumentos2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula01/Erro01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula01/Erro01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula01/Erro02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula01/Erro02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula01/Erro03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula01/Erro03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula10/Condicional.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula10/Continue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula10/LoopFor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula10/Variaveis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores_Exe01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores_Exe02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores_Exe03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores_Exe04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores_Exe05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores_Exe06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores_Exe07.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores_Exe08.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores_Exe09.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores_Exe10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores_Exe11.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores_Exe12.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores_Exe13.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores_Exe14.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores_Exe15.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores_Exe16.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/loiane/cursojava/aula19/Vetores_Exe19.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/.idea/CursoJavaBasico.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula01/Argumentos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula01/Argumentos2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula01/Erro01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula01/Erro02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula01/Erro03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula10/Condicional.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula10/Continue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula10/LoopFor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula10/Variaveis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores_Exe01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores_Exe02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores_Exe03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores_Exe04.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores_Exe05.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores_Exe06.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores_Exe07.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores_Exe08.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores_Exe09.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores_Exe10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores_Exe11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores_Exe12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores_Exe13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores_Exe14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores_Exe15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores_Exe16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CursoJavaBasico/com/loiane/cursojava/aula19/Vetores_Exe19.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2XGQwyLtfwwuBwqAFYo3vbJrcnO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "editor.preferences.import"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula01" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="" />
+      <created>1698253179887</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698253179887</updated>
+    </task>
+    <servers />
+  </component>
+</project>
