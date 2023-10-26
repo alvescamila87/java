@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula04/Matrizes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula04/Matrizes_Exe01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula04/Matrizes_Exe02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula04/Matrizes_Exe03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula04/Matrizes_Exe04.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula03/Vetores_Exe01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula03/Vetores_Exe01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula03/Vetores_Exe19.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula03/Vetores_Exe19.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula04/Matrizes_Exe01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula04/Matrizes_Exe01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula04/Matrizes_Exe02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula04/Matrizes_Exe02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula04/Matrizes_Exe03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula04/Matrizes_Exe03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/nbproject/private/private.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
