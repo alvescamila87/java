@@ -23,12 +23,12 @@ public class Ex07_vetor_notasAlunos2 {
 
         for (int contadorAlunos = 0; contadorAlunos < alunosNomes.length; contadorAlunos++) {
 
-            System.out.printf("Informe o nome do %s aluno(a): \n", contadorAlunos + 1);
+            System.out.printf("Informe o nome do %s aluno: \n", contadorAlunos + 1);
             alunosNomes[contadorAlunos] = entrada.next();
 
             for (int contadorNotas = 0; contadorNotas < 3; contadorNotas++) {
 
-                System.out.printf("Informe a %s nota do aluno(a) %s: \n", contadorNotas + 1, alunosNomes[contadorAlunos]);
+                System.out.printf("Informe a %s nota do aluno %s: \n", contadorNotas + 1, alunosNomes[contadorAlunos]);
                 alunosNotas[contadorTurma] = entrada.nextDouble();
 
                 somaNotas = somaNotas + alunosNotas[contadorTurma];
@@ -36,27 +36,27 @@ public class Ex07_vetor_notasAlunos2 {
             }
 
             alunosMedia[contadorAlunos] = somaNotas / 3;
-            //System.out.println("Aluno(a): " + alunosNomes[contadorAlunos] + " Média: " + alunosMedia[contadorAlunos]);
+
             somaNotas = 0;
         }
         for (int contadorAlunos = 0; contadorAlunos < alunosNomes.length; contadorAlunos++) {
 
-            System.out.println("Aluno(a): " + alunosNomes[contadorAlunos]);
+            System.out.println("Aluno: " + alunosNomes[contadorAlunos]);
             
             for (int contadorNotas = 0; contadorNotas < 3; contadorNotas++) {
                 
-                System.out.println("Notas: " + alunosNotas[contadorAlunos]);
+                System.out.printf("%sº nota: %s \n", contadorNotas + 1, alunosNotas[contadorAlunos]);
                 contadorTurma++;
             }
             
-            System.out.println("Média: " + alunosMedia[contadorAlunos]);
+            System.out.println("Média de notas: " + alunosMedia[contadorAlunos]);
             
             if (alunosMedia[contadorAlunos] >= 7) {
-                System.out.println("Classificação: APROVADO!");
+                System.out.println("Classificação: APROVADO");
             } else if (alunosMedia[contadorAlunos] <= 6 && alunosMedia[contadorAlunos] < 7) {
-                System.out.println("Classificação: EM EXAME!");
+                System.out.println("Classificação: EM EXAME");
             } else {
-                System.out.println("Classificação: REPROVADO!");
+                System.out.println("Classificação: REPROVADO");
             }
         }
     }
