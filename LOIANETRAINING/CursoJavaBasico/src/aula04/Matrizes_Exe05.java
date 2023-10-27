@@ -2,13 +2,12 @@ package aula04;
 
 import java.util.Scanner;
 
-public class Matrizes_Exe04 {
-
+public class Matrizes_Exe05 {
     public static void main(String[] args) {
 
         Scanner entrada = new Scanner(System.in);
 
-        String[][] matrizCompromissos = new String[31][24];
+        String[][][] matrizCompromissos = new String[12][31][24];
 
         boolean sair = false;
         byte opcao;
@@ -23,6 +22,20 @@ public class Matrizes_Exe04 {
 
             switch (opcao) {
                 case 1: // adicionar compromisso
+
+                    boolean mesValido = false;
+                    int mes = 0;
+
+                    while (!mesValido) {
+                        System.out.println("Informe com o mês (1 a 12): ");
+                        mes = entrada.nextInt();
+
+                        if (mes > 0 && mes <= 12) {
+                            mesValido = true;
+                        } else {
+                            System.out.println("[ERRO] Mês inválido, tente novamente.");
+                        }
+                    }
 
                     boolean diaValido = false;
                     int dia = 0;
@@ -52,12 +65,28 @@ public class Matrizes_Exe04 {
                         }
                     }
 
+                    mes--;
                     dia--;
                     System.out.println("Informe a descrição do compromisso: ");
-                    matrizCompromissos[dia][hora] = entrada.next();
+                    matrizCompromissos[mes][dia][hora] = entrada.next();
 
                 break;
                 case 2: // verificar compromisso
+
+                    mesValido = false;
+                    mes = 0;
+
+                    while (!mesValido) {
+                        System.out.println("Informe com o mês (1 a 12): ");
+                        mes = entrada.nextInt();
+
+                        if (mes > 0 && mes <= 12) {
+                            mesValido = true;
+                        } else {
+                            System.out.println("[ERRO] Mês inválido, tente novamente.");
+                        }
+                    }
+
                     diaValido = false;
                     dia = 0;
 
@@ -86,15 +115,16 @@ public class Matrizes_Exe04 {
                         }
                     }
 
+                    mes--;
                     dia--;
                     System.out.println("O compromisso agendado é: ");
-                    System.out.println(matrizCompromissos[dia][hora]);
+                    System.out.println(matrizCompromissos[mes][dia][hora]);
 
                 break;
                 case 0:
                     sair = true;
                     System.out.println("FIM PROGRAMA!");
-                break;
+                    break;
                 default:
                     System.out.println("[ERRO] Opção de menu inválida. Tente novamente... ");
             }
