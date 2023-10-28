@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula21/ForEach1_Vetor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula21/ForEach2_Matriz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula21/ForEach_Exe01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula21/ForEach_Exe02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula21/ForEach_Exe03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula21/ForEach_Exe04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula21/ForEach_Exe05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula24/Carro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula24/ContaCorrente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula24/ContatoAgenda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula24/Lampada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula24/Livro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula24/LivroDeBiblioteca.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula24/LivroDeLivraria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula24/TesteCarro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula24/TesteClasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula04/Matrizes_Exe01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula04/Matrizes_Exe01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,33 +41,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "editor.preferences.import"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula01" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="aula24" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.SwitchCase">
-    <configuration name="ForEach_Exe03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula21.ForEach_Exe03" />
-      <module name="CursoJavaBasico" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="aula21.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TesteCarro">
     <configuration name="ForEach_Exe04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aula21.ForEach_Exe04" />
       <module name="CursoJavaBasico" />
@@ -116,13 +110,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TesteCarro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula24.TesteCarro" />
+      <module name="CursoJavaBasico" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aula24.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TesteCarro" />
         <item itemvalue="Application.SwitchCase" />
         <item itemvalue="Application.LoopFor" />
         <item itemvalue="Application.ForEach_Exe05" />
         <item itemvalue="Application.ForEach_Exe04" />
-        <item itemvalue="Application.ForEach_Exe03" />
       </list>
     </recent_temporary>
   </component>

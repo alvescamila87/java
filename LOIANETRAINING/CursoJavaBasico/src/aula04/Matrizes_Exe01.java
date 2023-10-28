@@ -2,6 +2,8 @@ package aula04;
 
 import java.util.Random;
 
+// exercicios: https://www.slideshare.net/loianeg/curso-java-basico-exercicios-aula-20
+
 public class Matrizes_Exe01 {
 
     public static void main(String[] args) {
