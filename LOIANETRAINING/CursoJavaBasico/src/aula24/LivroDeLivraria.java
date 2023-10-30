@@ -1,10 +1,8 @@
 package aula24;
 
-public class LivroDeLivraria {
+public class LivroDeLivraria extends Livro {
 
-    String titulo;
-    String autor;
-    String idioma;
     int numeroPaginas;
+    double preco;
 
 }

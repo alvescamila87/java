@@ -5,7 +5,7 @@ package aula24;
 
 public class Lampada {
     String marca;
-    String tipoLuz;
+    String[] tipos;
     int potencia;
     String cor;
 }

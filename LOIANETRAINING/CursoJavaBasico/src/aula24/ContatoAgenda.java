@@ -4,6 +4,6 @@ public class ContatoAgenda {
 
     String nome;
     String sobrenome;
-    int numeroCelular;
+    String[] numeroCelulares;
 
 }

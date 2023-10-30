@@ -1,14 +1,16 @@
 package aula24;
 
-public class LivroDeBiblioteca {
+import java.util.Date;
 
-    String titulo;
-    String autor;
-    String idioma;
-    int numeroPaginas;
+public class LivroDeBiblioteca extends Livro {
+
     String codigoLocalizacao;
 
     boolean emEmprestimo;
+
+    Date dataEmprestimo;
+
+    Date dataRetornoEmprestimo;
 
 
 }
