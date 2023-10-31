@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula26/ContaCorrente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula26/ContaCorrente2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula26/TestaContaCorrente1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula26/TesteContaCorrente2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula26/Aluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula26/TesteAluno1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +49,7 @@
       <recent name="aula24" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TesteContaCorrente2">
+  <component name="RunManager" selected="Application.TesteAluno1">
     <configuration name="TestaContaCorrente1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aula26.TestaContaCorrente1" />
       <module name="CursoJavaBasico" />
@@ -78,8 +76,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteContaCorrente2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula26.TesteContaCorrente2" />
+    <configuration name="TesteAluno1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula26.TesteAluno1" />
       <module name="CursoJavaBasico" />
       <extension name="coverage">
         <pattern>
@@ -91,8 +89,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteLampada1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula26.TesteLampada1" />
+    <configuration name="TesteContaCorrente2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula26.TesteContaCorrente2" />
       <module name="CursoJavaBasico" />
       <extension name="coverage">
         <pattern>
@@ -119,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TesteAluno1" />
         <item itemvalue="Application.TesteContaCorrente2" />
         <item itemvalue="Application.TestaContaCorrente1" />
         <item itemvalue="Application.TestaLampada3" />
         <item itemvalue="Application.TesteLampada2" />
-        <item itemvalue="Application.TesteLampada1" />
       </list>
     </recent_temporary>
   </component>
