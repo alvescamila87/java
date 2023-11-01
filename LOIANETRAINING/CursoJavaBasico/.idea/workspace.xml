@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula26/Aluno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula26/TesteAluno1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula26/Aluno2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula26/TesteAluno2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula29/Carro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula29/TesteCarro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula30/Carro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula30/TesteCarro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula32/Carro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula32/TesteCarro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +29,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -45,37 +54,12 @@
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula01" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="aula30" />
       <recent name="aula26" />
       <recent name="aula24" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TesteAluno1">
-    <configuration name="TestaContaCorrente1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula26.TestaContaCorrente1" />
-      <module name="CursoJavaBasico" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="aula26.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestaLampada3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula26.TestaLampada3" />
-      <module name="CursoJavaBasico" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="aula26.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.aula32.TesteCarro">
     <configuration name="TesteAluno1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aula26.TesteAluno1" />
       <module name="CursoJavaBasico" />
@@ -89,8 +73,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteContaCorrente2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula26.TesteContaCorrente2" />
+    <configuration name="TesteAluno2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula26.TesteAluno2" />
       <module name="CursoJavaBasico" />
       <extension name="coverage">
         <pattern>
@@ -102,12 +86,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteLampada2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula26.TesteLampada2" />
+    <configuration name="TesteCarro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula29.TesteCarro" />
       <module name="CursoJavaBasico" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aula26.*" />
+          <option name="PATTERN" value="aula29.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="aula30.TesteCarro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula30.TesteCarro" />
+      <module name="CursoJavaBasico" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aula30.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="aula32.TesteCarro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula32.TesteCarro" />
+      <module name="CursoJavaBasico" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aula32.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.aula32.TesteCarro" />
+        <item itemvalue="Application.aula30.TesteCarro" />
+        <item itemvalue="Application.TesteAluno2" />
         <item itemvalue="Application.TesteAluno1" />
-        <item itemvalue="Application.TesteContaCorrente2" />
-        <item itemvalue="Application.TestaContaCorrente1" />
-        <item itemvalue="Application.TestaLampada3" />
-        <item itemvalue="Application.TesteLampada2" />
+        <item itemvalue="Application.TesteCarro" />
       </list>
     </recent_temporary>
   </component>
