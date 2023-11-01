@@ -9,9 +9,16 @@ public class PhraseOMatic {
 	
 	int oneLenght = wordListOne.length;
 	int twoLength = wordListTwo.length;
-	int threeLength = wordListThree;
+	int threeLength = wordListThree.length;
 	
 	java.util.Random randomGenerator = new java.util.Random();
 	int rand1 = randomGenerator.nextInt(oneLenght);
 	int rand2 = randomGenerator.nextInt(twoLength);
 	int rand3 = randomGenerator.nextInt(threeLength);
+	
+	String phrase = wordListOne[rand1] + " " + wordListTwo[rand2] + " " + wordListThree[rand3];
+	
+	System.out.println("What we nees is a " + phrase);
+	}
+	
+}
