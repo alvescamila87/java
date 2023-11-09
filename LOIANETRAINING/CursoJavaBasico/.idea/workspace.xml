@@ -5,164 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula33/Aluno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula33/ContaCorrente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula33/TesteAluno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula33/TesteContaCorrente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula34/Contador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula34/MinhaCalculadora1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula34/MinhaCalculadora2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula34/TesteCalculadora1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula34/TesteCalculadora2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula34/TesteCalculadora3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula34/TesteContador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/.idea/3_INTRO_JAVA.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/Aula01_OperadoresCondicionais.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/nbproject/private/private.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/EntradaDados.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Exe01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Exe02.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Exe03.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Exe04.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Exe05.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Exe06.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Exe07.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Exe08.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Exe09.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Exe10.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Exe11.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Exe12.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Exe13.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Exe14.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Exe15.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Exe16.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Exe17.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/PrimeiroProjeto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula01_OperadoresCondicionais/src/operadoresCondicionais/Variaveis.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/Aula02_LacosRepeticaoFOR.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/src/lacoRepeticaoFOR/Aula_20_09_For.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/src/lacoRepeticaoFOR/EntradaDados_JOP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/src/lacoRepeticaoFOR/For_Exe01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/src/lacoRepeticaoFOR/For_Exe02.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/src/lacoRepeticaoFOR/For_Exe03.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/src/lacoRepeticaoFOR/For_Exe03_B.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/src/lacoRepeticaoFOR/For_Exe04.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/src/lacoRepeticaoFOR/For_Exe05.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/src/lacoRepeticaoFOR/For_Exe06.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/src/lacoRepeticaoFOR/For_Exe07.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/src/lacoRepeticaoFOR/For_Exe08.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/src/lacoRepeticaoFOR/For_Exe09.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/src/lacoRepeticaoFOR/For_Exe10.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula02_LacosRepeticaoFOR/src/lacoRepeticaoFOR/VisualizarInformacoesEmTela.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/Aula03_LacosRepeticaoWHILE.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/src/aula03_lacosrepeticaowhile/While_Exe01_mediaDeIdade.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/src/aula03_lacosrepeticaowhile/While_Exe02_imprimirPares.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/src/aula03_lacosrepeticaowhile/While_Exe03_DoWhile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/src/aula03_lacosrepeticaowhile/While_Exe04_somaNumeros.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/src/aula03_lacosrepeticaowhile/While_Exe05_DoWhile_A.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/src/aula03_lacosrepeticaowhile/While_Exe05_DoWhile_B.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/src/aula03_lacosrepeticaowhile/While_Exe06_imprimirPares.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/src/aula03_lacosrepeticaowhile/While_Exe07_maiorNumero.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/src/aula03_lacosrepeticaowhile/While_Exe08_senha.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/src/aula03_lacosrepeticaowhile/While_Exe09_menorValor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula03_LacosRepeticaoWHILE/src/aula03_lacosrepeticaowhile/While_Exe10_imprimirImpares.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula04_Vetores/Aula04_Vetores.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula04_Vetores/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula04_Vetores/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula04_Vetores/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula04_Vetores/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula04_Vetores/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula04_Vetores/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula04_Vetores/src/aula04_vetores/Vetores_Exe01_numerosInteiros.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula04_Vetores/src/aula04_vetores/Vetores_Exe02_somaNumeros.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula04_Vetores/src/aula04_vetores/Vetores_Exe03_numerosPrimos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula04_Vetores/src/aula04_vetores/Vetores_Exe04_divisibilidadeNumero.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula04_Vetores/src/aula04_vetores/Vetores_Exe05_inverterValores.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula04_Vetores/src/aula04_vetores/Vetores_Exe06_somaImpares_multiplicaPares.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_ExerciciosGerais/Aula05_ExerciciosGerais.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_ExerciciosGerais/src/Exe01_somaSubstracaoDivisaoMultiplicacao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_ExerciciosGerais/src/Exe02_toUpperCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_ExerciciosGerais/src/Exe03_valorDesconto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_ExerciciosGerais/src/Exe04_parImpar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_ExerciciosGerais/src/Exe05_situacaoAlunos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_ExerciciosGerais/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_RevisaoLacosCondicionais/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_RevisaoLacosCondicionais/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_RevisaoLacosCondicionais/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_RevisaoLacosCondicionais/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_RevisaoLacosCondicionais/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_RevisaoLacosCondicionais/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_RevisaoLacosCondicionais/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_RevisaoLacosCondicionais/src/geral/Exe01_somaSubstracaoDivisaoMultiplicacao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_RevisaoLacosCondicionais/src/geral/Exe02_toUpperCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_RevisaoLacosCondicionais/src/geral/Exe03_valorDesconto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_RevisaoLacosCondicionais/src/geral/Exe04_parImpar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula05_RevisaoLacosCondicionais/src/geral/Exe05_situacaoAlunos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/build/built-jar.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/build/classes/aula06_lacosderepeticao/Ex01_tomarChopp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/build/classes/aula06_lacosderepeticao/Ex02_calcularMedia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/build/classes/aula06_lacosderepeticao/Ex03_numerosPares.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/build/classes/aula06_lacosderepeticao/Ex04_validadorSenha.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/dist/Aula06_LacosDeRepeticao.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/dist/README.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/src/aula06_lacosderepeticao/Ex01_tomarChopp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/src/aula06_lacosderepeticao/Ex02_calcularMedia.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/src/aula06_lacosderepeticao/Ex03_numerosPares.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula06_LacosDeRepeticao/src/aula06_lacosderepeticao/Ex04_validadorSenha.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/build/classes/.netbeans_automatic_build" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/build/classes/.netbeans_update_resources" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/build/classes/aula07_vetores/Ex01_vetor_numerosInteiros.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/build/classes/aula07_vetores/Ex02_vetor_somaValores.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/build/classes/aula07_vetores/Ex03_vetor_numerosPrimos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/build/classes/aula07_vetores/Ex04_vetor_numerosDivisiveis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/build/classes/aula07_vetores/Ex05_vetor_inveterValores.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/build/classes/aula07_vetores/Ex05_vetor_inveterValores2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/build/classes/aula07_vetores/Ex06_vetor_produtoSoma.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/build/classes/aula07_vetores/Ex07_vetor_notasAlunos1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/build/classes/aula07_vetores/Ex07_vetor_notasAlunos2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/manifest.mf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/nbproject/private/private.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/src/aula07_vetores/Ex01_vetor_numerosInteiros.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/src/aula07_vetores/Ex02_vetor_somaValores.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/src/aula07_vetores/Ex03_vetor_numerosPrimos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/src/aula07_vetores/Ex04_vetor_numerosDivisiveis.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/src/aula07_vetores/Ex05_vetor_inveterValores.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/src/aula07_vetores/Ex05_vetor_inveterValores2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/src/aula07_vetores/Ex06_vetor_produtoSoma.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/src/aula07_vetores/Ex07_vetor_notasAlunos1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/3_INTRO_JAVA/Aula07_Vetores/src/aula07_vetores/Ex07_vetor_notasAlunos2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula33/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula33/Aluno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula33/TesteAluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula33/TesteAluno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula07_Vetores/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula07_Vetores/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/build/classes/aula08_vetores/DesafioAviao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/nbproject/project.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,18 +65,19 @@
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula01" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="aula34" />
       <recent name="aula30" />
       <recent name="aula26" />
       <recent name="aula24" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TesteContaCorrente">
-    <configuration name="TesteAluno2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula26.TesteAluno2" />
+  <component name="RunManager" selected="Application.TesteContador">
+    <configuration name="TesteAluno" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula33.TesteAluno" />
       <module name="CursoJavaBasico" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aula26.*" />
+          <option name="PATTERN" value="aula34.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -227,7 +90,20 @@
       <module name="CursoJavaBasico" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aula33.*" />
+          <option name="PATTERN" value="aula34.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesteContador" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula34.TesteContador" />
+      <module name="CursoJavaBasico" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aula34.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -240,20 +116,7 @@
       <module name="CursoJavaBasico" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aula33.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="aula30.TesteCarro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula30.TesteCarro" />
-      <module name="CursoJavaBasico" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="aula30.*" />
+          <option name="PATTERN" value="aula34.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -276,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TesteContador" />
+        <item itemvalue="Application.TesteAluno" />
         <item itemvalue="Application.TesteContaCorrente" />
         <item itemvalue="Application.TesteLampada" />
         <item itemvalue="Application.aula32.TesteCarro" />
-        <item itemvalue="Application.aula30.TesteCarro" />
-        <item itemvalue="Application.TesteAluno2" />
       </list>
     </recent_temporary>
   </component>
