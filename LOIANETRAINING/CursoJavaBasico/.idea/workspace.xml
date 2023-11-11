@@ -5,26 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula34/Contador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula34/MinhaCalculadora1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula34/MinhaCalculadora2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula34/TesteCalculadora1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula34/TesteCalculadora2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula34/TesteCalculadora3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula34/TesteContador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula33/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula33/Aluno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula33/TesteAluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula33/TesteAluno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula07_Vetores/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula07_Vetores/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/build/classes/.netbeans_automatic_build" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/build/classes/.netbeans_update_resources" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/build/classes/aula08_vetores/DesafioAviao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula08_Vetores/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula07_Vetores/build/classes/aula07_vetores/Ex08_DesafioAviao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula07_Vetores/build/classes/aula07_vetores/Ex08_DesafioAviao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula07_Vetores/src/aula07_vetores/Ex08_DesafioAviao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula07_Vetores/src/aula07_vetores/Ex08_DesafioAviao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,14 +36,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Camila/OneDrive/GitHub/java/DEVSUPERIOR/demo/pom.xml",
+    "settings.editor.selected.configurable": "editor.preferences.import"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula01" />

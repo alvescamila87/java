@@ -13,6 +13,8 @@ public class Ex08_DesafioAviao {
         
         Scanner entrada = new Scanner (System.in);        
         
+        boolean PrimeiraClasseLotada = false;
+        boolean ClasseEconomicaLotada = false;
         int opcao = 0;
         int numeroAssento = Integer.MAX_VALUE;
         String[] vetorStatusAssentoAviao2 = new String[10];
@@ -24,7 +26,7 @@ public class Ex08_DesafioAviao {
         int qtdPrimeiraClasseReservado = 0;
         int qtdClasseEconomicaReservado = 0;
         
-        // iniciar vetores
+        // iniciar vetores preenchendo false para assentos livres
         for (int i = 0; i < 10; i++) {
             vetorStatusAssentoAviao1[i] = false;
             
@@ -71,36 +73,105 @@ public class Ex08_DesafioAviao {
                     System.out.println();
                     System.out.println();
                    
-                    for (int i = 0; i < 5; i++) {
-                       
-                        System.out.printf("- Assento %s Status: %s R$%.2f \n", i, vetorStatusAssentoAviao2[i], vetorPrecoAssentoAviao[i]);
-                        System.out.println("");
-                    }
-                    
-                    System.out.print("Informe o número do assento que deseja comprar: ");
-                    numeroAssento = entrada.nextInt();                    
-              
-                        if (numeroAssento < 0 || numeroAssento > 5) {
+                    // imprimir assentos                     
+                    for (int i = 0; i < 10; i++) {
 
-                            System.out.println("[ERRO] Opção inválida! Tente novamente.");
-                            System.out.println("");
-
+                        // imprimir assentos de 0 a 5 para reservar, se não estiver lotado                        
+                        if(PrimeiraClasseLotada != true) {
+                            
+                            // imprimir assentos de 0 a 5 para reservar - SOMENTE PRIMEIRA CLASSE     
+                            if(i >= 0 && i < 5) {
+                                
+                                System.out.printf("- Assento %s Status: %s R$%.2f \n", i, vetorStatusAssentoAviao2[i], vetorPrecoAssentoAviao[i]);
+                                System.out.println("");                   
+                               
+                            }                        
+                            
+                        } else if(PrimeiraClasseLotada) {
+                            
+                            i = 5;
+                            
+                            // imprimir assentos de 5 a 10 para reservar - SOMENTE CLASSE ECONÔMICA com preço de classe econômica
+                            if(i >= 5 && i < 10) {
+                                
+                                System.out.printf("- Assento %s Status: %s R$%.2f \n", i, vetorStatusAssentoAviao2[i], vetorPrecoAssentoAviao[i]);
+                                System.out.println("");
+                            } 
+                            
                         } else {
                             
-
-                            vetorStatusAssentoAviao1[numeroAssento] = true;
-
-                            if (vetorStatusAssentoAviao1[numeroAssento] == true) {
-
-                                vetorStatusAssentoAviao2[numeroAssento] = "Reservado";
-                                
-                                System.out.println("");
-                                System.out.printf("- Assento %s Status: %s - Valor a pagar R$%.2f \n", numeroAssento, vetorStatusAssentoAviao2[numeroAssento], vetorPrecoAssentoAviao[numeroAssento]);
-                                System.out.println("");
-                            }
-
-                            break;
+                            System.out.println();
+                            System.out.println("[ERRO] Aeronave lotada!!! \n");
+                            System.out.println();
                         }
+
+                    }
+                    
+                    // lógica de assentos
+                    for (int i = 0; i < 10; i++) {
+                 
+                        if(PrimeiraClasseLotada != true) {
+                            
+                            if(i >= 0 && i < 5 && vetorStatusAssentoAviao1[i] != true) {
+                                
+                                System.out.println();
+                                System.out.print("Informe o número do assento que deseja reservar: ");
+                                numeroAssento = entrada.nextInt();
+                                
+                                if(numeroAssento >= 0 || numeroAssento <= 4) {
+                                    
+                                    vetorStatusAssentoAviao1[numeroAssento] = true;
+                                    vetorStatusAssentoAviao2[numeroAssento] = "Reservado";
+                                    break;
+                                    
+                                } else {
+                                    
+                                    System.out.println();
+                                    System.out.println("[ERRO] Número de assento inválido, tente novamente! \n");
+                                    System.out.println();
+                                    
+                                }                               
+                               
+                            }                        
+                            
+                        } else if(PrimeiraClasseLotada) {
+                            
+                            PrimeiraClasseLotada = true;
+                            
+                            i = 5;
+                            
+                            // imprimir assentos de 5 a 10 para reservar - SOMENTE CLASSE ECONÔMICA com preço de classe econômica
+                            if(i >= 5 && i < 10 && vetorStatusAssentoAviao1[i] != true) {
+                                
+                                System.out.println();
+                                System.out.print("Informe o número do assento que deseja reservar: ");
+                                numeroAssento = entrada.nextInt();
+                                
+                                if(numeroAssento >= 0 || numeroAssento <= 4 && vetorStatusAssentoAviao1[i] != true) {
+                                    
+                                    vetorStatusAssentoAviao1[numeroAssento] = true;
+                                    vetorStatusAssentoAviao2[numeroAssento] = "Reservado";
+                                    break;
+                                    
+                                } else {
+                                    
+                                    System.out.println();
+                                    System.out.println("[ERRO] Número de assento inválido, tente novamente! \n");
+                                    System.out.println();
+                                    
+                                }
+                                
+                            } else {
+                                
+                                ClasseEconomicaLotada = true;
+                                
+                                System.out.println();
+                                System.out.println("[ERRO] Aeronave lotada!!! \n");
+                                System.out.println();
+                                
+                            } 
+                        }
+                    }
                                                 
                 break;
                 case 2:
