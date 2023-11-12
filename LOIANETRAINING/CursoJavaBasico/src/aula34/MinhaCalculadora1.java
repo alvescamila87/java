@@ -1,5 +1,7 @@
 package aula34;
 
+// https://www.slideshare.net/loianeg/curso-java-basico-exercicios-aula-34
+
 public class MinhaCalculadora1 {
 
     public int soma(int num1, int num2) {
