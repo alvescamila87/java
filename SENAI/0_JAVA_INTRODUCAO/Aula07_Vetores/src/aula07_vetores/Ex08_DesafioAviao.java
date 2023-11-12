@@ -123,8 +123,8 @@ public class Ex08_DesafioAviao {
                     } else if(!classeEconomicaLotada) {
                         
                         System.out.println();
-                        System.out.println("[ANTEÇÃO] PRIMEIRA CLASSE LOTADA! \n");
-                        System.out.println("[ANTEÇÃO] Possibilidade de reserva de assento na Classe Econômica! \n");
+                        System.out.println("[ATENÇÃO] PRIMEIRA CLASSE LOTADA! \n");
+                        System.out.println("[ATENÇÃO] Possibilidade de reserva de assento na Classe Econômica! \n");
                         System.out.println("RELATÓRIO DE ASSENTOS DA AERONAVE - CLASSE ECONÔMICA");
                         System.out.println();
                         
@@ -241,9 +241,9 @@ public class Ex08_DesafioAviao {
                     } else if(!primeiraClasseLotada) {
                         
                         System.out.println();
-                        System.out.println("[ATEÇÃO] CLASSE ECONÔMICA LOTADA! \n");
-                        System.out.println("[ATEÇÃO] OFERTA DE 50% OFF!!! \n");
-                        System.out.println("[ATEÇÃO] Possibilidade de reserva de assento na Primeira Classe! \n");
+                        System.out.println("[ATENÇÃO] CLASSE ECONÔMICA LOTADA! \n");
+                        System.out.println("[ATENÇÃO] OFERTA DE 50% OFF!!! \n");
+                        System.out.println("[ATENÇÃO] Possibilidade de reserva de assento na Primeira Classe! \n");
                         System.out.println("RELATÓRIO DE ASSENTOS DA AERONAVE - PRIMEIRA CLASSE");
                         System.out.println();
                         
