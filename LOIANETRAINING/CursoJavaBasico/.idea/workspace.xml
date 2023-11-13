@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula34/Calculadora.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula34/Ex02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula34/MinhaCalculadora1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula34/MinhaCalculadora1.java" afterDir="false" />
-    </list>
+    <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
