@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="" />
+    <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/aula34/Ex03_Fatorial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula35/Calculadora.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula35/CalculadoraFibonacci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula35/TestaCalculadoraFibonacci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula35/TesteCalculadora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/pgadmin/pgadmin4.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/pgadmin/pgadmin4.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/pgadmin/sessions/73b4f1e5-d557-4f30-b080-cd46c43966ea" beforeDir="false" afterPath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/pgadmin/sessions/73b4f1e5-d557-4f30-b080-cd46c43966ea" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/global/1262" beforeDir="false" afterPath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/global/1262" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/global/2396" beforeDir="false" afterPath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/global/2396" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/global/2671" beforeDir="false" afterPath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/global/2671" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/global/2672" beforeDir="false" afterPath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/global/2672" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/global/pg_control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/global/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/global/pg_internal.init" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/pg_stat_tmp/db_0.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/pg_stat_tmp/db_16384.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/pg_stat_tmp/global.stat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/pg_wal/000000010000000000000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/pg_xact/0000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEVSUPERIOR/docker/.data/postgresql/data/postmaster.pid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula34/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula34/Calculadora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula34/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula34/Ex02_MinhaCalculadora.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,15 +68,16 @@
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula01" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="aula35" />
       <recent name="aula34" />
       <recent name="aula30" />
       <recent name="aula26" />
       <recent name="aula24" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Ex02">
-    <configuration name="Ex02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula34.Ex02" />
+  <component name="RunManager" selected="Application.TesteCalculadora">
+    <configuration name="Ex02_MinhaCalculadora" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula34.Ex02_MinhaCalculadora" />
       <module name="CursoJavaBasico" />
       <extension name="coverage">
         <pattern>
@@ -65,8 +89,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteAluno" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula33.TesteAluno" />
+    <configuration name="Ex03_Fatorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula34.Ex03_Fatorial" />
       <module name="CursoJavaBasico" />
       <extension name="coverage">
         <pattern>
@@ -78,12 +102,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteContaCorrente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula33.TesteContaCorrente" />
+    <configuration name="TestaCalculadoraFibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula35.TestaCalculadoraFibonacci" />
       <module name="CursoJavaBasico" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aula34.*" />
+          <option name="PATTERN" value="aula35.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesteCalculadora" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula35.TesteCalculadora" />
+      <module name="CursoJavaBasico" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aula35.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,26 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteLampada" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula33.TesteLampada" />
-      <module name="CursoJavaBasico" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="aula34.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Ex02" />
+        <item itemvalue="Application.TesteCalculadora" />
+        <item itemvalue="Application.TestaCalculadoraFibonacci" />
+        <item itemvalue="Application.Ex03_Fatorial" />
+        <item itemvalue="Application.Ex02_MinhaCalculadora" />
         <item itemvalue="Application.TesteContador" />
-        <item itemvalue="Application.TesteAluno" />
-        <item itemvalue="Application.TesteContaCorrente" />
-        <item itemvalue="Application.TesteLampada" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +170,17 @@
           <line>46</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/aula35/TesteCalculadora.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="args" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

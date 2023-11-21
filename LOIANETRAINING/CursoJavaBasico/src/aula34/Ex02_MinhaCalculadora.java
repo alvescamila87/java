@@ -1,6 +1,6 @@
 package aula34;
 
-public class Ex02 {
+public class Ex02_MinhaCalculadora {
 
     public static void main(String[] args) {
 
