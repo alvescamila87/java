@@ -27,7 +27,17 @@ public class TesteContato {
         telefone.setDdd("11");
         telefone.setNumero("99999-5555");
 
-        contato.setTelefone(telefone);
+        Telefone telefone2 = new Telefone();
+        telefone2.setTipo("Casa");
+        telefone2.setDdd("11");
+        telefone2.setNumero("88888-4444");
+
+        Telefone[] telefones = new Telefone[2];
+        telefones[0] = telefone;
+        telefones[1] = telefone2;
+
+        //contato.setTelefone(telefone);
+        contato.setTelefones(telefones);
 
        // teste saída no console
         System.out.println(contato.getNome());
@@ -36,11 +46,17 @@ public class TesteContato {
             System.out.println(contato.getEndereco().getCidade());
         }
 
-        if(contato != null && contato.getTelefone() != null) {
+        /*if(contato != null && contato.getTelefone() != null) {
             System.out.println(contato.getTelefone().getDdd() + " " + contato.getTelefone().getNumero());
-        }
+        }*/
 
-        System.out.println(contato.getTelefone());
+        if(contato != null && contato.getTelefones() != null) {
+
+            for (Telefone t : contato.getTelefones()) {
+                System.out.println(t.getDdd() + " " + t.getNumero());
+            }
+
+        }
 
     }
 }

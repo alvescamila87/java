@@ -4,7 +4,7 @@ public class Contato {
 
     private String nome;
     private Endereco endereco;
-    private Telefone telefone;
+    private Telefone[] telefones;
 
     public String getNome() {
         return nome;
@@ -22,11 +22,11 @@ public class Contato {
         this.endereco = endereco;
     }
 
-    public Telefone getTelefone() {
-        return telefone;
+    public Telefone[] getTelefones() {
+        return telefones;
     }
 
-    public void setTelefone(Telefone telefone) {
-        this.telefone = telefone;
+    public void setTelefones(Telefone[] telefones) {
+        this.telefones = telefones;
     }
 }
