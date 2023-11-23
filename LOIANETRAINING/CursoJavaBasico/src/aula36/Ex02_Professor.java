@@ -29,4 +29,8 @@ public class Ex02_Professor {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public String obterInfo() {
+        return "Professor: " + nome + "\n";
+    }
 }
