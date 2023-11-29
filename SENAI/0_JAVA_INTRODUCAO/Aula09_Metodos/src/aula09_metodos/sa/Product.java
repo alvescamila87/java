@@ -97,19 +97,86 @@ public class Product {
         System.out.println("Type an option: ");
         optionMenu = keyboard.nextInt();
                 
-        return optionMenu;       
+        return optionMenu;         
+        
         
     }
     
     public static void insertProduct() {
         
+        int countProduct=0;
+        String[] tableProducts = new String[50];
+        String[] tableRankingProducts = new String[50];
+        String descriptionProduct = "";
+        String rankingProduct = "";
         
+        Scanner keyboard = new Scanner(System.in);
+               
+        while("".equals(descriptionProduct)) {
+            
+            System.out.println("Type the product description: ");
+            descriptionProduct = keyboard.next();
+            
+            if(!"".equals(descriptionProduct)) {
+                
+                tableProducts[countProduct] = descriptionProduct;
+                break;
+                
+            } else {
+                System.out.println("[ERROR] There is no description product. Try again.");
+            }
+                      
+        }
         
+        while("".equals(rankingProduct)) {
+            
+            System.out.println("[A] Gold product");
+            System.out.println("[B] Premium product");
+            System.out.println("[C] Regular product");
+            System.out.println("");
+            System.out.println("Type the ranking product: ");
+            rankingProduct = keyboard.next();
+            
+            if(!"".equals(rankingProduct)) {
+                
+                tableRankingProducts[countProduct] = rankingProduct;
+                countProduct++;
+                break;
+                
+            } else {
+                System.out.println("[ERROR] There is no ranking product. Try again.");
+            }
+                      
+        }     
+                
     }
     
     public static void main(String[] args) {
-        
+                      
         login();
+        
+        int option;
+        
+        
+        do {
+            option = showMenu();
+            
+            switch (option) {
+                
+                case 1: 
+                    insertProduct();
+                    break;
+                case 2:
+                    //
+                    break;
+                default:
+                    System.out.println("[ERROR] Invalid option. Try again!");
+                
+            }
+            
+        } while(option != 9);
+        
+        
      
                 
     }
