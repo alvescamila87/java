@@ -9,6 +9,12 @@ import java.util.Scanner;
  */
 public class Product {
     
+    private static int MAX_PRODUCTS = 50;
+    private int countProduct=0;
+    private String[] tableProducts = new String[MAX_PRODUCTS];
+    private String[] tableRankingProducts = new String[MAX_PRODUCTS];
+    
+    
     public static void login() {
         
         Scanner keyboard = new Scanner(System.in);
@@ -40,7 +46,7 @@ public class Product {
                 
                 option = 1;
                 
-                showMenu(); 
+                //showMenu(); 
                                 
             } else {
                 
@@ -52,7 +58,7 @@ public class Product {
                 System.out.println("[2] TRY AGAIN");
                 System.out.println();
                 
-                System.out.print("Type an option: ");
+                System.out.print("Type an option above: ");
                 option = keyboard.nextInt(); 
                 keyboard.nextLine();
                 
@@ -94,7 +100,7 @@ public class Product {
         System.out.println("--------------------------------------------------");
         System.out.println();
         
-        System.out.println("Type an option: ");
+        System.out.println("Type an option from menu: ");
         optionMenu = keyboard.nextInt();
                 
         return optionMenu;         
@@ -104,9 +110,8 @@ public class Product {
     
     public static void insertProduct() {
         
-        int countProduct=0;
-        String[] tableProducts = new String[50];
-        String[] tableRankingProducts = new String[50];
+        Product products = new Product();
+        
         String descriptionProduct = "";
         String rankingProduct = "";
         
@@ -119,7 +124,7 @@ public class Product {
             
             if(!"".equals(descriptionProduct)) {
                 
-                tableProducts[countProduct] = descriptionProduct;
+                products.tableProducts[products.countProduct] = descriptionProduct;
                 break;
                 
             } else {
@@ -139,8 +144,8 @@ public class Product {
             
             if(!"".equals(rankingProduct)) {
                 
-                tableRankingProducts[countProduct] = rankingProduct;
-                countProduct++;
+                products.tableRankingProducts[products.countProduct] = rankingProduct;
+                products.countProduct++;
                 break;
                 
             } else {
@@ -151,8 +156,33 @@ public class Product {
                 
     }
     
+    public static void updateProduct() {
+        
+        Product products = new Product();
+        
+        
+    }
+    
+    public static void displayProducts() {
+        
+        Product products = new Product();
+        
+        for (int i = 0; i < products.countProduct; i++) {
+            
+            if(!"".equals(products.tableProducts[i])) {
+                
+                System.out.println(products.tableProducts[i]);
+            
+            
+        }
+        
+        
+    }
+    
     public static void main(String[] args) {
-                      
+          
+        Product products = new Product();
+        
         login();
         
         int option;
@@ -164,10 +194,15 @@ public class Product {
             switch (option) {
                 
                 case 1: 
-                    insertProduct();
+                    products.insertProduct();
                     break;
                 case 2:
-                    //
+                    products.updateProduct();
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    products.displayProducts();
                     break;
                 default:
                     System.out.println("[ERROR] Invalid option. Try again!");
