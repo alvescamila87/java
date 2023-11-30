@@ -20,7 +20,7 @@ public class MatrizRandom {
     
         for (int linha = 0; linha < matrizNumeros.length; linha++) {
             
-            for (int coluna = 0; coluna < matrizNumeros[linha].length; coluna++) {
+            for (int coluna = 0; coluna < matrizNumeros.length; coluna++) {
                 
                 matrizNumeros[linha][coluna] = numerosAleatorios.nextInt(100);
                 
