@@ -8,10 +8,12 @@ import java.util.Scanner;
  */
 public class Product {
 
-    private static int maxProduct = 50;
-    private int countProduct = 0;
-    private String[] tableProducts = new String[maxProduct];
-    private String[] tableRankingProducts = new String[maxProduct];
+    private static int maxProducts = 50;
+    private static int countProduct = 0;
+    private static String[] tableProducts = new String[maxProducts];
+    private static String[] tableClassificationProducts = new String[maxProducts];
+    private static int[] tableInventoryProducts = new int[maxProducts];
+    
     
 
     public static void login() {
@@ -107,15 +109,15 @@ public class Product {
             switch (optionMenu) {
 
                 case 1:
-                    products.insertProduct();
+                    Product.insertProduct();
                     break;
                 case 2:
-                    products.updateProduct();
+                    Product.updateProduct();
                     break;
                 case 3:
                     break;
                 case 4:
-                    products.displayProducts();
+                    Product.displayProducts();
                     break;
                 case 9:
                     System.out.println("THE END");
@@ -129,22 +131,24 @@ public class Product {
     }
 
     public static void insertProduct() {
-
-        Product products = new Product();
+        
+        Product.displayProducts();
 
         String descriptionProduct = "";
-        String rankingProduct = "";
+        String classificationProduct = "";
 
         Scanner keyboard = new Scanner(System.in);
 
         while ("".equals(descriptionProduct)) {
-
+            
+            System.out.println();
             System.out.println("Type the product description: ");
             descriptionProduct = keyboard.next();
 
             if (!"".equals(descriptionProduct)) {
 
-                products.tableProducts[products.countProduct] = descriptionProduct;
+                Product.tableProducts[Product.countProduct] = descriptionProduct;
+                Product.tableInventoryProducts[Product.countProduct] = 0;
                 break;
 
             } else {
@@ -153,23 +157,24 @@ public class Product {
 
         }
 
-        while ("".equals(rankingProduct)) {
+        while ("".equals(classificationProduct)) {
 
+            System.out.println();
             System.out.println("[A] Gold product");
             System.out.println("[B] Premium product");
             System.out.println("[C] Regular product");
             System.out.println("");
             System.out.println("Type the ranking product: ");
-            rankingProduct = keyboard.next();
+            classificationProduct = keyboard.next();
 
-            if (!"".equals(rankingProduct)) {
+            if (!"".equals(classificationProduct)) {
 
-                products.tableRankingProducts[products.countProduct] = rankingProduct;
-                products.countProduct++;
+                Product.tableClassificationProducts[Product.countProduct] = classificationProduct;
+                Product.countProduct++;
                 break;
 
             } else {
-                System.out.println("[ERROR] There is no ranking product. Try again.");
+                System.out.println("[ERROR] There is no classification product like that. Try again.");
             }
 
         }
@@ -177,21 +182,57 @@ public class Product {
     }
 
     public static void updateProduct() {
+        
+        Product.displayProducts();
+        
+        int idProduct;
+        String descriptionProduct = "";
+        
+        Scanner keyboard = new Scanner(System.in);
+       
+        System.out.println();
+        System.out.println("Type the ID of the product that would you like to change: ");
+        idProduct = keyboard.nextInt();
 
-        Product products = new Product();
+        if (idProduct < 0 || idProduct > Product.maxProducts) {
+            
+            System.out.println("[ERROR] There is no negative ID and/or non-existent ID.");
+            
+        } else if (idProduct >= 0 || idProduct > Product.maxProducts && "".equals(Product.tableProducts[idProduct]) || " ".equals(Product.tableProducts[idProduct])) {
 
+            while (true) {
+
+                System.out.println();
+                System.out.println("Type the new description product: ");
+                descriptionProduct = keyboard.next();
+
+                if ("".equals(Product.tableProducts[idProduct]) || " ".equals(Product.tableProducts[idProduct])) {
+                    System.out.println("[ERROR] The product must have a description. Try again!");
+                } else {
+                    Product.tableProducts[idProduct] = descriptionProduct;
+                    System.out.println();
+                    System.out.println("The description product was updated successfully!");
+                    break;
+                }
+
+            }
+        } else {
+            System.out.println("[ERROR] There is no product registered.");
+        }
+   
     }
 
     public static void displayProducts() {
 
-        Product products = new Product();
+        // Header
+        System.out.println(""); 
+        System.out.println("| ID | CLASSIFICATION | DESCRIPTION PRODUCT | INVENTORY |");
+        
+        for (int i = 0; i < Product.countProduct; i++) {
 
-        for (int i = 0; i < products.countProduct; i++) {
+            if (!"".equals(Product.tableProducts[i])) {
 
-            if (!"".equals(products.tableProducts[i])) {
-
-                System.out.println(products.tableProducts[i]);
-
+                System.out.printf("| %-2d | %-14s | %-20s | %-9d \n", i, Product.tableClassificationProducts[i], Product.tableProducts[i], Product.tableInventoryProducts[i]);
             }
 
         }
@@ -199,8 +240,8 @@ public class Product {
     }
 
     public static void main(String[] args) {
-
-        login();
+        
+        Product.login();
 
     }
 
