@@ -13,6 +13,7 @@ public class Product {
     private static String[] tableProducts = new String[maxProducts];
     private static String[] tableClassificationProducts = new String[maxProducts];
     private static int[] tableInventoryProducts = new int[maxProducts];
+    private static boolean findProduct = false;
     
     
 
@@ -187,38 +188,53 @@ public class Product {
         
         int idProduct;
         String descriptionProduct = "";
+        Product.findProduct = false;
         
         Scanner keyboard = new Scanner(System.in);
        
-        System.out.println();
-        System.out.println("Type the ID of the product that would you like to change: ");
-        idProduct = keyboard.nextInt();
-
-        if (idProduct < 0 || idProduct > Product.maxProducts) {
+        while (!Product.findProduct) {
             
-            System.out.println("[ERROR] There is no negative ID and/or non-existent ID.");
-            
-        } else if (idProduct >= 0 || idProduct > Product.maxProducts && "".equals(Product.tableProducts[idProduct]) || " ".equals(Product.tableProducts[idProduct])) {
+            System.out.println();
+            System.out.println("Type the ID of the product that would you like to change: ");
+            idProduct = keyboard.nextInt();
 
-            while (true) {
-
+            if (idProduct < 0 || idProduct > Product.maxProducts) {
+                    
                 System.out.println();
-                System.out.println("Type the new description product: ");
-                descriptionProduct = keyboard.next();
+                System.out.println("[ERROR] There is no negative ID and/or non-existent ID.");
+                break;
 
-                if ("".equals(Product.tableProducts[idProduct]) || " ".equals(Product.tableProducts[idProduct])) {
-                    System.out.println("[ERROR] The product must have a description. Try again!");
-                } else {
-                    Product.tableProducts[idProduct] = descriptionProduct;
+            } else if (idProduct >= 0 || idProduct > Product.maxProducts) {
+                
+                if(Product.tableProducts[idProduct] == null || Product.tableProducts[idProduct].trim().isEmpty()) {
+                    
                     System.out.println();
-                    System.out.println("The description product was updated successfully!");
+                    System.out.println("[ERROR] There is no product registered.");
+                    break;
+                
+                } else {
+                    
+                    while (descriptionProduct == null || descriptionProduct.trim().isEmpty()) {
+
+                        System.out.println();
+                        System.out.println("Type the new description product: ");
+                        descriptionProduct = keyboard.next();
+
+                        Product.tableProducts[idProduct] = descriptionProduct;
+                        System.out.println();
+                        System.out.println("The description product was updated successfully!");
+                        Product.findProduct = true;
+                        break;                       
+
+                    }
+                }                
+            } else {
+                
+                if(Product.findProduct) {
                     break;
                 }
-
-            }
-        } else {
-            System.out.println("[ERROR] There is no product registered.");
-        }
+            } 
+        }        
    
     }
 
@@ -226,7 +242,7 @@ public class Product {
 
         // Header
         System.out.println(""); 
-        System.out.println("| ID | CLASSIFICATION | DESCRIPTION PRODUCT | INVENTORY |");
+        System.out.println("| ID | CLASSIFICATION | DESCRIPTION PRODUCT  | INVENTORY |");
         
         for (int i = 0; i < Product.countProduct; i++) {
 
