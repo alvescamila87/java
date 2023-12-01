@@ -116,6 +116,7 @@ public class Product {
                     Product.updateProduct();
                     break;
                 case 3:
+                    Product.removeProduct();
                     break;
                 case 4:
                     Product.displayProducts();
@@ -237,6 +238,57 @@ public class Product {
         }        
    
     }
+    
+    public static void removeProduct() {
+        
+        Product.displayProducts();
+        
+        int idProduct;
+        Product.findProduct = false;
+        
+        Scanner keyboard = new Scanner(System.in);
+       
+        while (!Product.findProduct) {
+            
+            System.out.println();
+            System.out.println("Type the ID of the product that would you like to remove: ");
+            idProduct = keyboard.nextInt();
+
+            if (idProduct < 0 || idProduct > Product.maxProducts) {
+                    
+                System.out.println();
+                System.out.println("[ERROR] There is no negative ID and/or non-existent ID.");
+                break;
+
+            } else if (idProduct >= 0 || idProduct > Product.maxProducts) {
+                
+                if(Product.tableProducts[idProduct] == null || Product.tableProducts[idProduct].trim().isEmpty()) {
+                    
+                    System.out.println();
+                    System.out.println("[ERROR] There is no product registered.");
+                    break;
+                
+                } else {
+                    
+                    Product.tableProducts[idProduct] = null;
+                    Product.tableClassificationProducts[idProduct] = null;
+                    Product.tableInventoryProducts[idProduct] = 0;
+                    System.out.println();
+                    System.out.println("The product was removed successfully!");
+                    Product.findProduct = true;
+                    break;                       
+
+                    
+                }   
+                
+            } else {
+                
+                if(Product.findProduct) {
+                    break;
+                }
+            } 
+        }      
+    }
 
     public static void displayProducts() {
 
@@ -246,7 +298,7 @@ public class Product {
         
         for (int i = 0; i < Product.countProduct; i++) {
 
-            if (!"".equals(Product.tableProducts[i])) {
+            if (!"".equals(Product.tableProducts[i]) && Product.tableProducts[i] != null) {
 
                 System.out.printf("| %-2d | %-14s | %-20s | %-9d \n", i, Product.tableClassificationProducts[i], Product.tableProducts[i], Product.tableInventoryProducts[i]);
             }
