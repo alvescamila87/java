@@ -407,6 +407,12 @@ public class Product {
                     System.out.println("[ERROR] There is no product registered.");
                     break;
                 
+                } else if (Product.tableInventoryProducts[idProduct] == 0) {
+
+                    System.out.println();
+                    System.out.println("The inventory of this product is already zeroed.");
+                    break;
+                    
                 } else {
                     
                     while (quantityItemsProduct < 0 ) {
@@ -436,15 +442,19 @@ public class Product {
                                 System.out.println();
                                 System.out.println("[ATTENTION] The quantity was typed EXCEEDED the inventory ifo the product for removing!");
                                 System.out.println("[ATTENTION] However, the product has its inventory reseted to zero, cause it's impossivel go to negative!");
-                                Product.findProduct = true;
-                                break; 
+                                 
                                 
-                            }                            
-                            
+                            }
+
+                            System.out.println();
+                            System.out.println("The quantity was removed from the product successfully!");
+                            Product.findProduct = true;
+                            break;
                         }
 
                     }
-                }                
+                } 
+                
             } else {
                 
                 if(Product.findProduct) {
