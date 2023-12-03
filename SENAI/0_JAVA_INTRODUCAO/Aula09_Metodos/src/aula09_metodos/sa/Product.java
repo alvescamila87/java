@@ -121,6 +121,12 @@ public class Product {
                 case 4:
                     Product.displayProducts();
                     break;
+                case 7:
+                    Product.addInventory();
+                    break;
+                case 8:
+                    Product.removeInventory();
+                    break;
                 case 9:
                     System.out.println("THE END");
                     break;
@@ -305,6 +311,147 @@ public class Product {
 
         }
 
+    }
+    
+    public static void addInventory() {
+        
+        Product.displayProducts();
+        
+        int idProduct;
+        int quantityItemsProduct = -1;
+        Product.findProduct = false;
+        
+        Scanner keyboard = new Scanner(System.in);
+       
+        while (!Product.findProduct) {
+            
+            System.out.println();
+            System.out.println("Type the ID of the product that would you like to add items from inventory: ");
+            idProduct = keyboard.nextInt();
+
+            if (idProduct < 0 || idProduct > Product.maxProducts) {
+                    
+                System.out.println();
+                System.out.println("[ERROR] There is no negative ID and/or non-existent ID.");
+                break;
+
+            } else if (idProduct >= 0 || idProduct > Product.maxProducts) {
+                
+                if(Product.tableProducts[idProduct] == null || Product.tableProducts[idProduct].trim().isEmpty()) {
+                    
+                    System.out.println();
+                    System.out.println("[ERROR] There is no product registered.");
+                    break;
+                
+                } else {
+                    
+                    while (quantityItemsProduct < 0 ) {
+                        
+                        System.out.println();
+                        System.out.println("How many items of these product would you like to add: ");
+                        quantityItemsProduct = keyboard.nextInt();
+                        
+                        if(quantityItemsProduct < 0) {
+                            
+                            System.out.println();
+                            System.out.println("The quantity of the items must not be negative. Try again.");
+                        
+                        } else {
+                            
+                            Product.tableInventoryProducts[idProduct] = Product.tableInventoryProducts[idProduct] + quantityItemsProduct;
+                            System.out.println();
+                            System.out.println("The quantity was added to the product successfully!");
+                            Product.findProduct = true;
+                            break;
+                            
+                        }
+
+                    }
+                }                
+            } else {
+                
+                if(Product.findProduct) {
+                    break;
+                }
+            } 
+        }
+    }
+    
+    public static void removeInventory() {
+        
+        Product.displayProducts();
+        
+        int idProduct;
+        int quantityItemsProduct = -1;
+        Product.findProduct = false;
+        
+        Scanner keyboard = new Scanner(System.in);
+       
+        while (!Product.findProduct) {
+            
+            System.out.println();
+            System.out.println("Type the ID of the product that would you like to remove items from inventory: ");
+            idProduct = keyboard.nextInt();
+
+            if (idProduct < 0 || idProduct > Product.maxProducts) {
+                    
+                System.out.println();
+                System.out.println("[ERROR] There is no negative ID and/or non-existent ID.");
+                break;
+
+            } else if (idProduct >= 0 || idProduct > Product.maxProducts) {
+                
+                if(Product.tableProducts[idProduct] == null || Product.tableProducts[idProduct].trim().isEmpty()) {
+                    
+                    System.out.println();
+                    System.out.println("[ERROR] There is no product registered.");
+                    break;
+                
+                } else {
+                    
+                    while (quantityItemsProduct < 0 ) {
+                        
+                        System.out.println();
+                        System.out.println("How many items of these product would you like to remove: ");
+                        quantityItemsProduct = keyboard.nextInt();
+                        
+                        if(quantityItemsProduct < 0) {
+                            
+                            System.out.println();
+                            System.out.println("The quantity of the items must not be negative. Try again.");
+                        
+                        } else if (quantityItemsProduct >= 0 && Product.tableInventoryProducts[idProduct] == 0) {
+                            
+                            System.out.println();
+                            System.out.println("The quantity of the items typed AND/OR the inventory of this product is already zeroed.");
+                            break;                            
+                            
+                        } else {
+                            
+                            Product.tableInventoryProducts[idProduct] = Product.tableInventoryProducts[idProduct] - quantityItemsProduct;
+                            
+                            if(Product.tableInventoryProducts[idProduct] < 0) {
+                                
+                                Product.tableInventoryProducts[idProduct] = 0;
+                                System.out.println();
+                                System.out.println("[ATTENTION] The quantity was typed EXCEEDED the inventory ifo the product for removing!");
+                                System.out.println("[ATTENTION] However, the product has its inventory reseted to zero, cause it's impossivel go to negative!");
+                                Product.findProduct = true;
+                                break; 
+                                
+                            }                            
+                            
+                        }
+
+                    }
+                }                
+            } else {
+                
+                if(Product.findProduct) {
+                    break;
+                }
+            } 
+        }
     }
 
     public static void main(String[] args) {
