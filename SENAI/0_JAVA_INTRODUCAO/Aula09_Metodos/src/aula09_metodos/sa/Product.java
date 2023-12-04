@@ -134,7 +134,8 @@ public class Product {
                     Product.removeInventory();
                     break;
                 case 9:
-                    System.out.println("THE END");
+                    System.out.println("");
+                    System.out.println("The program is finishing.");
                     break;
                 default:
                     System.out.println("[ERROR] Invalid option. Try again!");
@@ -149,11 +150,14 @@ public class Product {
         Product.displayProducts();
 
         String descriptionProduct = "";
-        char classificationProduct = '\0';
+        char classificationProduct = 0;
+        
 
         Scanner keyboard = new Scanner(System.in);
 
         while ("".equals(descriptionProduct)) {
+            
+            
             
             System.out.println();
             System.out.println("Type the product description: ");
@@ -171,7 +175,7 @@ public class Product {
 
         }
 
-        while (classificationProduct == '\0')) {
+        while (classificationProduct == '\0') {
 
             System.out.println();
             System.out.println("[A] Gold line");
@@ -179,7 +183,9 @@ public class Product {
             System.out.println("[C] Regular line");
             System.out.println("");
             System.out.println("Type the classification of the product: ");
-            classificationProduct = keyboard.next();
+            classificationProduct = keyboard.next().charAt(0);
+            
+            char classificationProductUpperCase = Character.toUpperCase(classificationProduct);
 
 //            if (!''.equals(classificationProduct)) {
 //
@@ -191,7 +197,7 @@ public class Product {
 //                System.out.println("[ERROR] There is no classification product like that. Try again.");
 //            }
             
-            switch(classificationProduct.toUpperCase().charAt(0)) {
+            switch(classificationProductUpperCase) {
                 case 'A': 
                     Product.tableClassificationProducts[Product.countProduct] = "Gold line";
                     Product.countProduct++;
@@ -403,9 +409,9 @@ public class Product {
             System.out.println("");
             System.out.println("----------- FILTER BY CLASSIFICATION PRODUCT ------------");
             System.out.println("");
-            System.out.println("[1] Gold products");
-            System.out.println("[2] Premium products");
-            System.out.println("[3] Regular products");
+            System.out.println("[1] Gold line");
+            System.out.println("[2] Premium line");
+            System.out.println("[3] Regular line");
             System.out.println("[4] Order classication products");
             System.out.println("[5] Back to the menu                                     ");
             System.out.println("");
@@ -424,7 +430,7 @@ public class Product {
 
                         if (!"".equals(Product.tableProducts[i]) && Product.tableProducts[i] != null) {
                             
-                            if("A".equals(Product.tableClassificationProducts[i])) {
+                            if("Gold line".equals(Product.tableClassificationProducts[i])) {
                                 System.out.printf("| %-2d | %-14s | %-20s | %-9d \n", i, Product.tableClassificationProducts[i], Product.tableProducts[i], Product.tableInventoryProducts[i]);
                             }
                             
@@ -442,7 +448,7 @@ public class Product {
 
                         if (!"".equals(Product.tableProducts[i]) && Product.tableProducts[i] != null) {
                             
-                            if("B".equals(Product.tableClassificationProducts[i])) {
+                            if("Premium line".equals(Product.tableClassificationProducts[i])) {
                                 System.out.printf("| %-2d | %-14s | %-20s | %-9d \n", i, Product.tableClassificationProducts[i], Product.tableProducts[i], Product.tableInventoryProducts[i]);
                             }
                             
@@ -460,7 +466,7 @@ public class Product {
 
                         if (!"".equals(Product.tableProducts[i]) && Product.tableProducts[i] != null) {
                             
-                            if("C".equals(Product.tableClassificationProducts[i])) {
+                            if("Regular line".equals(Product.tableClassificationProducts[i])) {
                                 System.out.printf("| %-2d | %-14s | %-20s | %-9d \n", i, Product.tableClassificationProducts[i], Product.tableProducts[i], Product.tableInventoryProducts[i]);
                             }
                             
@@ -478,7 +484,7 @@ public class Product {
 
                         if (!"".equals(Product.tableProducts[i]) && Product.tableProducts[i] != null) {
                             
-                            if("A".equals(Product.tableClassificationProducts[i])) {
+                            if("Gold line".equals(Product.tableClassificationProducts[i])) {
                                 System.out.printf("| %-2d | %-14s | %-20s | %-9d \n", i, Product.tableClassificationProducts[i], Product.tableProducts[i], Product.tableInventoryProducts[i]);
                             }
                             
@@ -490,7 +496,7 @@ public class Product {
 
                         if (!"".equals(Product.tableProducts[i]) && Product.tableProducts[i] != null) {
                             
-                            if("B".equals(Product.tableClassificationProducts[i])) {
+                            if("Premium line".equals(Product.tableClassificationProducts[i])) {
                                 System.out.printf("| %-2d | %-14s | %-20s | %-9d \n", i, Product.tableClassificationProducts[i], Product.tableProducts[i], Product.tableInventoryProducts[i]);
                             }
                             
@@ -502,7 +508,7 @@ public class Product {
 
                         if (!"".equals(Product.tableProducts[i]) && Product.tableProducts[i] != null) {
                             
-                            if("C".equals(Product.tableClassificationProducts[i])) {
+                            if("Regular line".equals(Product.tableClassificationProducts[i])) {
                                 System.out.printf("| %-2d | %-14s | %-20s | %-9d \n", i, Product.tableClassificationProducts[i], Product.tableProducts[i], Product.tableInventoryProducts[i]);
                             }
                             
