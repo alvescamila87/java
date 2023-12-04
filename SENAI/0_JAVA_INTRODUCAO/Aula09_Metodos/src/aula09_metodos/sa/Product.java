@@ -157,8 +157,6 @@ public class Product {
 
         while ("".equals(descriptionProduct)) {
             
-            
-            
             System.out.println();
             System.out.println("Type the product description: ");
             descriptionProduct = keyboard.next();
@@ -186,16 +184,6 @@ public class Product {
             classificationProduct = keyboard.next().charAt(0);
             
             char classificationProductUpperCase = Character.toUpperCase(classificationProduct);
-
-//            if (!''.equals(classificationProduct)) {
-//
-//                Product.tableClassificationProducts[Product.countProduct] = classificationProduct;
-//                Product.countProduct++;
-//                break;
-//
-//            } else {
-//                System.out.println("[ERROR] There is no classification product like that. Try again.");
-//            }
             
             switch(classificationProductUpperCase) {
                 case 'A': 
