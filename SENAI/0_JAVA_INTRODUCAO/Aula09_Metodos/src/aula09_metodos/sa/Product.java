@@ -124,7 +124,8 @@ public class Product {
                 case 5: 
                     Product.displaySortingProducts();
                     break;
-                case 6:                     
+                case 6: 
+                    Product.displayClassificationProducts();                    
                     break;
                 case 7:
                     Product.addInventory();
@@ -148,7 +149,7 @@ public class Product {
         Product.displayProducts();
 
         String descriptionProduct = "";
-        String classificationProduct = "";
+        char classificationProduct = '\0';
 
         Scanner keyboard = new Scanner(System.in);
 
@@ -170,24 +171,43 @@ public class Product {
 
         }
 
-        while ("".equals(classificationProduct)) {
+        while (classificationProduct == '\0')) {
 
             System.out.println();
-            System.out.println("[A] Gold product");
-            System.out.println("[B] Premium product");
-            System.out.println("[C] Regular product");
+            System.out.println("[A] Gold line");
+            System.out.println("[B] Premium line");
+            System.out.println("[C] Regular line");
             System.out.println("");
             System.out.println("Type the classification of the product: ");
             classificationProduct = keyboard.next();
 
-            if (!"".equals(classificationProduct)) {
-
-                Product.tableClassificationProducts[Product.countProduct] = classificationProduct;
-                Product.countProduct++;
-                break;
-
-            } else {
-                System.out.println("[ERROR] There is no classification product like that. Try again.");
+//            if (!''.equals(classificationProduct)) {
+//
+//                Product.tableClassificationProducts[Product.countProduct] = classificationProduct;
+//                Product.countProduct++;
+//                break;
+//
+//            } else {
+//                System.out.println("[ERROR] There is no classification product like that. Try again.");
+//            }
+            
+            switch(classificationProduct.toUpperCase().charAt(0)) {
+                case 'A': 
+                    Product.tableClassificationProducts[Product.countProduct] = "Gold line";
+                    Product.countProduct++;
+                    break;
+                case 'B': 
+                    Product.tableClassificationProducts[Product.countProduct] = "Premium line";
+                    Product.countProduct++;
+                    break;
+                case 'C': 
+                    Product.tableClassificationProducts[Product.countProduct] = "Regular line";
+                    Product.countProduct++;
+                    break;
+                default: 
+                    System.out.println("");
+                    System.out.println("[ERROR] There is no classification product like that. Try again.");
+                    classificationProduct = '\0';
             }
 
         }
@@ -326,11 +346,13 @@ public class Product {
         
         while(classificationOption != 3) {
             System.out.println("");
-            System.out.println("--------------- CLASSIFICATION PRODUCT ------------------");
+            System.out.println("-------------------- LIST OF PRODUCTS -------------------");
             System.out.println("");
             System.out.println("[1] Display sorted in order list of products - ASC       ");
             System.out.println("[2] Display sorted in descending list of products - DESC ");
             System.out.println("[3] Back to the menu                                     ");
+            System.out.println("");
+            System.out.println("---------------------------------------------------------");
             System.out.println("");
             System.out.println("Type an option from classification product: ");
             classificationOption = keyboard.nextInt();
@@ -369,6 +391,135 @@ public class Product {
         }
         
         
+    }
+    
+    public static void displayClassificationProducts() {
+        
+        int classificationOption = 0;
+        
+        Scanner keyboard = new Scanner(System.in);
+        
+        while(classificationOption != 5) {
+            System.out.println("");
+            System.out.println("----------- FILTER BY CLASSIFICATION PRODUCT ------------");
+            System.out.println("");
+            System.out.println("[1] Gold products");
+            System.out.println("[2] Premium products");
+            System.out.println("[3] Regular products");
+            System.out.println("[4] Order classication products");
+            System.out.println("[5] Back to the menu                                     ");
+            System.out.println("");
+            System.out.println("---------------------------------------------------------");
+            System.out.println("");
+            System.out.println("Type an option to filter classification products: ");
+            classificationOption = keyboard.nextInt();
+            
+            switch(classificationOption) {
+                case 1: 
+                    // Header
+                    System.out.println("");
+                    System.out.println("| ID | CLASSIFICATION | DESCRIPTION PRODUCT  | INVENTORY |");
+
+                    for (int i = 0; i < Product.countProduct; i++) {
+
+                        if (!"".equals(Product.tableProducts[i]) && Product.tableProducts[i] != null) {
+                            
+                            if("A".equals(Product.tableClassificationProducts[i])) {
+                                System.out.printf("| %-2d | %-14s | %-20s | %-9d \n", i, Product.tableClassificationProducts[i], Product.tableProducts[i], Product.tableInventoryProducts[i]);
+                            }
+                            
+                        }
+
+                    }
+                    classificationOption = 5;
+                    break;
+                case 2:                   
+                    // Header
+                    System.out.println("");
+                    System.out.println("| ID | CLASSIFICATION | DESCRIPTION PRODUCT  | INVENTORY |");
+
+                    for (int i = 0; i < Product.countProduct; i++) {
+
+                        if (!"".equals(Product.tableProducts[i]) && Product.tableProducts[i] != null) {
+                            
+                            if("B".equals(Product.tableClassificationProducts[i])) {
+                                System.out.printf("| %-2d | %-14s | %-20s | %-9d \n", i, Product.tableClassificationProducts[i], Product.tableProducts[i], Product.tableInventoryProducts[i]);
+                            }
+                            
+                        }
+
+                    }
+                    classificationOption = 5;
+                    break;
+                case 3:                    
+                    // Header
+                    System.out.println("");
+                    System.out.println("| ID | CLASSIFICATION | DESCRIPTION PRODUCT  | INVENTORY |");
+
+                    for (int i = 0; i < Product.countProduct; i++) {
+
+                        if (!"".equals(Product.tableProducts[i]) && Product.tableProducts[i] != null) {
+                            
+                            if("C".equals(Product.tableClassificationProducts[i])) {
+                                System.out.printf("| %-2d | %-14s | %-20s | %-9d \n", i, Product.tableClassificationProducts[i], Product.tableProducts[i], Product.tableInventoryProducts[i]);
+                            }
+                            
+                        }
+
+                    }
+                    classificationOption = 5;
+                    break;
+                case 4:
+                    // Header
+                    System.out.println("");
+                    System.out.println("| ID | CLASSIFICATION | DESCRIPTION PRODUCT  | INVENTORY |");
+
+                    for (int i = 0; i < Product.countProduct; i++) {
+
+                        if (!"".equals(Product.tableProducts[i]) && Product.tableProducts[i] != null) {
+                            
+                            if("A".equals(Product.tableClassificationProducts[i])) {
+                                System.out.printf("| %-2d | %-14s | %-20s | %-9d \n", i, Product.tableClassificationProducts[i], Product.tableProducts[i], Product.tableInventoryProducts[i]);
+                            }
+                            
+                        }
+
+                    }
+                    
+                    for (int i = 0; i < Product.countProduct; i++) {
+
+                        if (!"".equals(Product.tableProducts[i]) && Product.tableProducts[i] != null) {
+                            
+                            if("B".equals(Product.tableClassificationProducts[i])) {
+                                System.out.printf("| %-2d | %-14s | %-20s | %-9d \n", i, Product.tableClassificationProducts[i], Product.tableProducts[i], Product.tableInventoryProducts[i]);
+                            }
+                            
+                        }
+
+                    }
+                    
+                    for (int i = 0; i < Product.countProduct; i++) {
+
+                        if (!"".equals(Product.tableProducts[i]) && Product.tableProducts[i] != null) {
+                            
+                            if("C".equals(Product.tableClassificationProducts[i])) {
+                                System.out.printf("| %-2d | %-14s | %-20s | %-9d \n", i, Product.tableClassificationProducts[i], Product.tableProducts[i], Product.tableInventoryProducts[i]);
+                            }
+                            
+                        }
+
+                    }
+                    classificationOption = 5;
+                    break;               
+                case 5:
+                    System.out.println("");
+                    System.out.println("Back to the menu...");
+                    break;
+                default: 
+                    System.out.println("");
+                    System.out.println("[ERROR] Invalid option. Try again!");
+            }
+        }
     }
     
     
