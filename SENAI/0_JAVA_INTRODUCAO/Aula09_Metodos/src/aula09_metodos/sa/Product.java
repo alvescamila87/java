@@ -94,9 +94,9 @@ public class Product {
                            [1] Insert product 
                            [2] Update product 
                            [3] Remove product 
-                           [4] Display products 
-                           [5] Print products 
-                           [6] Sort products by ranking 
+                           [4] Display all products 
+                           [5] Display all products by sorting
+                           [6] Display all products by classification
                            [7] Add inventory 
                            [8] Remove inventory 
                            [9] Exit 
@@ -120,6 +120,11 @@ public class Product {
                     break;
                 case 4:
                     Product.displayProducts();
+                    break;
+                case 5: 
+                    Product.displaySortingProducts();
+                    break;
+                case 6:                     
                     break;
                 case 7:
                     Product.addInventory();
@@ -172,7 +177,7 @@ public class Product {
             System.out.println("[B] Premium product");
             System.out.println("[C] Regular product");
             System.out.println("");
-            System.out.println("Type the ranking product: ");
+            System.out.println("Type the classification of the product: ");
             classificationProduct = keyboard.next();
 
             if (!"".equals(classificationProduct)) {
@@ -313,6 +318,60 @@ public class Product {
 
     }
     
+    public static void displaySortingProducts() {
+        
+        int classificationOption = 0;
+        
+        Scanner keyboard = new Scanner(System.in);
+        
+        while(classificationOption != 3) {
+            System.out.println("");
+            System.out.println("--------------- CLASSIFICATION PRODUCT ------------------");
+            System.out.println("");
+            System.out.println("[1] Display sorted in order list of products - ASC       ");
+            System.out.println("[2] Display sorted in descending list of products - DESC ");
+            System.out.println("[3] Back to the menu                                     ");
+            System.out.println("");
+            System.out.println("Type an option from classification product: ");
+            classificationOption = keyboard.nextInt();
+            
+            switch(classificationOption) {
+                
+                case 1: 
+                    Product.displayProducts();
+                    classificationOption = 3;
+                    break;
+                case 2:
+                    
+                    // Header
+                    System.out.println("");
+                    System.out.println("| ID | CLASSIFICATION | DESCRIPTION PRODUCT  | INVENTORY |");
+
+                    for (int i = Product.countProduct; i >= 0; i--) {
+
+                        if (!"".equals(Product.tableProducts[i]) && Product.tableProducts[i] != null) {
+
+                            System.out.printf("| %-2d | %-14s | %-20s | %-9d \n", i, Product.tableClassificationProducts[i], Product.tableProducts[i], Product.tableInventoryProducts[i]);
+                        }
+
+                    }
+                    classificationOption = 3;
+                    break;
+                case 3:
+                    System.out.println("");
+                    System.out.println("Back to the menu...");
+                    break;
+                default: 
+                    System.out.println("");
+                    System.out.println("[ERROR] Invalid option. Try again!");
+                    
+            }
+        }
+        
+        
+    }
+    
+    
     public static void addInventory() {
         
         Product.displayProducts();
@@ -382,7 +441,7 @@ public class Product {
         Product.displayProducts();
         
         int idProduct;
-        int quantityItemsProduct = -1;
+        int quantityItemsProduct = 0;
         Product.findProduct = false;
         
         Scanner keyboard = new Scanner(System.in);
@@ -415,7 +474,7 @@ public class Product {
                     
                 } else {
                     
-                    while (quantityItemsProduct < 0 ) {
+                    while (true) {
                         
                         System.out.println();
                         System.out.println("How many items of these product would you like to remove: ");
@@ -424,13 +483,17 @@ public class Product {
                         if(quantityItemsProduct < 0) {
                             
                             System.out.println();
-                            System.out.println("The quantity of the items must not be negative. Try again.");
+                            System.out.println("The quantity of the items must not be negative. Try again!");
                         
-                        } else if (quantityItemsProduct >= 0 && Product.tableInventoryProducts[idProduct] == 0) {
+                        } else if (quantityItemsProduct == 0) {
                             
                             System.out.println();
-                            System.out.println("The quantity of the items typed AND/OR the inventory of this product is already zeroed.");
-                            break;                            
+                            System.out.println("The quantity of the items typed was zeroed. There is no change found."); 
+                            Product.findProduct = true;
+                            break;
+                            
+                        } else if (Product.findProduct) {
+                            break;
                             
                         } else {
                             
