@@ -1,4 +1,4 @@
-package aula37;
+package aula38;
 
 public class Aluno extends Pessoa {
 
@@ -6,6 +6,14 @@ public class Aluno extends Pessoa {
     private String curso;
     private double[] notas;
 
+    public Aluno() {
+        super();
+    }
+
+    public Aluno(String nome, String endereco, String telefone, String curso) {
+        super(nome, endereco, telefone);
+        this.curso = curso;
+    }
 
     public String getCurso() {
         return curso;
@@ -29,5 +37,11 @@ public class Aluno extends Pessoa {
 
     public boolean verificarAprovacao() {
         return true;
+    }
+
+    public void metodoQualquer() {
+        super.setCpf("333.333.222-99");
+
+        this.setCpf("333.333.222-99");
     }
 }
