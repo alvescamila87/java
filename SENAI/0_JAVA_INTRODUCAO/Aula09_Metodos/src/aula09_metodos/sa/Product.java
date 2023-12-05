@@ -7,16 +7,16 @@ import java.util.Scanner;
  * @author camila_alves3
  */
 public class Product {
-
-    private static int maxProducts = 50;
+    
+    public static final int MAX_PRODUCTS = 50;
     private static int countProduct = 0;
-    private static String[] tableProducts = new String[maxProducts];
-    private static String[] tableClassificationProducts = new String[maxProducts];
-    private static int[] tableInventoryProducts = new int[maxProducts];
+    private static String[] tableProducts = new String[MAX_PRODUCTS];
+    private static String[] tableClassificationProducts = new String[MAX_PRODUCTS];
+    private static int[] tableInventoryProducts = new int[MAX_PRODUCTS];
     private static boolean findProduct = false;
     
     
-
+    // Login autentication method
     public static void login() {
 
         Scanner keyboard = new Scanner(System.in);
@@ -47,7 +47,8 @@ public class Product {
                 System.out.println();
 
                 option = 1;
-
+                
+                // After authenticating user, the menu was displayed
                 showMenu();
 
             } else {
@@ -77,7 +78,8 @@ public class Product {
         } while (option == 2);
 
     }
-
+    
+    // The menu method that displays which operations the program has
     public static void showMenu() {
 
         Scanner keyboard = new Scanner(System.in);
@@ -144,7 +146,9 @@ public class Product {
 
         } while (optionMenu != 9);
     }
-
+    
+    // Insert product method aims to allow inputing any products and include a 
+    // classification due to line of the product, related the quality it.
     public static void insertProduct() {
         
         Product.displayProducts();
@@ -207,7 +211,9 @@ public class Product {
         }
 
     }
-
+    
+    // Update product method aims to change only the description of 
+    // the product, it does not allow to change its classification.
     public static void updateProduct() {
         
         Product.displayProducts();
@@ -224,13 +230,13 @@ public class Product {
             System.out.println("Type the ID of the product that would you like to change: ");
             idProduct = keyboard.nextInt();
 
-            if (idProduct < 0 || idProduct > Product.maxProducts) {
+            if (idProduct < 0 || idProduct > Product.MAX_PRODUCTS) {
                     
                 System.out.println();
                 System.out.println("[ERROR] There is no negative ID and/or non-existent ID.");
                 break;
 
-            } else if (idProduct >= 0 || idProduct > Product.maxProducts) {
+            } else if (idProduct >= 0 || idProduct > Product.MAX_PRODUCTS) {
                 
                 if(Product.tableProducts[idProduct] == null || Product.tableProducts[idProduct].trim().isEmpty()) {
                     
@@ -264,6 +270,8 @@ public class Product {
    
     }
     
+    // Remove product method aims to delete the product and its 
+    // dependencies, such as classification and inventory
     public static void removeProduct() {
         
         Product.displayProducts();
@@ -279,13 +287,13 @@ public class Product {
             System.out.println("Type the ID of the product that would you like to remove: ");
             idProduct = keyboard.nextInt();
 
-            if (idProduct < 0 || idProduct > Product.maxProducts) {
+            if (idProduct < 0 || idProduct > Product.MAX_PRODUCTS) {
                     
                 System.out.println();
                 System.out.println("[ERROR] There is no negative ID and/or non-existent ID.");
                 break;
 
-            } else if (idProduct >= 0 || idProduct > Product.maxProducts) {
+            } else if (idProduct >= 0 || idProduct > Product.MAX_PRODUCTS) {
                 
                 if(Product.tableProducts[idProduct] == null || Product.tableProducts[idProduct].trim().isEmpty()) {
                     
@@ -314,7 +322,9 @@ public class Product {
             } 
         }      
     }
-
+    
+    // Display products method aims to show all the product inserted by the user like a list
+    // It displays the ID, Classification, Description and Inventory about Product
     public static void displayProducts() {
 
         // Header
@@ -332,6 +342,9 @@ public class Product {
 
     }
     
+    // Display sorting products method aims to show all the product sorted by ascending and descending ID list.
+    // The user can select the sorting option 
+    // It displays the ID, Classification, Description and Inventory about Product
     public static void displaySortingProducts() {
         
         int classificationOption = 0;
@@ -387,6 +400,10 @@ public class Product {
         
     }
     
+    // Display classification products method aims to show all the product filtered ascending by its 
+    // classification product.
+    // The user can select the sorting option 
+    // It displays the ID, Classification, Description and Inventory about Product
     public static void displayClassificationProducts() {
         
         int classificationOption = 0;
@@ -516,7 +533,8 @@ public class Product {
         }
     }
     
-    
+    // Add inventory method aims to insert and add up the quantity of the item that 
+    // each product has in the stock
     public static void addInventory() {
         
         Product.displayProducts();
@@ -533,13 +551,13 @@ public class Product {
             System.out.println("Type the ID of the product that would you like to add items from inventory: ");
             idProduct = keyboard.nextInt();
 
-            if (idProduct < 0 || idProduct > Product.maxProducts) {
+            if (idProduct < 0 || idProduct > Product.MAX_PRODUCTS) {
                     
                 System.out.println();
                 System.out.println("[ERROR] There is no negative ID and/or non-existent ID.");
                 break;
 
-            } else if (idProduct >= 0 || idProduct > Product.maxProducts) {
+            } else if (idProduct >= 0 || idProduct > Product.MAX_PRODUCTS) {
                 
                 if(Product.tableProducts[idProduct] == null || Product.tableProducts[idProduct].trim().isEmpty()) {
                     
@@ -581,6 +599,9 @@ public class Product {
         }
     }
     
+    // Remove inventory method aims to remove all and descrease the quantity of the item that 
+    // each product has in the stock
+    // It's impossible for the stock to show a negative inventory
     public static void removeInventory() {
         
         Product.displayProducts();
@@ -597,13 +618,13 @@ public class Product {
             System.out.println("Type the ID of the product that would you like to remove items from inventory: ");
             idProduct = keyboard.nextInt();
 
-            if (idProduct < 0 || idProduct > Product.maxProducts) {
+            if (idProduct < 0 || idProduct > Product.MAX_PRODUCTS) {
                     
                 System.out.println();
                 System.out.println("[ERROR] There is no negative ID and/or non-existent ID.");
                 break;
 
-            } else if (idProduct >= 0 || idProduct > Product.maxProducts) {
+            } else if (idProduct >= 0 || idProduct > Product.MAX_PRODUCTS) {
                 
                 if(Product.tableProducts[idProduct] == null || Product.tableProducts[idProduct].trim().isEmpty()) {
                     
@@ -671,7 +692,8 @@ public class Product {
             } 
         }
     }
-
+    
+    // Main
     public static void main(String[] args) {
         
         Product.login();
