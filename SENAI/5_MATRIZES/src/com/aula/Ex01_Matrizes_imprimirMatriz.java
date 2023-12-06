@@ -7,10 +7,11 @@ import java.util.Random;
  *
  * @author camila_alves3
  */
-public class Ex01_Matrizes_SomaElementos {
+public class Ex01_Matrizes_imprimirMatriz {
 
     /**
-     * @param args the command line arguments
+     * 1. Escreva um algoritmo que leia os elementos de uma matriz 5x5 de inteiros. Ao final, o algoritmo
+     * deverá mostrar a soma de todos os elementos.
      */
     public static void main(String[] args) {
         
@@ -18,9 +19,9 @@ public class Ex01_Matrizes_SomaElementos {
         
         int[][] matrizNumeros = new int[5][5];
         
-        for (int linha = 0; linha < 5; linha++) {
+        for (int linha = 0; linha < matrizNumeros.length; linha++) {
             
-            for (int coluna = 0; coluna < 5; coluna++) {
+            for (int coluna = 0; coluna < matrizNumeros.length; coluna++) {
                 
                 matrizNumeros[linha][coluna] = numerosAleatorios.nextInt(100);
                 
