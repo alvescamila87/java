@@ -1,4 +1,6 @@
-package aula37;
+package aula40;
+
+import aula36.Endereco;
 
 public class Pessoa {
 
@@ -13,6 +15,16 @@ public class Pessoa {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+
+    public Pessoa() {
+    }
+
+    public Pessoa(String nome, String endereco, String telefone) {
+        this.nome = nome;
+        this.endereco = endereco;
+        this.telefone = telefone;
     }
 
     public String getEndereco() {
@@ -38,5 +50,11 @@ public class Pessoa {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
+
+    public String obterEtiquetaEndereco() {
+        return endereco;
+    }
+
+
 
 }

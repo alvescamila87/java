@@ -1,4 +1,4 @@
-package aula37;
+package aula39;
 
 public class Pessoa {
 
@@ -7,12 +7,18 @@ public class Pessoa {
     private String telefone;
     private String cpf;
 
-    public String getNome() {
-        return nome;
+    String nomeVisivel;
+
+
+    public Pessoa() {
+
+        nomeVisivel="jfhbdsfjkhbsjdkf";
     }
 
-    public void setNome(String nome) {
+    public Pessoa(String nome, String endereco, String telefone) {
         this.nome = nome;
+        this.endereco = endereco;
+        this.telefone = telefone;
     }
 
     public String getEndereco() {
@@ -37,6 +43,24 @@ public class Pessoa {
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
+    }
+
+
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNomeVisivel() {
+        return nomeVisivel;
+    }
+
+    public void setNomeVisivel(String nomeVisivel) {
+        this.nomeVisivel = nomeVisivel;
     }
 
 }

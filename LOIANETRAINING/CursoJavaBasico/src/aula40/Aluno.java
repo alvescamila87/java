@@ -1,4 +1,4 @@
-package aula38;
+package aula40;
 
 public class Aluno extends Pessoa {
 

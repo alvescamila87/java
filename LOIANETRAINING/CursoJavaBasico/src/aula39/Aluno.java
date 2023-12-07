@@ -1,10 +1,17 @@
-package aula38;
+package aula39;
 
 public class Aluno extends Pessoa {
 
 
     private String curso;
     private double[] notas;
+
+    public void verificarAcesso() {
+        //super.nome = "Maria";
+
+        super.nomeVisivel = "Maria";
+        this.nomeVisivel = "Maria";
+    }
 
     public Aluno() {
         super();
@@ -43,13 +50,5 @@ public class Aluno extends Pessoa {
         super.setCpf("333.333.222-99");
 
         this.setCpf("333.333.222-99");
-    }
-
-    public String obterEtiquetaEndereco() {
-
-        String s = "Endereço do aluno: ";
-        s += super.getEndereco();
-
-        return s;
     }
 }

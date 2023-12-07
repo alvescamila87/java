@@ -1,4 +1,4 @@
-package aula38;
+package aula41;
 
 public class Aluno extends Pessoa {
 
@@ -51,5 +51,10 @@ public class Aluno extends Pessoa {
         s += super.getEndereco();
 
         return s;
+    }
+
+    @Override
+    public void imprimirEtiquetaEndereco() {
+        System.out.println(this.obterEtiquetaEndereco());
     }
 }

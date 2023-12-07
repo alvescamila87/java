@@ -5,15 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula37/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula37/Teste.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula38/Aluno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula38/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula38/Professor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula38/Teste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula39/Aluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula39/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula39/Professor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula39/Teste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula40/Aluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula40/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula40/Professor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula40/Teste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula41/Aluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula41/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula41/Professor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula41/Teste.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula37/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula37/Aluno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula37/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula37/Professor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula37/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula37/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula38/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula38/Aluno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula38/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula38/Pessoa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula09_Metodos/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula09_Metodos/nbproject/private/private.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,26 +54,29 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Camila/OneDrive/GitHub/java/LOIANETRAINING/CursoJavaBasico/src/aula38",
+    "last_opened_file_path": "C:/Users/Camila/OneDrive/GitHub/java/LOIANETRAINING/CursoJavaBasico/src/aula41",
     "settings.editor.selected.configurable": "editor.preferences.import"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula41" />
+      <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula40" />
+      <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula39" />
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula38" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula01" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="aula41" />
       <recent name="aula35" />
       <recent name="aula34" />
       <recent name="aula30" />
       <recent name="aula26" />
-      <recent name="aula24" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Ex02_TestaCurso">
+  <component name="RunManager" selected="Application.aula41.Teste">
     <configuration name="Ex01_TestaAgenda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aula36.Ex01_TestaAgenda" />
       <module name="CursoJavaBasico" />
@@ -93,25 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaCalculadoraFibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula35.TestaCalculadoraFibonacci" />
+    <configuration name="Teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula40.Teste" />
       <module name="CursoJavaBasico" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aula35.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TesteCalculadora" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula35.TesteCalculadora" />
-      <module name="CursoJavaBasico" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="aula35.*" />
+          <option name="PATTERN" value="aula40.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,13 +129,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="aula41.Teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula41.Teste" />
+      <module name="CursoJavaBasico" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aula41.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.aula41.Teste" />
+        <item itemvalue="Application.Teste" />
         <item itemvalue="Application.Ex02_TestaCurso" />
         <item itemvalue="Application.Ex01_TestaAgenda" />
         <item itemvalue="Application.TesteContato" />
-        <item itemvalue="Application.TesteCalculadora" />
-        <item itemvalue="Application.TestaCalculadoraFibonacci" />
       </list>
     </recent_temporary>
   </component>
