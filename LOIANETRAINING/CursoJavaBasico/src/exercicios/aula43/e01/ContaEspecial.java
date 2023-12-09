@@ -4,15 +4,6 @@ public class ContaEspecial extends ContaBancaria {
 
     private double limite;
 
-    public ContaEspecial(double limite) {
-        this.limite = limite;
-    }
-
-    public ContaEspecial(String nomeCliente, String numConta, int saldo, double limite) {
-        super(nomeCliente, numConta, saldo);
-        this.limite = limite;
-    }
-
     public double getLimite() {
         return limite;
     }
@@ -21,14 +12,23 @@ public class ContaEspecial extends ContaBancaria {
         this.limite = limite;
     }
 
-    /*@Override
-    public void sacar(double valor) {
-       double limiteEspecial = limite + getSaldo();
+    @Override
+    public Boolean sacar(double valor) {
+       double saldoComLimite = limite + getSaldo();
 
-       if(limiteEspecial >= valor) {
-           super.getSaldo() = super.getSaldo() + valor;
+       if((saldoComLimite - valor) >=0) {
+           this.setSaldo(this.getSaldo() - valor);
+           return true;
        } else {
            System.out.println("Saldo insuficiente");
+           return false;
        }
-    }*/
+    }
+
+    @Override
+    public String toString() {
+        return "ContaEspecial{" +
+                "limite=" + limite +
+                "} " + super.toString();
+    }
 }

@@ -19,7 +19,7 @@ public class Teste {
         ContaPoupanca contaPoupanca = new ContaPoupanca();
         contaPoupanca.setNomeCliente("Cliente conta poupança");
         contaPoupanca.setNumConta("63264-77");
-        contaPoupanca.setDiaRendimento(8);
+        contaPoupanca.setDiaRendimento(10);
 
         contaPoupanca.depositar(100);
         realizarSaque(contaPoupanca,50);
@@ -28,11 +28,22 @@ public class Teste {
         if(contaPoupanca.calcularNovoSaldo(0.5)) {
             System.out.println("Rendimento aplicado, novo saldo é de = " + contaPoupanca.getSaldo());
         } else {
-            System.out.println("hoje não é dia de rendimento, novo saldo não calculado.");
+            System.out.println("Hoje não é dia de rendimento, novo saldo não calculado.");
         }
 
         System.out.println(contaPoupanca);
 
+        System.out.println("*** Conta especial ***");
+        ContaEspecial contaEspecial = new ContaEspecial();
+        contaEspecial.setNomeCliente("Cliente conta especial");
+        contaEspecial.setNumConta("58974-77");
+        contaEspecial.setLimite(50);
+
+        contaEspecial.depositar(100);
+        realizarSaque(contaEspecial,50);
+        realizarSaque(contaEspecial,70);
+
+        System.out.println(contaEspecial);
     }
 
     public static void realizarSaque(ContaBancaria conta, double valor) {
