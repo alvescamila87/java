@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/exercicios/aula43/e02/Contribuinte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/aula43/e02/PessoaFisica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/aula43/e02/PessoaJuridica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/aula43/e02/Teste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/aula43/e03/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/aula43/e03/Mamifero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/aula43/e03/Peixe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/aula43/e03/Teste.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula09_Metodos/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula09_Metodos/nbproject/private/private.xml" afterDir="false" />
     </list>
@@ -66,13 +66,13 @@
       <recent name="aula34" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.exercicios.aula43.e02.Teste">
-    <configuration name="aula41.Teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula41.Teste" />
+  <component name="RunManager" selected="Application.Teste">
+    <configuration name="Teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercicios.aula43.e03.Teste" />
       <module name="CursoJavaBasico" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aula41.*" />
+          <option name="PATTERN" value="exercicios.aula43.e03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Teste" />
         <item itemvalue="Application.exercicios.aula43.e02.Teste" />
         <item itemvalue="Application.exercicios.aula43.e01.Teste" />
         <item itemvalue="Application.aula43.Teste" />
         <item itemvalue="Application.aula42.Teste" />
-        <item itemvalue="Application.aula41.Teste" />
       </list>
     </recent_temporary>
   </component>
