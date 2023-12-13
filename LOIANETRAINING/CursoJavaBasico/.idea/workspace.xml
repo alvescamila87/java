@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula46/BancoDados.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula46/BancoMySQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula46/SqlDCL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula46/SqlDDL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula46/SqlMDL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/aula46/e01/Cilindro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/aula46/e01/Circulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/aula46/e01/Cubo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/aula46/e01/Figura2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/aula46/e01/Figura3D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/aula46/e01/FiguraGeometrica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/aula46/e01/Piramide.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/aula46/e01/Quadrado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/aula46/e01/Triangulo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula09_Metodos/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula09_Metodos/nbproject/private/private.xml" afterDir="false" />
     </list>
@@ -21,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,15 +44,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Camila/OneDrive/GitHub/java/LOIANETRAINING/CursoJavaBasico/src/aula45",
-    "settings.editor.selected.configurable": "editor.preferences.import"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Camila/OneDrive/GitHub/java/LOIANETRAINING/CursoJavaBasico/src/aula45&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula45" />
@@ -64,11 +68,11 @@
       <recent name="aula44" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="exercicios.aula46.e01" />
       <recent name="aula46" />
       <recent name="aula44" />
       <recent name="exercicios.aula43.e02" />
       <recent name="aula43" />
-      <recent name="aula41" />
     </key>
   </component>
   <component name="RunManager" selected="Application.InstanceOf">
