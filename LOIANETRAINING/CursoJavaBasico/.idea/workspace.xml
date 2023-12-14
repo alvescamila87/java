@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula47/Excecao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula48/aula47/MultiCatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula48/aula47/MultiCatchGenerico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula48/aula47/MultiCatchJava7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula09_Metodos/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula09_Metodos/nbproject/private/private.xml" afterDir="false" />
     </list>
@@ -41,17 +43,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Camila/OneDrive/GitHub/java/LOIANETRAINING/CursoJavaBasico/src/exercicios/aula46/e03",
+    "last_opened_file_path": "C:/Users/Camila/OneDrive/GitHub/java/LOIANETRAINING/CursoJavaBasico/src/aula48",
     "settings.editor.selected.configurable": "editor.preferences.import"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula48" />
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\exercicios\aula46\e03" />
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\exercicios\aula46\e02" />
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula45" />
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula42" />
-      <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula41" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula01" />
@@ -60,14 +62,14 @@
       <recent name="aula44" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="aula48.aula47" />
       <recent name="exercicios.aula46.e01" />
       <recent name="aula46" />
       <recent name="aula44" />
       <recent name="exercicios.aula43.e02" />
-      <recent name="aula43" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Excecao">
+  <component name="RunManager" selected="Application.MultiCatchGenerico">
     <configuration name="Excecao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aula47.Excecao" />
       <module name="CursoJavaBasico" />
@@ -94,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercicios.aula43.e03.Teste" />
+    <configuration name="MultiCatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula48.aula47.MultiCatch" />
       <module name="CursoJavaBasico" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercicios.aula43.e03.*" />
+          <option name="PATTERN" value="aula48.aula47.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="exercicios.aula43.e02.Teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercicios.aula43.e02.Teste" />
+    <configuration name="MultiCatchGenerico" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula48.aula47.MultiCatchGenerico" />
       <module name="CursoJavaBasico" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercicios.aula43.e02.*" />
+          <option name="PATTERN" value="aula48.aula47.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MultiCatchGenerico" />
+        <item itemvalue="Application.MultiCatch" />
         <item itemvalue="Application.Excecao" />
         <item itemvalue="Application.exercicios.aula46.e03.Teste" />
         <item itemvalue="Application.InstanceOf" />
-        <item itemvalue="Application.Teste" />
-        <item itemvalue="Application.exercicios.aula43.e02.Teste" />
       </list>
     </recent_temporary>
   </component>
@@ -166,6 +168,11 @@
           <url>file://$PROJECT_DIR$/src/aula35/TesteCalculadora.java</url>
           <line>9</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/aula47/Excecao.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
