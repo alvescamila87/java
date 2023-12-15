@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula50/ExceptionGenerica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula50/UsandoThrows.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula52/DivisaoNaoExata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula52/UsandoMinhaException1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula52/UsandoMinhaException2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula52/UsandoMinhaException3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula09_Metodos/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula09_Metodos/nbproject/private/private.xml" afterDir="false" />
     </list>
@@ -61,14 +63,14 @@
       <recent name="aula44" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="aula52" />
       <recent name="aula49" />
       <recent name="aula48.aula47" />
       <recent name="exercicios.aula46.e01" />
       <recent name="aula46" />
-      <recent name="aula44" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UsandoThrows">
+  <component name="RunManager">
     <configuration name="Excecao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aula47.Excecao" />
       <module name="CursoJavaBasico" />
