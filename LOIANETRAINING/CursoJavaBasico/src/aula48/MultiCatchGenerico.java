@@ -1,4 +1,4 @@
-package aula48.aula47;
+package aula48;
 
 public class MultiCatchGenerico {
 

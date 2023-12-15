@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula48/aula47/MultiCatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula48/aula47/MultiCatchGenerico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aula48/aula47/MultiCatchJava7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula49/TestandoFinally.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula48/aula47/MultiCatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula48/MultiCatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula48/aula47/MultiCatchGenerico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula48/MultiCatchGenerico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula48/aula47/MultiCatchJava7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula48/MultiCatchJava7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula09_Metodos/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula09_Metodos/nbproject/private/private.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +70,7 @@
       <recent name="exercicios.aula43.e02" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MultiCatchGenerico">
+  <component name="RunManager">
     <configuration name="Excecao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aula47.Excecao" />
       <module name="CursoJavaBasico" />

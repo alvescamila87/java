@@ -1,4 +1,4 @@
-package aula48.aula47;
+package aula48;
 
 public class MultiCatchJava7 {
 
@@ -13,7 +13,7 @@ public class MultiCatchJava7 {
                 System.out.println(numeros[i] + " / " + divisor[i] + " = " + (numeros[i] / divisor[i]));
             } catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
                 System.out.println("Aconteceu um erro!");
-            } 
+            }
 
         }
     }
