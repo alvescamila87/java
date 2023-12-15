@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="628c3760-6fd5-494f-aad5-7efc885d9f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula49/TestandoFinally.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula50/ExceptionGenerica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aula50/UsandoThrows.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula48/aula47/MultiCatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula48/MultiCatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula48/aula47/MultiCatchGenerico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula48/MultiCatchGenerico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula48/aula47/MultiCatchJava7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula48/MultiCatchJava7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula09_Metodos/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SENAI/0_JAVA_INTRODUCAO/Aula09_Metodos/nbproject/private/private.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,17 +42,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Camila/OneDrive/GitHub/java/LOIANETRAINING/CursoJavaBasico/src/aula48",
+    "last_opened_file_path": "C:/Users/Camila/OneDrive/GitHub/java/LOIANETRAINING/CursoJavaBasico/src/aula50",
     "settings.editor.selected.configurable": "editor.preferences.import"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula50" />
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula48" />
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\exercicios\aula46\e03" />
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\exercicios\aula46\e02" />
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula45" />
-      <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula42" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Camila\OneDrive\GitHub\java\LOIANETRAINING\CursoJavaBasico\src\aula01" />
@@ -63,14 +61,14 @@
       <recent name="aula44" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="aula49" />
       <recent name="aula48.aula47" />
       <recent name="exercicios.aula46.e01" />
       <recent name="aula46" />
       <recent name="aula44" />
-      <recent name="exercicios.aula43.e02" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.UsandoThrows">
     <configuration name="Excecao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aula47.Excecao" />
       <module name="CursoJavaBasico" />
@@ -84,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InstanceOf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula45.InstanceOf" />
+    <configuration name="ExceptionGenerica" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula50.ExceptionGenerica" />
       <module name="CursoJavaBasico" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aula45.*" />
+          <option name="PATTERN" value="aula50.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="exercicios.aula46.e03.Teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercicios.aula46.e03.Teste" />
+    <configuration name="UsandoThrows" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula50.UsandoThrows" />
       <module name="CursoJavaBasico" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercicios.aula46.e03.*" />
+          <option name="PATTERN" value="aula50.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UsandoThrows" />
+        <item itemvalue="Application.ExceptionGenerica" />
         <item itemvalue="Application.MultiCatchGenerico" />
         <item itemvalue="Application.MultiCatch" />
         <item itemvalue="Application.Excecao" />
-        <item itemvalue="Application.exercicios.aula46.e03.Teste" />
-        <item itemvalue="Application.InstanceOf" />
       </list>
     </recent_temporary>
   </component>
