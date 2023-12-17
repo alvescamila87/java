@@ -4,7 +4,6 @@ package com.aula;
 import java.util.Random;
 
 /**
- *
  * 2. Elabore um algoritmo que leia uma matriz 4x4 de reais. Ao final, apresentar 
  * a soma dos elementos da primeira linha, e a soma dos elementos da terceira coluna, 
  * e a subtração do resultado destas somas
