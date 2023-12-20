@@ -93,4 +93,14 @@ public class Vetor {
 
 
     }
+
+    // verificar se o elemento existe no vetor
+    public int busca(String elemento) {
+        for (int i = 0; i < this.tamanho; i++) {
+            if(this.elementos[i].equals(elemento)) {
+                return i; //true
+            }
+        }
+        return -1; //false
+    }
 }
