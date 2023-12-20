@@ -8,9 +8,9 @@ public class Aula04 {
 
         Vetor vetor = new Vetor(10);
 
-        vetor.adicionar("elemento 1");
-        vetor.adicionar("elemento 2");
-        vetor.adicionar("elemento 3");
+        vetor.adiciona("elemento 1");
+        vetor.adiciona("elemento 2");
+        vetor.adiciona("elemento 3");
 
         System.out.println(vetor.tamanho());
 

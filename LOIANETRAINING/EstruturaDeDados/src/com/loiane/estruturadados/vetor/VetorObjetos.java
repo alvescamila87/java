@@ -1,50 +1,16 @@
 package com.loiane.estruturadados.vetor;
 
-import java.util.Arrays;
+public class VetorObjetos {
 
-public class Vetor {
-
-    private String[] elementos;
+    private Object[] elementos;
     private int tamanho;
 
-    public Vetor(int capacidade) {
-        this.elementos = new String[capacidade];
+    public VetorObjetos(int capacidade) {
+        this.elementos = new Object[capacidade];
         this.tamanho = 0;
     }
 
-    // adicionar elemento no final do vetor
-
-    /* Não é uma boa prática: percorrer TODOS os elementos:
-
-    public void adicionar(String elemento) {
-
-        for (int i = 0; i < elementos.length; i++) {
-
-            if(this.elementos[i] == null) {
-                this.elementos[i] = elemento;
-                break;
-            }
-
-        }
-    }
-    */
-
-    // É uma boa prática: guardar a última posição que inseriu um elemento
-
-    /*
-    public void adicionar(String elemento) throws Exception {
-
-        if(this.tamanho < this.elementos.length) {
-            this.elementos[this.tamanho] = elemento;
-            this.tamanho++;
-        } else {
-            throw new Exception("Vetor já está cheio, não é possível adicionar mais elementos.");
-        }
-
-    }
-    */
-
-    public boolean adiciona(String elemento) {
+    public boolean adiciona(Object elemento) {
         aumentaCapacidade();
 
         if(this.tamanho < this.elementos.length) {
@@ -59,7 +25,7 @@ public class Vetor {
     // adicionar elemento em qualquer posição
     // 0 1 2 3 4 5 6 -> tamanho é 5
     // B C E F G + + (adicionar o A na posição 0)
-    public void adiciona(int posicao, String elemento) {
+    public void adiciona(int posicao, Object elemento) {
 
         if(!(posicao >= 0 && posicao < tamanho)) {
             throw new IllegalArgumentException("Posição inválida!");
@@ -79,7 +45,7 @@ public class Vetor {
     private void aumentaCapacidade() {
 
         if(this.tamanho == this.elementos.length) {
-            String[] elementosNovos = new String[this.elementos.length * 2];
+            Object[] elementosNovos = new Object[this.elementos.length * 2];
 
             for (int i = 0; i < this.elementos.length; i++) {
                 elementosNovos[i] = this.elementos[i];
@@ -118,7 +84,7 @@ public class Vetor {
     }
 
     // busca para obter o elemento de uma posição
-    public String busca(int posicao) {
+    public Object busca(int posicao) {
 
         // se negar a codição, temos o range de todas as posições que NÃO podem ser acessadas
         if(!(posicao >= 0 && posicao < tamanho)) {
@@ -126,11 +92,10 @@ public class Vetor {
         }
         return this.elementos[posicao];
 
-
     }
 
     // verificar se o elemento existe no vetor
-    public int busca(String elemento) {
+    public int busca(Object elemento) {
         for (int i = 0; i < this.tamanho; i++) {
             if(this.elementos[i].equals(elemento)) {
                 return i; //true

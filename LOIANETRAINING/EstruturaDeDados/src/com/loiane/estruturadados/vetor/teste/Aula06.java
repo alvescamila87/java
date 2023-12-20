@@ -8,9 +8,9 @@ public class Aula06 {
 
         Vetor vetor = new Vetor(10);
 
-        vetor.adicionar("elemento 1"); //0
-        vetor.adicionar("elemento 2"); //1
-        vetor.adicionar("elemento 3"); //2
+        vetor.adiciona("elemento 1"); //0
+        vetor.adiciona("elemento 2"); //1
+        vetor.adiciona("elemento 3"); //2
 
         System.out.println(vetor.busca("elemento 2")); //1 retornou a posição
         System.out.println(vetor.busca("Elemento 2")); //-1: elemento não existe
