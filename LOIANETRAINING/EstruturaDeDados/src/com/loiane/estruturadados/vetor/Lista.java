@@ -1,6 +1,7 @@
 package com.loiane.estruturadados.vetor;
 
 import java.lang.reflect.Array;
+import java.security.PublicKey;
 
 public class Lista<T> {
 
@@ -91,6 +92,11 @@ public class Lista<T> {
         return s.toString();
     }
 
+    // criar metodo get arraylist (exe04)
+    public T obtem(int posicao) {
+        return this.busca(posicao);
+    }
+
     // busca para obter o elemento de uma posição
     public T busca(int posicao) {
 
@@ -130,5 +136,56 @@ public class Lista<T> {
         }
         this.tamanho--;
 
+    }
+
+    // método remove elemento da lista passando o mesmo como parametro (exe03)
+    // Overriding remove method
+    public void remove(T elemento) {
+
+        int pos = this.busca(elemento);
+
+        if(pos > -1) {
+            this.remove(pos);
+        }
+    }
+
+    // criando metodo contains do arraylist (exe01)
+    public boolean contem(T elemento) {
+        /*int pos = busca(elemento);
+        if(pos > -1) {
+            return true;
+        }
+        return false;*/
+
+        return busca(elemento) > -1; //>=0
+    }
+
+    // criando metodo ultimoIndice (lastIndexOf) do arraylist (exe02)
+    public int ultimoIndice(T elemento) {
+
+        //int ultimaPos = -1;
+
+        for (int i = this.tamanho-1; i >= 0; i--) {
+            if(this.elementos[i].equals(elemento)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    // criar metodo clear do arraylist (exe05)
+    public void limpar() {
+
+        //opcao 1 - melhor opção no momento
+        //this.elementos = (T[]) new Object[this.elementos.length];
+
+        //opcao 2
+        //this.tamanho = 0;
+
+        //opcao 3: dependendo do tamanho (libera espaço no coletor de lixo do java)
+        for (int i = 0; i < this.tamanho; i++) {
+            this.elementos[i] = null;
+        }
+        this.tamanho = 0;
     }
 }
