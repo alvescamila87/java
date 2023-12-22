@@ -25,11 +25,15 @@ public class Aula01 {
             
         }
         
-        for (int i = 0; i < 10; i++) {
+        System.out.println("Números do array: ");
+                
+        for (int i = 0; i < listNumbers.size(); i++) {
             
-            System.out.println(listNumbers.get(i) + " ");
+            System.out.print(listNumbers.get(i) + " ");
             
         }
+        System.out.println("");
+                
         
         
         
