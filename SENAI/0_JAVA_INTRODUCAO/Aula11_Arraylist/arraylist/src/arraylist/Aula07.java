@@ -2,34 +2,32 @@
 package arraylist;
 
 import java.util.ArrayList;
-import java.util.Random;
+import java.util.Scanner;
+
 
 /**
  *
  * @author Camila
  */
-public class Aula05 {
+public class Aula07 {
     
     public static void main(String[] args) {
         
-        ArrayList<Integer> numerosInteiros = new ArrayList<>();
+        ArrayList<Float> listaPreco = new ArrayList<>();
         
-        Random random = new Random();
+        Scanner entrada = new Scanner(System.in);
         
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 3; i++) {
             
-            numerosInteiros.add(random.nextInt(10));
+            System.out.println("Informe o " + (i +1) + "º preço: ");            
+            listaPreco.add(entrada.nextFloat());
             
         }
         
-        System.out.println(numerosInteiros);
+        System.out.println(listaPreco);      
         
-        numerosInteiros.clear();
         
-        numerosInteiros.add(0, 2);
-        
-        System.out.println(numerosInteiros);
-        
+            
         
         
     }
