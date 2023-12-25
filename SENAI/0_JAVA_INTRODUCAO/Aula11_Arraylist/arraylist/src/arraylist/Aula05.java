@@ -22,6 +22,8 @@ public class Aula05 {
             
         }
         
+        Collections.sort(numerosInteiros); // sort list
+
         System.out.println(numerosInteiros);
         
         numerosInteiros.clear();
