@@ -2,8 +2,8 @@ package com.loiane.estruturadados.base;
 
 public class EstruturaEstatica<T> {
 
-    private T[] elementos;
-    private int tamanho;
+    protected T[] elementos;
+    protected int tamanho;
 
     public EstruturaEstatica(int capacidade) {
         this.elementos = (T[])new Object[capacidade]; // solução melhor, é uma solução do livro effective Java
@@ -12,6 +12,11 @@ public class EstruturaEstatica<T> {
 
     public EstruturaEstatica() {
         this(10);
+    }
+
+    // verificar se estrutura está vazia
+    public boolean estaVazia() {
+        return this.tamanho == 0;
     }
 
     protected boolean adiciona(T elemento) {
