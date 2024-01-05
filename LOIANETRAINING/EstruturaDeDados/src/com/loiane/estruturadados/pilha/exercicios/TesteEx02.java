@@ -3,7 +3,7 @@ package com.loiane.estruturadados.pilha.exercicios;
 import java.util.Random;
 import java.util.Stack;
 
-public class Teste02 {
+public class TesteEx02 {
     public static void main(String[] args) {
 
         Random random = new Random();
@@ -30,6 +30,7 @@ public class Teste02 {
                 } catch (Exception e) {
                     System.out.println("Pilha vazia!");
                     e.getMessage();
+
                 }
 
                 stackPar.pop();
@@ -37,9 +38,8 @@ public class Teste02 {
 
                 stackImpar.pop();
                 System.out.println("POP -> Pilha ímpar: " + stackImpar);
-            }
 
-            if(numero % 2 == 0) {
+            } else if(numero % 2 == 0) {
                 stackPar.push(numero);
                 System.out.println("Pilha par: " + stackPar);
             } else {
@@ -55,12 +55,20 @@ public class Teste02 {
 
         //Desempilhar as duas pilhas
 
-        for (int i = 0; i < stackPar.size(); i++) {
-            System.out.println("Elemento de par desempilhado: " + stackPar.pop());
+        if(!stackPar.isEmpty()) {
+            for (int i = 0; i <= stackPar.size(); i++) {
+                System.out.println("Elemento de par desempilhado: " + stackPar.pop());
+            }
+        } else {
+            System.out.println("FIM: Pilha par vazia!");
         }
 
-        for (int i = 0; i < stackPar.size(); i++) {
-            System.out.println("Elemento de ímpar desempilhado: " + stackImpar.pop());
+        if(!stackImpar.isEmpty()) {
+            for (int i = 0; i <= stackImpar.size(); i++) {
+                System.out.println("Elemento de ímpar desempilhado: " + stackImpar.pop());
+            }
+        } else {
+            System.out.println("FIM: Pilha ímpar vazia!");
         }
 
     }

@@ -5,7 +5,7 @@ package com.loiane.estruturadados.pilha.exercicios;
 import java.util.Random;
 import java.util.Stack;
 
-public class Teste01 {
+public class TesteEx01 {
 
     public static void main(String[] args) {
 
@@ -36,6 +36,16 @@ public class Teste01 {
         }
 
         System.out.println("Números: " + stack);
+
+        // Desempilhando a pilha
+        if(!stack.isEmpty()) {
+
+            for (int i = 0; i <= stack.size(); i++) {
+                System.out.println("Desempilhando o: " + stack.pop());
+            }
+        } else {
+            System.out.println("Pilha vazia: " + stack);
+        }
 
     }
 }
