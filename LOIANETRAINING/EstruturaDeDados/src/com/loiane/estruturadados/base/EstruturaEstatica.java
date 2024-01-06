@@ -32,8 +32,8 @@ public class EstruturaEstatica<T> {
 
     protected void adiciona(int posicao, T elemento) {
 
-        if(!(posicao >= 0 && posicao < tamanho))
         //if(!(posicao < 0 || posicao > tamanho)) { // aula 24
+        if(!(posicao >= 0 && posicao < tamanho)){
             throw new IllegalArgumentException("Posição inválida!");
         }
 
