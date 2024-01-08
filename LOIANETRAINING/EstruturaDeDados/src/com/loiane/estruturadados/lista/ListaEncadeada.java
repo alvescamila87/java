@@ -9,6 +9,8 @@ public class ListaEncadeada<T>  {
     private No<T> ultimo;
     private int tamanho = 0; // apenas o get
 
+    private final int NAO_ENCONTRADO = -1;
+
     public void adiciona(T elemento) {
         No<T> celula = new No<T>(elemento);
 
@@ -19,6 +21,37 @@ public class ListaEncadeada<T>  {
         }        
         this.ultimo = celula;
         this.tamanho++;
+    }
+
+    public void adicionaNoInicio(T elemento) {
+        if(this.tamanho == 0) {
+            No<T> novoNo = new No<>(elemento);
+            this.inicio = novoNo;
+            this.ultimo = novoNo;
+        } else {
+            No<T> novoNo = new No<>(elemento, this.inicio);
+            this.inicio = novoNo;
+        }
+        this.tamanho++;
+    }
+
+    public void adiciona(int posicao, T elemento) {
+
+        if(posicao <  0 || posicao > this.tamanho) {
+            throw new IllegalArgumentException("Posição inválida");
+        }
+        if(posicao == 0) { // lista vazia
+            this.adicionaNoInicio(elemento);
+        } else if(posicao == this.tamanho) { // adiciona na última posição
+            this.adiciona(elemento);
+        } else { // meio da lista
+            No<T> noAnterior = this.buscaNo(posicao);
+            No<T> proximoNo = noAnterior.getProximo(); //sempre o próximo primeiro, caso contrário perde referência
+            No<T> novoNo = new No<>(elemento);
+            novoNo.setProximo(proximoNo); //sempre o próximo primeiro, caso contrário perde referência
+            noAnterior.setProximo(novoNo);
+            this.tamanho++;
+        }
     }
 
     public int getTamanho() {
@@ -40,6 +73,48 @@ public class ListaEncadeada<T>  {
         this.ultimo = null;
         this.tamanho = 0;
     }
+
+    // para não expor o nó fora da classe (no busca por posição)
+    private No<T> buscaNo(int posicao) {
+
+        // se a posição NÃO existir:
+        if(!(posicao >= 0 && posicao <= this.tamanho)) {
+            throw new IllegalArgumentException("Posição não existe");
+        }
+
+        No<T> noAtual = this.inicio;
+        for (int i = 0; i < posicao; i++) {
+            noAtual = noAtual.getProximo();
+        }
+
+        return noAtual;
+    }
+    public T buscaPorPosicao(int posicao) {
+        return this.buscaNo(posicao).getElemento();
+    }
+
+    public int busca(T elemento) {
+
+        No<T> noAtual = this.inicio;
+        int posicao = 0;
+
+        while (noAtual != null) {
+
+            // comparar se é o elemento produrado
+            if(noAtual.getElemento().equals(elemento)){
+                return posicao;
+            }
+            posicao++; //posicao += 1; ou posicao = posicao + 1;
+
+
+            // para mover o nó atual
+            noAtual = noAtual.getProximo();
+        }
+
+
+        return NAO_ENCONTRADO;
+    }
+
 
     @Override
     public String toString() {
