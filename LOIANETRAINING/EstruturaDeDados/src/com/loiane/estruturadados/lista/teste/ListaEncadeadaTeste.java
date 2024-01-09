@@ -19,8 +19,22 @@ public class ListaEncadeadaTeste {
 
         //removeDoInicio(); // aula 29
 
-        removeDoFinal();
+        //removeDoFinal(); // aula 30
 
+        remove(); // aula 31
+
+    }
+
+    public static void remove() {
+        ListaEncadeada<String> lista = new ListaEncadeada<>();
+
+        lista.adiciona("C");
+        lista.adiciona("B");
+        lista.adiciona("A");
+        lista.adiciona("L");
+
+        System.out.println("Elemento removido: " + lista.remove(1));
+        System.out.println(lista);
     }
 
     public static void removeDoFinal() {
@@ -28,9 +42,9 @@ public class ListaEncadeadaTeste {
 
         //lista.removerDoFinal();
 
-        lista.adicionaNoInicio("C");
-        lista.adicionaNoInicio("B");
-        lista.adicionaNoInicio("A");
+        lista.adiciona("C");
+        lista.adiciona("B");
+        lista.adiciona("A");
 
         System.out.println("Remove último elemento: " + lista.removerDoFinal());
 
@@ -50,9 +64,9 @@ public class ListaEncadeadaTeste {
 
         //lista.removerDoInicio();
 
-        lista.adicionaNoInicio("C");
-        lista.adicionaNoInicio("B");
-        lista.adicionaNoInicio("A");
+        lista.adiciona("C");
+        lista.adiciona("B");
+        lista.adiciona("A");
 
         System.out.println(lista);
 
