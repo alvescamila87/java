@@ -13,10 +13,60 @@ public class ListaEncadeadaTeste {
     public static void main(String[] args) {
         //testesIniciais();
 
-        //adicionaNoInicio();
+        //adicionaNoInicio(); // aula 28
 
-        adicionaPorPosicao();
+        //adicionaPorPosicao(); // aula 28
 
+        //removeDoInicio(); // aula 29
+
+        removeDoFinal();
+
+    }
+
+    public static void removeDoFinal() {
+        ListaEncadeada<String> lista = new ListaEncadeada<>();
+
+        //lista.removerDoFinal();
+
+        lista.adicionaNoInicio("C");
+        lista.adicionaNoInicio("B");
+        lista.adicionaNoInicio("A");
+
+        System.out.println("Remove último elemento: " + lista.removerDoFinal());
+
+        System.out.println(lista);
+
+        System.out.println("Remove último elemento: " + lista.removerDoFinal());
+
+        System.out.println(lista);
+
+        System.out.println("Remove último elemento: " + lista.removerDoFinal());
+
+        System.out.println(lista);
+    }
+
+    public static void removeDoInicio() {
+        ListaEncadeada<String> lista = new ListaEncadeada<>();
+
+        //lista.removerDoInicio();
+
+        lista.adicionaNoInicio("C");
+        lista.adicionaNoInicio("B");
+        lista.adicionaNoInicio("A");
+
+        System.out.println(lista);
+
+        System.out.println("Elemento removido: " + lista.removerDoInicio());
+
+        System.out.println(lista);
+
+        System.out.println("Elemento removido: " + lista.removerDoInicio());
+
+        System.out.println(lista);
+
+        System.out.println("Elemento removido: " + lista.removerDoInicio());
+
+        System.out.println(lista);
     }
 
     public static void adicionaNoInicio() {

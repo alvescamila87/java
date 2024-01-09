@@ -54,6 +54,40 @@ public class ListaEncadeada<T>  {
         }
     }
 
+    public T removerDoInicio() {
+
+        if(this.tamanho == 0) {
+            throw new RuntimeException("Lista está vazia");
+        }
+
+        T removido = this.inicio.getElemento();
+        this.inicio = this.inicio.getProximo();
+        this.tamanho--;
+
+        if(this.tamanho == 0) {
+            this.ultimo = null;
+        }
+
+        return removido;
+
+    }
+
+    public T removerDoFinal() {
+        if(this.tamanho == 0) {
+            throw new RuntimeException("Lista está vazia");
+        }
+        if(this.tamanho == 1) {
+            return this.removerDoInicio();
+        }
+        No<T> penultimoNo = this.buscaNo(this.tamanho - 2);
+        T removido = penultimoNo.getProximo().getElemento();
+        penultimoNo.setProximo(null);
+        this.ultimo = penultimoNo;
+        this.tamanho--;
+
+        return removido;
+    }
+
     public int getTamanho() {
         return this.tamanho;
     }
@@ -100,7 +134,7 @@ public class ListaEncadeada<T>  {
 
         while (noAtual != null) {
 
-            // comparar se é o elemento produrado
+            // comparar se é o elemento procurado
             if(noAtual.getElemento().equals(elemento)){
                 return posicao;
             }
