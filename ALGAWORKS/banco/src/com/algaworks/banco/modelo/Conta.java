@@ -1,3 +1,5 @@
+package com.algaworks.banco.modelo;
+
 import java.util.Objects;
 
 public class Conta {
@@ -12,7 +14,7 @@ public class Conta {
 
     }
 
-    Conta(Pessoa titular, int agencia, int numero) {
+    public Conta(Pessoa titular, int agencia, int numero) {
         Objects.requireNonNull(titular);
 
         this.titular = titular;
@@ -23,7 +25,7 @@ public class Conta {
 
 
     // métodos
-    void depositar(double valor) {
+    public void depositar(double valor) {
         if(valor <= 0) {
             throw new IllegalArgumentException("Não são permitidos valores negativos.");
         }
@@ -31,7 +33,7 @@ public class Conta {
 
     }
 
-    void sacar(double valor) {
+    public void sacar(double valor) {
         if(valor <= 0) {
             throw new IllegalArgumentException("Não são permitidos valores negativos.");
         }
@@ -43,7 +45,7 @@ public class Conta {
     }
 
     // sobrecarga de método
-    void sacar(double valor, double taxaSaque) {
+    public void sacar(double valor, double taxaSaque) {
         // debitar da conta:
         sacar(valor + taxaSaque);
     }
