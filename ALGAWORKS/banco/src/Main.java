@@ -9,10 +9,10 @@ public class Main {
         titular2.nome = "Maria Helena";
         titular2.documento = "3655196159";
 
-        Conta minhaConta = new Conta();
-        minhaConta.titular = titular1;
-        minhaConta.agencia = 123;
-        minhaConta.numero = 9998;
+        Conta minhaConta = new Conta(titular1, 123, 9998);
+//        minhaConta.titular = titular1;
+//        minhaConta.agencia = 123;
+//        minhaConta.numero = 9998;
         //minhaConta.saldo = 15_000;
 
 

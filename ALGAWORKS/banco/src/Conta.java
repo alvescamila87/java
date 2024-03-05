@@ -1,8 +1,26 @@
+import java.util.Objects;
+
 public class Conta {
     Pessoa titular;
     int agencia;
     int numero;
     double saldo;
+
+    // construtor
+
+    Conta() {
+
+    }
+
+    Conta(Pessoa titular, int agencia, int numero) {
+        Objects.requireNonNull(titular);
+
+        this.titular = titular;
+        this.agencia = agencia;
+        this.numero = numero;
+    }
+
+
 
     // métodos
     void depositar(double valor) {
