@@ -38,7 +38,7 @@ public class Conta {
             throw new IllegalArgumentException("Não são permitidos valores negativos.");
         }
 
-        if(saldo - valor < 0) {
+        if(getSaldoDisponivel() - valor < 0) {
             throw new IllegalStateException("Saldo insuficiente");
         }
         saldo -= valor;
@@ -66,6 +66,10 @@ public class Conta {
 
     public double getSaldo() {
         return saldo;
+    }
+
+    public double getSaldoDisponivel() {
+        return getSaldo();
     }
 
 }

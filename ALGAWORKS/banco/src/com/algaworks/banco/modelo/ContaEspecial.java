@@ -9,6 +9,11 @@ public class ContaEspecial extends Conta {
         this.valorLimite = valorLimite;
     }
 
+    @Override
+    public double getSaldoDisponivel() {
+        return getSaldo() + getValorLimite();
+    }
+
     public double getValorLimite() {
         return valorLimite;
     }
@@ -16,4 +21,6 @@ public class ContaEspecial extends Conta {
     public void setValorLimite(double valorLimite) {
         this.valorLimite = valorLimite;
     }
+
+
 }

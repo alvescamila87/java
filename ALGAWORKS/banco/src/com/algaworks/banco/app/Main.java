@@ -32,12 +32,13 @@ public class Main {
 
         //minhaConta.depositar(15_000);
         suaConta.depositar(30_000);
-        suaConta.sacar(30_500);
+        suaConta.sacar(31_500);
         //minhaConta.sacar(1_000);
         //minhaConta.sacar(500, 15);
         //minhaConta.creditarRendimentos(0.8);
 
-        //System.out.println("Saldo: R$" + minhaConta.getSaldo());
+
+        System.out.println("Saldo: R$" + minhaConta.getSaldo());
         System.out.println("Saldo: R$" + suaConta.getSaldo());
 
 
