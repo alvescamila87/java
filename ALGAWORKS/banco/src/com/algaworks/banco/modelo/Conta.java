@@ -2,7 +2,7 @@ package com.algaworks.banco.modelo;
 
 import java.util.Objects;
 
-public class Conta {
+public abstract class Conta {
     private Pessoa titular;
     private int agencia;
     private int numero;
@@ -43,6 +43,9 @@ public class Conta {
         }
         saldo -= valor;
     }
+
+    // abstract (quem implementa são as subsclasses)
+    public abstract void debitarTarifaMensal();
 
     // sobrecarga de método
     public void sacar(double valor, double taxaSaque) {

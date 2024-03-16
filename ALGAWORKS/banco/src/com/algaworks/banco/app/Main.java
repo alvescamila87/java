@@ -31,10 +31,11 @@ public class Main {
         minhaConta.sacar(1_000);
         //minhaConta.sacar(500, 15);
         minhaConta.creditarRendimentos(0.8);
+        minhaConta.debitarTarifaMensal();
 
         suaConta.depositar(30_000);
         suaConta.sacar(30_500);
-
+        suaConta.debitarTarifaMensal();
 
         System.out.println("Saldo: R$" + minhaConta.getSaldo());
         System.out.println("Saldo: R$" + suaConta.getSaldo());
@@ -51,6 +52,8 @@ public class Main {
         System.out.println("");
         ce.imprimirSaldo(suaConta);
 
+        // Não permitir que classe abstrata seja instanciada, no caso Conta
+        //Conta conta4 = new Conta(titular1, 6516161, 6169161);
 
 
     }
