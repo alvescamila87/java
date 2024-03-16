@@ -1,9 +1,6 @@
 package com.algaworks.banco.app;
 
-import com.algaworks.banco.modelo.Conta;
-import com.algaworks.banco.modelo.ContaEspecial;
-import com.algaworks.banco.modelo.ContaInvestimento;
-import com.algaworks.banco.modelo.Pessoa;
+import com.algaworks.banco.modelo.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,16 +27,30 @@ public class Main {
         System.out.println("Número: " + suaConta.getNumero());
         System.out.println("Saldo: R$" + suaConta.getSaldo());
 
-        //minhaConta.depositar(15_000);
-        suaConta.depositar(30_000);
-        suaConta.sacar(31_500);
-        //minhaConta.sacar(1_000);
+        minhaConta.depositar(15_000);
+        minhaConta.sacar(1_000);
         //minhaConta.sacar(500, 15);
-        //minhaConta.creditarRendimentos(0.8);
+        minhaConta.creditarRendimentos(0.8);
+
+        suaConta.depositar(30_000);
+        suaConta.sacar(30_500);
 
 
         System.out.println("Saldo: R$" + minhaConta.getSaldo());
         System.out.println("Saldo: R$" + suaConta.getSaldo());
+
+        //upcasting (coerção para cima) explicito da subclasse ContaInvestimento na super classe Conta
+        //Conta conta = (Conta) minhaConta;
+
+        //upcasting (coerção para cima) implícito
+        //Conta conta2 = minhaConta;
+
+        // polimorfismo
+        CaixaEletronico ce = new CaixaEletronico();
+        ce.imprimirSaldo(minhaConta);
+        System.out.println("");
+        ce.imprimirSaldo(suaConta);
+
 
 
     }
