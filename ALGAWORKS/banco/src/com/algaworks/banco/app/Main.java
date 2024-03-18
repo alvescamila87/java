@@ -7,12 +7,28 @@ import com.algaworks.banco.modelo.pagamento.Boleto;
 import com.algaworks.banco.modelo.pagamento.DocumentoPagavel;
 import com.algaworks.banco.modelo.pagamento.Holerite;
 
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+
 public class Main {
     public static void main(String[] args) {
 
         Pessoa titular1 = new Pessoa();
         titular1.setNome("Princesa Isabel");
         titular1.setDocumento("6984989871919");
+        //wrapper double -> Double, com auto-boxing
+        //Double.valueOf(15_000d)
+        titular1.setRendimentoAnual(new BigDecimal("15000"));
+        //enum
+        titular1.setTipoPessoa(TipoPessoa.JURIDICA);
+        System.out.println(titular1.getTipoPessoa());
+
+        // local date time
+        System.out.println(titular1.getDataUltimaAtualizacao());
+
+        // local date time: setando uma horário via iso
+        titular1.setDataUltimaAtualizacao(LocalDateTime.parse("2024-03-18T17:21:00"));
+        System.out.println(titular1.getDataUltimaAtualizacao());
 
         Pessoa titular2 = new Pessoa();
         titular2.setNome("Maria Helena");
@@ -25,7 +41,7 @@ public class Main {
         System.out.println("Número: " + minhaConta.getNumero());
         System.out.println("Saldo: R$" + minhaConta.getSaldo());
 
-        ContaEspecial suaConta = new ContaEspecial(titular2, 658, 962651, 1_000);
+        ContaEspecial suaConta = new ContaEspecial(titular2, 658, 962651, new BigDecimal("1000"));
 
         System.out.println("Titular 2: " + suaConta.getTitular().getNome());
         System.out.println("Agência: " + suaConta.getAgencia());
@@ -34,14 +50,14 @@ public class Main {
 
         // exception
         try {
-            minhaConta.depositar(30_000);
-            minhaConta.sacar(1_000);
+            minhaConta.depositar(new BigDecimal("30000"));
+            minhaConta.sacar(new BigDecimal("1000"));
             //minhaConta.sacar(500, 15);
             //minhaConta.creditarRendimentos(0.8);
             //minhaConta.debitarTarifaMensal();
 
-            suaConta.depositar(30_000);
-            suaConta.sacar(30_500);
+            suaConta.depositar(new BigDecimal("30000"));
+            suaConta.sacar(new BigDecimal("30500"));
             suaConta.debitarTarifaMensal();
 
             System.out.println("Saldo: R$" + minhaConta.getSaldo());
@@ -64,7 +80,7 @@ public class Main {
 
 
             // interface boleto 1
-            Boleto boletoEscola = new Boleto(titular1, 35_000);
+            Boleto boletoEscola = new Boleto(titular1, new BigDecimal("30000"));
             ce.pagar(boletoEscola, minhaConta);
             // interface 3 estornar pagamento
             ce.estornarPagamento(boletoEscola, minhaConta);
@@ -72,7 +88,7 @@ public class Main {
             boletoEscola.imprimirRecibo();
 
             // interface holerite 2
-            Holerite salarioFuncionario = new Holerite(titular1, 100, 160);
+            Holerite salarioFuncionario = new Holerite(titular1, new BigDecimal("100"), 160);
             ce.pagar(salarioFuncionario, minhaConta);
 
             //System.out.println("Holerite pago: " + salarioFuncionario.estaPago());

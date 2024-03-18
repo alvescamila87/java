@@ -2,13 +2,14 @@ package com.algaworks.banco.modelo;
 
 import com.algaworks.banco.modelo.excecao.SaldoInsuficienteException;
 
+import java.math.BigDecimal;
 import java.util.Objects;
 
 public abstract class Conta {
     private Pessoa titular;
     private int agencia;
     private int numero;
-    private double saldo;
+    private BigDecimal saldo = BigDecimal.ZERO;
 
     // construtor
 
@@ -27,32 +28,32 @@ public abstract class Conta {
 
 
     // métodos
-    public void depositar(double valor) {
-        if(valor <= 0) {
+    public void depositar(BigDecimal valor) {
+        if(valor.compareTo(BigDecimal.ZERO) <= 0) {
             throw new IllegalArgumentException("Não são permitidos valores negativos.");
         }
-        this.saldo += valor;
+        this.saldo.add(valor);
 
     }
 
-    public void sacar(double valor) {
-        if(valor <= 0) {
+    public void sacar(BigDecimal valor) {
+        if(valor.compareTo(BigDecimal.ZERO) <= 0) {
             throw new IllegalArgumentException("Não são permitidos valores negativos.");
         }
 
-        if(getSaldoDisponivel() - valor < 0) {
+        if(getSaldoDisponivel().subtract(valor).compareTo(BigDecimal.ZERO) < 0) {
             throw new SaldoInsuficienteException("Saldo insuficiente");
         }
-        saldo -= valor;
+        saldo = saldo.subtract(valor);
     }
 
     // abstract (quem implementa são as subsclasses)
     public abstract void debitarTarifaMensal();
 
     // sobrecarga de método
-    public void sacar(double valor, double taxaSaque) {
+    public void sacar(BigDecimal valor, BigDecimal taxaSaque) {
         // debitar da conta:
-        sacar(valor + taxaSaque);
+        sacar(valor.add(taxaSaque));
     }
 
     public Pessoa getTitular() {
@@ -69,11 +70,11 @@ public abstract class Conta {
     }
 
 
-    public double getSaldo() {
+    public BigDecimal getSaldo() {
         return saldo;
     }
 
-    public double getSaldoDisponivel() {
+    public BigDecimal getSaldoDisponivel() {
         return getSaldo();
     }
 
