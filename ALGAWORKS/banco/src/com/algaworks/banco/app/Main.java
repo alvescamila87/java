@@ -2,6 +2,7 @@ package com.algaworks.banco.app;
 
 import com.algaworks.banco.modelo.*;
 import com.algaworks.banco.modelo.atm.CaixaEletronico;
+import com.algaworks.banco.modelo.excecao.SaldoInsuficienteException;
 import com.algaworks.banco.modelo.pagamento.Boleto;
 import com.algaworks.banco.modelo.pagamento.DocumentoPagavel;
 import com.algaworks.banco.modelo.pagamento.Holerite;
@@ -31,51 +32,55 @@ public class Main {
         System.out.println("Número: " + suaConta.getNumero());
         System.out.println("Saldo: R$" + suaConta.getSaldo());
 
-        minhaConta.depositar(30_000);
-        minhaConta.sacar(1_000);
-        //minhaConta.sacar(500, 15);
-        //minhaConta.creditarRendimentos(0.8);
-        //minhaConta.debitarTarifaMensal();
+        // exception
+        try {
+            minhaConta.depositar(30_000);
+            minhaConta.sacar(1_000);
+            //minhaConta.sacar(500, 15);
+            //minhaConta.creditarRendimentos(0.8);
+            //minhaConta.debitarTarifaMensal();
 
-        suaConta.depositar(30_000);
-        suaConta.sacar(30_500);
-        suaConta.debitarTarifaMensal();
+            suaConta.depositar(30_000);
+            suaConta.sacar(30_500);
+            suaConta.debitarTarifaMensal();
 
-        System.out.println("Saldo: R$" + minhaConta.getSaldo());
-        System.out.println("Saldo: R$" + suaConta.getSaldo());
+            System.out.println("Saldo: R$" + minhaConta.getSaldo());
+            System.out.println("Saldo: R$" + suaConta.getSaldo());
 
-        //upcasting (coerção para cima) explicito da subclasse ContaInvestimento na super classe Conta
-        //Conta conta = (Conta) minhaConta;
+            //upcasting (coerção para cima) explicito da subclasse ContaInvestimento na super classe Conta
+            //Conta conta = (Conta) minhaConta;
 
-        //upcasting (coerção para cima) implícito
-        //Conta conta2 = minhaConta;
+            //upcasting (coerção para cima) implícito
+            //Conta conta2 = minhaConta;
 
-        // polimorfismo
-        CaixaEletronico ce = new CaixaEletronico();
-        ce.imprimirSaldo(minhaConta);
-        System.out.println("");
-        ce.imprimirSaldo(suaConta);
+            // polimorfismo
+            CaixaEletronico ce = new CaixaEletronico();
+            ce.imprimirSaldo(minhaConta);
+            System.out.println("");
+            ce.imprimirSaldo(suaConta);
 
-        // Não permitir que classe abstrata seja instanciada, no caso Conta
-        //Conta conta4 = new Conta(titular1, 6516161, 6169161);
-
-
-        // interface boleto 1
-        Boleto boletoEscola = new Boleto(titular1, 800);
-        ce.pagar(boletoEscola, minhaConta);
-        // interface 3 estornar pagamento
-        ce.estornarPagamento(boletoEscola, minhaConta);
-        //System.out.println("Boleto pago: " + boletoEscola.estaPago());
-        boletoEscola.imprimirRecibo();
-
-        // interface holerite 2
-        Holerite salarioFuncionario = new Holerite(titular1, 100, 160);
-        ce.pagar(salarioFuncionario, minhaConta);
-        //System.out.println("Holerite pago: " + salarioFuncionario.estaPago());
-        salarioFuncionario.imprimirRecibo();
+            // Não permitir que classe abstrata seja instanciada, no caso Conta
+            //Conta conta4 = new Conta(titular1, 6516161, 6169161);
 
 
+            // interface boleto 1
+            Boleto boletoEscola = new Boleto(titular1, 35_000);
+            ce.pagar(boletoEscola, minhaConta);
+            // interface 3 estornar pagamento
+            ce.estornarPagamento(boletoEscola, minhaConta);
+            //System.out.println("Boleto pago: " + boletoEscola.estaPago());
+            boletoEscola.imprimirRecibo();
 
+            // interface holerite 2
+            Holerite salarioFuncionario = new Holerite(titular1, 100, 160);
+            ce.pagar(salarioFuncionario, minhaConta);
 
+            //System.out.println("Holerite pago: " + salarioFuncionario.estaPago());
+            salarioFuncionario.imprimirRecibo();
+
+        } catch (SaldoInsuficienteException e) {
+            // capturamos e tratamos a exceção mais específica
+            System.out.println("Erro ao executar operação na conta: " + e.getMessage());
+        }
     }
 }
