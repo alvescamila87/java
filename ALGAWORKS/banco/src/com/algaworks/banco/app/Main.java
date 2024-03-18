@@ -1,6 +1,10 @@
 package com.algaworks.banco.app;
 
 import com.algaworks.banco.modelo.*;
+import com.algaworks.banco.modelo.atm.CaixaEletronico;
+import com.algaworks.banco.modelo.pagamento.Boleto;
+import com.algaworks.banco.modelo.pagamento.DocumentoPagavel;
+import com.algaworks.banco.modelo.pagamento.Holerite;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,11 +31,11 @@ public class Main {
         System.out.println("Número: " + suaConta.getNumero());
         System.out.println("Saldo: R$" + suaConta.getSaldo());
 
-        minhaConta.depositar(15_000);
+        minhaConta.depositar(30_000);
         minhaConta.sacar(1_000);
         //minhaConta.sacar(500, 15);
-        minhaConta.creditarRendimentos(0.8);
-        minhaConta.debitarTarifaMensal();
+        //minhaConta.creditarRendimentos(0.8);
+        //minhaConta.debitarTarifaMensal();
 
         suaConta.depositar(30_000);
         suaConta.sacar(30_500);
@@ -54,6 +58,23 @@ public class Main {
 
         // Não permitir que classe abstrata seja instanciada, no caso Conta
         //Conta conta4 = new Conta(titular1, 6516161, 6169161);
+
+
+        // interface boleto 1
+        Boleto boletoEscola = new Boleto(titular1, 800);
+        ce.pagar(boletoEscola, minhaConta);
+        // interface 3 estornar pagamento
+        ce.estornarPagamento(boletoEscola, minhaConta);
+        //System.out.println("Boleto pago: " + boletoEscola.estaPago());
+        boletoEscola.imprimirRecibo();
+
+        // interface holerite 2
+        Holerite salarioFuncionario = new Holerite(titular1, 100, 160);
+        ce.pagar(salarioFuncionario, minhaConta);
+        //System.out.println("Holerite pago: " + salarioFuncionario.estaPago());
+        salarioFuncionario.imprimirRecibo();
+
+
 
 
     }
