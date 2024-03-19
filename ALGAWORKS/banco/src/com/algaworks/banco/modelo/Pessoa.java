@@ -3,7 +3,7 @@ package com.algaworks.banco.modelo;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-public class Pessoa {
+public class Pessoa extends Object {
 
     private String nome;
     private String documento;
@@ -18,6 +18,15 @@ public class Pessoa {
     // data e hora: iso 8601
     // sem informação de fuso horário
     private LocalDateTime dataUltimaAtualizacao = LocalDateTime.now();
+
+    // uso com arraylist
+    public Pessoa() {
+    }
+
+    public Pessoa(String nome, String documento) {
+        this.nome = nome;
+        this.documento = documento;
+    }
 
     public String getNome() {
         return nome;
@@ -57,5 +66,33 @@ public class Pessoa {
 
     public void setDataUltimaAtualizacao(LocalDateTime dataUltimaAtualizacao) {
         this.dataUltimaAtualizacao = dataUltimaAtualizacao;
+    }
+
+    // uso com arraylist
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", documento='" + documento + '\'' +
+                ", tipoPessoa=" + tipoPessoa +
+                '}';
+    }
+
+    // comparar igualdade depende do negócio
+    @Override
+    public boolean equals(Object obj) {
+        // verificar se a referência é a mesma
+        if(this == obj) return true;
+
+        // se o objeto recebido é null
+        if(obj == null) return false;
+
+        // se a classe do objeto é diferente
+        if(getClass() != obj.getClass()) return false;
+
+        // se 2 objetos diferentes possuirem o mesmo documento, são iguais
+        Pessoa pessoa = (Pessoa) obj;
+        return documento.equals(pessoa.documento);
     }
 }
