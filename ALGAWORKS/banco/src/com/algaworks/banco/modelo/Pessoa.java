@@ -2,6 +2,7 @@ package com.algaworks.banco.modelo;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 public class Pessoa extends Object {
 
@@ -78,7 +79,7 @@ public class Pessoa extends Object {
                 ", tipoPessoa=" + tipoPessoa +
                 '}';
     }
-
+    /*
     // comparar igualdade depende do negócio
     @Override
     public boolean equals(Object obj) {
@@ -94,5 +95,27 @@ public class Pessoa extends Object {
         // se 2 objetos diferentes possuirem o mesmo documento, são iguais
         Pessoa pessoa = (Pessoa) obj;
         return documento.equals(pessoa.documento);
+    }
+
+    // método de geração de hash: que retorna um código para categorizar o objeto em tabelas de espalhamento
+    @Override
+    public int hashCode() {
+        return 1;
+    }
+    */
+
+    // melhor prática, gerar equals e hash juntos
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Pessoa pessoa = (Pessoa) o;
+        return Objects.equals(documento, pessoa.documento);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(documento);
     }
 }

@@ -32,7 +32,7 @@ public abstract class Conta {
         if(valor.compareTo(BigDecimal.ZERO) <= 0) {
             throw new IllegalArgumentException("Não são permitidos valores negativos.");
         }
-        this.saldo.add(valor);
+        saldo = saldo.add(valor);
 
     }
 
