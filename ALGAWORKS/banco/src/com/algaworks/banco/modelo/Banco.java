@@ -3,6 +3,7 @@ package com.algaworks.banco.modelo;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class Banco {
 
@@ -34,4 +35,32 @@ public class Banco {
     public List<Conta> getContas() {
         return contas;
     }
+
+    // método que retorna Optional (objeto que funciona como container: que pode ou não ter algo):
+    public Optional<Conta> buscar(int agencia, int numeroConta) {
+        for (Conta conta : getContas()) {
+            if(conta.getAgencia() == agencia && conta.getNumero() == numeroConta) {
+                return Optional.of(conta);
+            }
+        }
+        // não retornar null
+        return Optional.empty();
+    }
+
+    /*
+
+    método padrão:
+
+
+    // se proteger da null pointer exception
+    public Conta buscar(int agencia, int numeroConta) {
+        for (Conta conta : getContas()) {
+            if(conta.getAgencia() == agencia && conta.getNumero() == numeroConta) {
+                return conta;
+            }
+        }
+        return null;
+    }
+
+     */
 }
